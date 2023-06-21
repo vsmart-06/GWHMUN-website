@@ -4,9 +4,9 @@ import "package:google_fonts/google_fonts.dart";
 class Secretariat extends StatelessWidget {
   Secretariat({super.key});
 
-  String? titleFont = GoogleFonts.playfairDisplay().fontFamily;
-  String? font = GoogleFonts.roboto().fontFamily;
-  ScrollController scroll = ScrollController();
+  final String? titleFont = GoogleFonts.playfairDisplay().fontFamily;
+  final String? font = GoogleFonts.roboto().fontFamily;
+  final ScrollController scroll = ScrollController();
 
   @override
   Widget build(BuildContext context) {

@@ -22,7 +22,11 @@ void main() {
         "/unsc": (context) => UNSC(),
         "/disec": (context) => DISEC(),
         "/unhrc": (context) => UNHRC(),
-        "/unep": (context) => UNEP()
+        "/unep": (context) => UNEP(),
+        //"/ipc": (context) => IPC(),
+        //"/aippm": (context) => AIPPM(),
+        //"/jcc": (context) => JCC(),
+        //"/sochum": (context) => SOCHUM()
       }
     )
   );
