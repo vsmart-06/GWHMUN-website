@@ -21,7 +21,16 @@ class _HeaderState extends State<Header> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Image(image: NetworkImage("https://cdn.discordapp.com/attachments/1022434825115815937/1121068938416103454/mun_logo.png"), width: 75, height: 75),
+          IconButton(
+            icon: Image(
+              image: NetworkImage("https://cdn.discordapp.com/attachments/1022434825115815937/1121068938416103454/mun_logo.png"), 
+              width: 75, 
+              height: 75
+            ), 
+            onPressed: () {
+              Navigator.popAndPushNamed(context, "/");
+            },
+          ),
           TextButton(
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(buttonColors[0]),

@@ -61,14 +61,7 @@ class _HomeState extends State<Home> {
     else {time_string[3] = seconds.toString();}
 
     return Scaffold(
-      
       backgroundColor: Colors.black,
-      extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
-      
       body: Center(
         child: Column(
           children: [
