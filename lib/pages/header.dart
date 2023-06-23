@@ -40,7 +40,7 @@ class _HeaderState extends State<Header> {
                 fontFamily: fontFamily
               )
             ),
-            onPressed: () {},
+            onPressed: () {Navigator.popAndPushNamed(context, "/");},
             onHover: (value) {
               if (value) {
                 setState(() {
@@ -72,7 +72,7 @@ class _HeaderState extends State<Header> {
                 fontFamily: fontFamily
               )
             ),
-            onPressed: () {},
+            onPressed: () {Navigator.popAndPushNamed(context, "/committees");},
             onHover: (value) {
               if (value) {
                 setState(() {
@@ -104,7 +104,7 @@ class _HeaderState extends State<Header> {
                 fontFamily: fontFamily
               )
             ),
-            onPressed: () {},
+            onPressed: () {Navigator.popAndPushNamed(context, "/resources");},
             onHover: (value) {
               if (value) {
                 setState(() {
@@ -136,7 +136,7 @@ class _HeaderState extends State<Header> {
                 fontFamily: fontFamily
               )
             ),
-            onPressed: () {},
+            onPressed: () {Navigator.popAndPushNamed(context, "/secretariat");},
             onHover: (value) {
               if (value) {
                 setState(() {
@@ -168,7 +168,7 @@ class _HeaderState extends State<Header> {
                 fontFamily: fontFamily
               )
             ),
-            onPressed: () {},
+            onPressed: () {Navigator.popAndPushNamed(context, "/registration");},
             onHover: (value) {
               if (value) {
                 setState(() {

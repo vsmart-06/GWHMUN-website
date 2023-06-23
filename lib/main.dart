@@ -7,6 +7,7 @@ import "package:website/pages/unsc_page.dart";
 import "package:website/pages/unhrc_page.dart";
 import "package:website/pages/unep_page.dart";
 import "package:website/pages/disec_page.dart";
+import "package:website/pages/registration_page.dart";
 
 void main() {
 
@@ -19,6 +20,7 @@ void main() {
         "/committees": (context) => Committee(),
         "/secretariat": (context) => Secretariat(),
         "/resources": (context) => Resources(),
+        "/registration": (context) => Registrations(),
         "/unsc": (context) => UNSC(),
         "/disec": (context) => DISEC(),
         "/unhrc": (context) => UNHRC(),
