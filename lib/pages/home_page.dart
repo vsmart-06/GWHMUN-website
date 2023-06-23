@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "dart:async";
 import "package:google_fonts/google_fonts.dart";
+import "header.dart";
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -10,7 +11,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  Duration time = DateTime(2023, 4, 20, 8, 50).difference(DateTime.now());
+  Duration time = DateTime(2023, 7, 20, 8, 50).difference(DateTime.now());
   Timer? timer;
   int? days;
   int? hours;
@@ -20,10 +21,11 @@ class _HomeState extends State<Home> {
   Color primaryColor = Colors.black;
   Color accentColor = Colors.white;
   Size buttonSize = Size(100, 100);
-  String? font = GoogleFonts.playfairDisplay().fontFamily;
+  String? font = GoogleFonts.questrial().fontFamily;
   String? fontTime = GoogleFonts.roboto().fontFamily;
   ScrollController? scroll = ScrollController();
   List<Color> buttonColors = [Colors.black, Colors.black, Colors.black];
+  Color textcolor = Colors.white;
 
   @override
   void initState() {
@@ -40,6 +42,7 @@ class _HomeState extends State<Home> {
       time = Duration(seconds: seconds);
     });
   }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -58,85 +61,14 @@ class _HomeState extends State<Home> {
     else {time_string[3] = seconds.toString();}
 
     return Scaffold(
-      drawer: Drawer(
-        backgroundColor: Colors.grey[900],
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            SizedBox(
-              height: 80,
-              child: DrawerHeader(
-                child: Text(
-                  "GWHJMUN 2023",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: GoogleFonts.playfairDisplay().fontFamily,
-                    fontSize: 30
-                  ),
-                )
-              ),
-            ),
-            ListTile(
-              title: Text(
-                "Home",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: fontTime,
-                  fontSize: 20
-                ),
-              ),
-              onTap: () {
-                Navigator.popAndPushNamed(context, "/");
-              },
-            ),
-            ListTile(
-              title: Text(
-                "Committees",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: fontTime,
-                  fontSize: 20
-                ),
-              ),
-              onTap: () {
-                Navigator.popAndPushNamed(context, "/committees");
-              },
-            ),
-            ListTile(
-              title: Text(
-                "Resources",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: fontTime,
-                  fontSize: 20
-                ),
-              ),
-              onTap: () {
-                Navigator.popAndPushNamed(context, "/resources");
-              },
-            ),
-            ListTile(
-              title: Text(
-                "Secretariat",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: fontTime,
-                  fontSize: 20
-                ),
-              ),
-              onTap: () {
-                Navigator.popAndPushNamed(context, "/secretariat");
-              },
-            ),
-          ],
-        ),
-      ),
+      
       backgroundColor: Colors.black,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
+      
       body: Center(
         child: RawScrollbar(
           thumbColor: Color(0xFF313133),
@@ -149,135 +81,63 @@ class _HomeState extends State<Home> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image(width: MediaQuery.of(context).size.width/3, height: MediaQuery.of(context).size.width/5, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1097141394793054259/image.png?width=1176&height=638"),),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        TextButton(
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(buttonColors[0]),
-                            foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10.0),
-                                side: BorderSide(color: Colors.white)
-                              )
-                            )
-                          ),
-                          onPressed: () {
-                            Navigator.pushNamed(context, "/committees");
-                          }, 
-                          onHover: (value) {
-                            if (value) {
-                              setState(() {
-                                buttonColors[0] = Color(0x99313133);
-                              });
-                            }
-                            else {
-                              setState(() {
-                                buttonColors[0] = Colors.black;
-                              });
-                            }
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Text(
-                              "Committees",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontFamily: fontTime,
-                                fontSize: 20
-                              )
-                            ),
-                          )
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: TextButton(
-                            style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all<Color>(buttonColors[1]),
-                              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0),
-                                  side: BorderSide(color: Colors.white)
-                                )
-                              )
-                            ),
-                            onPressed: () {
-                              Navigator.pushNamed(context, "/resources");
-                            }, 
-                            onHover: (value) {
-                              if (value) {
-                                setState(() {
-                                  buttonColors[1] = Color(0x99313133);
-                                });
-                              }
-                              else {
-                                setState(() {
-                                  buttonColors[1] = Colors.black;
-                                });
-                              }
-                            },
-                            child: Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Text(
-                                "Resources",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: fontTime,
-                                  fontSize: 20
-                                )
-                              ),
-                            )
-                          ),
-                        ),
-                        TextButton(
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(buttonColors[2]),
-                            foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10.0),
-                                side: BorderSide(color: Colors.white)
-                              )
-                            )
-                          ),
-                          onPressed: () {
-                            Navigator.pushNamed(context, "/secretariat");
-                          }, 
-                          onHover: (value) {
-                            if (value) {
-                              setState(() {
-                                buttonColors[2] = Color(0x99313133);
-                              });
-                            }
-                            else {
-                              setState(() {
-                                buttonColors[2] = Colors.black;
-                              });
-                            }
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Text(
-                              "Secretariat",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontFamily: fontTime,
-                                fontSize: 20
-                              )
-                            ),
-                          )
-                        ),
-                      ]
+                Image(width: MediaQuery.of(context).size.width/3, height: MediaQuery.of(context).size.width/5, image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1121068938416103454/mun_logo.png?width=1452&height=1026"),),
+                Text(
+                    "Greenwood High Model\n United Nation 2023",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: font,
+                      fontSize: 40
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
+                    child: Text(
+                      "12-15 AUGUST 2023 | BENGALURU, INDIA",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: font,
+                        fontSize: 28
+                      ),
+                      textAlign: TextAlign.center,
                     ),
                   ),
-                ),
+                  
+                  TextButton(
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all<Color>(textcolor),
+                      backgroundColor: MaterialStatePropertyAll<Color>(Colors.transparent),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(50, 20, 50, 20),
+                      child: Text(
+                        "Registrations Open Now",
+                        style: TextStyle(
+                          color: textcolor,
+                          fontFamily: font,
+                          fontSize: 28
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  onPressed: (){
+                    //Navigator.pushNamed(context, "/registrations");
+                  },
+                  onHover: (value){
+                    if(value){
+                      setState(() {
+                        textcolor = Colors.green;
+                      });
+                    }
+                    else {
+                      setState(() {
+                        textcolor = Colors.white;
+                      });
+                    }
+                  },
+
+                  ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(50, 20, 50, 20),
                   child: Text(
