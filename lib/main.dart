@@ -20,7 +20,7 @@ void main() {
         "/committees": (context) => Committee(),
         "/secretariat": (context) => Secretariat(),
         "/resources": (context) => Resources(),
-        "/registration": (context) => Registrations(),
+        "/registrations": (context) => Registrations(),
         "/unsc": (context) => UNSC(),
         "/disec": (context) => DISEC(),
         "/unhrc": (context) => UNHRC(),

@@ -21,12 +21,23 @@ class _HeaderState extends State<Header> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          IconButton(
+          TextButton.icon(
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
+              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+              minimumSize: MaterialStateProperty.all<Size>(Size(50, 50)),
+              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(0),
+                )
+              )
+            ),
             icon: Image(
-              image: NetworkImage("https://cdn.discordapp.com/attachments/1022434825115815937/1121068938416103454/mun_logo.png"), 
-              width: 75, 
-              height: 75
+              image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1121068938416103454/mun_logo.png?width=1452&height=1026"), 
+              width: 50, 
+              height: 50
             ), 
+            label: Text(""),
             onPressed: () {
               Navigator.popAndPushNamed(context, "/");
             },
@@ -35,7 +46,7 @@ class _HeaderState extends State<Header> {
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(buttonColors[0]),
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              minimumSize: MaterialStateProperty.all<Size>(Size(100, 85)),
+              minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0),
@@ -67,7 +78,7 @@ class _HeaderState extends State<Header> {
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(buttonColors[1]),
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              minimumSize: MaterialStateProperty.all<Size>(Size(100, 85)),
+              minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0),
@@ -99,7 +110,7 @@ class _HeaderState extends State<Header> {
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(buttonColors[2]),
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              minimumSize: MaterialStateProperty.all<Size>(Size(100, 85)),
+              minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0),
@@ -131,7 +142,7 @@ class _HeaderState extends State<Header> {
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(buttonColors[3]),
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              minimumSize: MaterialStateProperty.all<Size>(Size(100, 85)),
+              minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0),
@@ -163,7 +174,7 @@ class _HeaderState extends State<Header> {
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(buttonColors[4]),
               foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              minimumSize: MaterialStateProperty.all<Size>(Size(100, 85)),
+              minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(0),
@@ -171,13 +182,13 @@ class _HeaderState extends State<Header> {
               )
             ),
             child: Text(
-              "Registration",
+              "Registrations",
               style: TextStyle(
                 fontSize: fontSize,
                 fontFamily: fontFamily
               )
             ),
-            onPressed: () {Navigator.popAndPushNamed(context, "/registration");},
+            onPressed: () {Navigator.popAndPushNamed(context, "/registrations");},
             onHover: (value) {
               if (value) {
                 setState(() {

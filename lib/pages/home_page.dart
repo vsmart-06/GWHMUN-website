@@ -34,13 +34,15 @@ class _HomeState extends State<Home> {
   }
 
   void setCountdown() {
-    setState(() {
-      int seconds = time.inSeconds - 1;
-      if (seconds < 0) {
-        seconds = 0;
-      }
-      time = Duration(seconds: seconds);
-    });
+    if (mounted) {
+      setState(() {
+        int seconds = time.inSeconds - 1;
+        if (seconds < 0) {
+          seconds = 0;
+        }
+        time = Duration(seconds: seconds);
+      });
+    }
   }
   
 
@@ -138,7 +140,7 @@ class _HomeState extends State<Home> {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(50, 20, 50, 20),
                         child: Text(
-                          "Greetings Delegates! After years of drought for Junior MUN in our school, the old MSPMUN is now back on our event shelves. We now bring to you MSP's biggest event, where 150 delegates rack their heads to provide solutions for the world's most antagonizing problems. From fiery debate to word-twisting manipulation, delegates receive the closest replica of what they would face in the Bangalore MUN Circuit. Many delegates over the years participating in the school's JMUN go from being the most shroud lobbyists to the most powerful public speaker, while many others receive their first taste of courage in the public. \n\nLadies and Gentlemen, we present to you GWHJMUN 2023!",
+                          "Greetings Delegates! After years of drought for Junior MUN in our school, the old MSPMUN is now back on our event shelves. We now bring to you MSP's biggest event, where 150 delegates rack their heads to provide solutions for the world's most antagonizing problems. From fiery debate to word-twisting manipulation, delegates receive the closest replica of what they would face in the Bangalore MUN Circuit. Many delegates over the years participating in the school's JMUN go from being the most shroud lobbyists to the most powerful public speaker, while many others receive their first taste of courage in the public. \n\nDelegates, we present to you GWHJMUN 2023!",
                           style: TextStyle(
                             color: Colors.white,
                             fontFamily: font,
