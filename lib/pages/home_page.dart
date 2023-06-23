@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import "dart:async";
 import "package:google_fonts/google_fonts.dart";
 import "package:website/pages/header.dart";
+import "package:website/pages/footer.dart";
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -270,6 +271,7 @@ class _HomeState extends State<Home> {
                           ),
                         ],
                       ),
+                      Footer(),
                     ],
                   ),
                 ),
