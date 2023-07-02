@@ -9,9 +9,9 @@ class Committee extends StatefulWidget {
 
 class _CommitteeState extends State<Committee> {
   String? font = GoogleFonts.roboto().fontFamily;
-  String? titleFont = GoogleFonts.questrial().fontFamily;
+  String? titleFont = GoogleFonts.ebGaramond().fontFamily;
 
-  List<Color> cardColors = [Colors.black, Colors.black, Colors.black, Colors.black];
+  List<Color> cardColors = [Colors.black, Colors.black, Colors.black, Colors.black, Colors.black, Colors.black, Colors.black, Colors.black,];
   ScrollController scroll = ScrollController();
   
   @override
@@ -30,7 +30,7 @@ class _CommitteeState extends State<Committee> {
                 "COMMITTEES",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 40,
+                  fontSize: 35,
                   fontFamily: titleFont
                 ),
               ),
@@ -77,7 +77,8 @@ class _CommitteeState extends State<Committee> {
                                   }
                                 },
                                 onPressed: () {Navigator.pushNamed(context, "/unhrc");},
-                                child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096448594669736077/cards-removebg-preview.png?width=834&height=834"),)
+                                child: Image(image: 
+                                  AssetImage("committeePage/UNHRC.png"))
                               )
                             ),
                           ),
@@ -109,7 +110,8 @@ class _CommitteeState extends State<Committee> {
                                   }
                                 },
                                 onPressed: () {Navigator.pushNamed(context, "/unep");},
-                                child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096456906316451890/cards_3.png?width=834&height=834"),)
+                                child: Image(image: 
+                                  AssetImage("committeePage/UNEP.png"))
                               )
                             ),
                           ),
@@ -146,8 +148,9 @@ class _CommitteeState extends State<Committee> {
                                   }
                                 },
                                 onPressed: () {Navigator.pushNamed(context, "/disec");},
-                                child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096452662171541646/cards__1_-removebg-preview.png?width=834&height=834"),)
-                              )
+                                child: Image(image: 
+                                  AssetImage("committeePage/DISEC.png"))
+                                )
                             ),
                           ),
                           Padding(
@@ -178,7 +181,8 @@ class _CommitteeState extends State<Committee> {
                                   }
                                 },
                                 onPressed: () {Navigator.pushNamed(context, "/unsc");},
-                                child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096454839606718546/cards-removebg-preview.png?width=834&height=834"),)
+                                child: Image(image: 
+                                  AssetImage("committeePage/UNSC.png"))
                               )
                             ),
                           ),
@@ -190,7 +194,7 @@ class _CommitteeState extends State<Committee> {
                           Padding(
                             padding: const EdgeInsets.all(20.0),
                             child: Card(
-                              color: cardColors[2],
+                              color: cardColors[4],
                               elevation: 10,
                               borderOnForeground: true,
                               shape: RoundedRectangleBorder(
@@ -205,24 +209,25 @@ class _CommitteeState extends State<Committee> {
                                 onHover: (value) {
                                   if (value) {
                                     setState(() {
-                                    cardColors[2] = Color(0x99313133);
+                                    cardColors[4] = Color(0x99313133);
                                     });
                                   }
                                   else {
                                     setState(() {
-                                    cardColors[2] = Colors.black;
+                                    cardColors[4] = Colors.black;
                                     });
                                   }
                                 },
                                 onPressed: () {Navigator.pushNamed(context, "/disec");},
-                                child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096452662171541646/cards__1_-removebg-preview.png?width=834&height=834"),)
+                                child: Image(image: 
+                                  AssetImage("committeePage/AIPPM.png"))
                               )
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(20.0),
                             child: Card(
-                              color: cardColors[3],
+                              color: cardColors[5],
                               elevation: 10,
                               borderOnForeground: true,
                               shape: RoundedRectangleBorder(
@@ -237,17 +242,18 @@ class _CommitteeState extends State<Committee> {
                                 onHover: (value) {
                                   if (value) {
                                     setState(() {
-                                    cardColors[3] = Color(0x99313133);
+                                    cardColors[5] = Color(0x99313133);
                                     });
                                   }
                                   else {
                                     setState(() {
-                                    cardColors[3] = Colors.black;
+                                    cardColors[5] = Colors.black;
                                     });
                                   }
                                 },
                                 onPressed: () {Navigator.pushNamed(context, "/unsc");},
-                                child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096454839606718546/cards-removebg-preview.png?width=834&height=834"),)
+                                child: Image(image: 
+                                  AssetImage("committeePage/IPC.png"))
                               )
                             ),
                           ),
@@ -259,7 +265,7 @@ class _CommitteeState extends State<Committee> {
                           Padding(
                             padding: const EdgeInsets.all(20.0),
                             child: Card(
-                              color: cardColors[2],
+                              color: cardColors[6],
                               elevation: 10,
                               borderOnForeground: true,
                               shape: RoundedRectangleBorder(
@@ -274,24 +280,25 @@ class _CommitteeState extends State<Committee> {
                                 onHover: (value) {
                                   if (value) {
                                     setState(() {
-                                    cardColors[2] = Color(0x99313133);
+                                    cardColors[6] = Color(0x99313133);
                                     });
                                   }
                                   else {
                                     setState(() {
-                                    cardColors[2] = Colors.black;
+                                    cardColors[6] = Colors.black;
                                     });
                                   }
                                 },
                                 onPressed: () {Navigator.pushNamed(context, "/disec");},
-                                child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096452662171541646/cards__1_-removebg-preview.png?width=834&height=834"),)
+                                child: Image(image: 
+                                  AssetImage("committeePage/JCC.png"))
                               )
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.all(20.0),
                             child: Card(
-                              color: cardColors[3],
+                              color: cardColors[7],
                               elevation: 10,
                               borderOnForeground: true,
                               shape: RoundedRectangleBorder(
@@ -306,17 +313,18 @@ class _CommitteeState extends State<Committee> {
                                 onHover: (value) {
                                   if (value) {
                                     setState(() {
-                                    cardColors[3] = Color(0x99313133);
+                                    cardColors[7] = Color(0x99313133);
                                     });
                                   }
                                   else {
                                     setState(() {
-                                    cardColors[3] = Colors.black;
+                                    cardColors[7] = Colors.black;
                                     });
                                   }
                                 },
                                 onPressed: () {Navigator.pushNamed(context, "/unsc");},
-                                child: Image(image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1096454839606718546/cards-removebg-preview.png?width=834&height=834"),)
+                                child: Image(image: 
+                                  AssetImage("committeePage/SOCHUM.png"))
                               )
                             ),
                           ),
