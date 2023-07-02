@@ -25,7 +25,7 @@ class _CommitteeState extends State<Committee> {
           children: [
             Header(),
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(10.0),
               child: Text(
                 "COMMITTEES",
                 style: TextStyle(
