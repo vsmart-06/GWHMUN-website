@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
+import "package:website/pages/header_button.dart";
 
 class Header extends StatefulWidget {
   const Header({super.key});
@@ -42,165 +43,25 @@ class _HeaderState extends State<Header> {
               Navigator.popAndPushNamed(context, "/");
             },
           ),
-          TextButton(
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(buttonColors[0]),
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)),
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(0),
-                )
-              )
-            ),
-            child: Text(
-              "Home",
-              style: TextStyle(
-                fontSize: fontSize,
-                fontFamily: fontFamily
-              )
-            ),
-            onPressed: () {Navigator.popAndPushNamed(context, "/");},
-            onHover: (value) {
-              if (value) {
-                setState(() {
-                  buttonColors[0] = Color(0xFF73767E);
-                });
-              }
-              else {
-                setState(() {
-                  buttonColors[0] = Colors.transparent;
-                });
-              }
-            }
+          HeaderButton(
+            name: "Home",
+            navPath: "/"
           ),
-          TextButton(
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(buttonColors[1]),
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)),
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(0),
-                )
-              )
-            ),
-            child: Text(
-              "Committees",
-              style: TextStyle(
-                fontSize: fontSize,
-                fontFamily: fontFamily
-              )
-            ),
-            onPressed: () {Navigator.popAndPushNamed(context, "/committees");},
-            onHover: (value) {
-              if (value) {
-                setState(() {
-                  buttonColors[1] = Color(0xFF73767E);
-                });
-              }
-              else {
-                setState(() {
-                  buttonColors[1] = Colors.transparent;
-                });
-              }
-            }
+          HeaderButton(
+            name: "Committees",
+            navPath: "/committees"
           ),
-          TextButton(
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(buttonColors[2]),
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)),
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(0),
-                )
-              )
-            ),
-            child: Text(
-              "Resources",
-              style: TextStyle(
-                fontSize: fontSize,
-                fontFamily: fontFamily
-              )
-            ),
-            onPressed: () {Navigator.popAndPushNamed(context, "/resources");},
-            onHover: (value) {
-              if (value) {
-                setState(() {
-                  buttonColors[2] = Color(0xFF73767E);
-                });
-              }
-              else {
-                setState(() {
-                  buttonColors[2] = Colors.transparent;
-                });
-              }
-            }
+          HeaderButton(
+            name: "Resources",
+            navPath: "/resources"
           ),
-          TextButton(
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(buttonColors[3]),
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)),
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(0),
-                )
-              )
-            ),
-            child: Text(
-              "Secretariat",
-              style: TextStyle(
-                fontSize: fontSize,
-                fontFamily: fontFamily
-              )
-            ),
-            onPressed: () {Navigator.popAndPushNamed(context, "/secretariat");},
-            onHover: (value) {
-              if (value) {
-                setState(() {
-                  buttonColors[3] = Color(0xFF73767E);
-                });
-              }
-              else {
-                setState(() {
-                  buttonColors[3] = Colors.transparent;
-                });
-              }
-            }
+          HeaderButton(
+            name: "Secretariat",
+            navPath: "/secretariat"
           ),
-          TextButton(
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(buttonColors[4]),
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              minimumSize: MaterialStateProperty.all<Size>(Size(100, 50)),
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(0),
-                )
-              )
-            ),
-            child: Text(
-              "Registrations",
-              style: TextStyle(
-                fontSize: fontSize,
-                fontFamily: fontFamily
-              )
-            ),
-            onPressed: () {Navigator.popAndPushNamed(context, "/registrations");},
-            onHover: (value) {
-              if (value) {
-                setState(() {
-                  buttonColors[4] = Color(0xFF73767E);
-                });
-              }
-              else {
-                setState(() {
-                  buttonColors[4] = Colors.transparent;
-                });
-              }
-            }
+          HeaderButton(
+            name: "Registrations",
+            navPath: "/registrations"
           ),
         ],
       )

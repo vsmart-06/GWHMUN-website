@@ -1,8 +1,7 @@
 import "package:flutter/material.dart";
-import "dart:html";
 import "package:google_fonts/google_fonts.dart";
 import "package:website/pages/header.dart";
-import 'resourcesButton.dart';
+import 'package:website/pages/resources_button.dart';
 
 class Resources extends StatefulWidget {
   @override
@@ -18,7 +17,6 @@ class _ResourcesState extends State<Resources> {
 
   @override
   Widget build(BuildContext context) {
-    Size cardSize = Size(2.4*MediaQuery.of(context).size.width/4, MediaQuery.of(context).size.width/4);
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
@@ -52,20 +50,20 @@ class _ResourcesState extends State<Resources> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         ResourcesButton(
-                            imagePath: 'assets/code_of_conduct.jpg',
-                            websitePath: "https://docs.google.com/document/d/1MSTvjv-TC2RxX49Iq090i7dr5wusqyjWmXL8sTFZis8/edit?usp=drivesdk",
-                            name: "Code of Conduct",
-                            ),
+                          imagePath: 'assets/code_of_conduct.jpg',
+                          websitePath: "https://docs.google.com/document/d/1MSTvjv-TC2RxX49Iq090i7dr5wusqyjWmXL8sTFZis8/edit?usp=drivesdk",
+                          name: "Code of Conduct",
+                        ),
                         ResourcesButton(
-                            imagePath: 'assets/background_guides.jpg',
-                            websitePath: "https://drive.google.com/drive/folders/1PvWVxG5gLpb0p990iga8NNrM7OZJnFxJ?usp=sharing",
-                            name: "Background Guides",
-                            ),
+                          imagePath: 'assets/background_guides.jpg',
+                          websitePath: "https://drive.google.com/drive/folders/1PvWVxG5gLpb0p990iga8NNrM7OZJnFxJ?usp=sharing",
+                          name: "Background Guides",
+                        ),
                         ResourcesButton(
-                            imagePath: "rules_of_procedure.jpg",
-                            websitePath: "https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing",
-                            name: "Rules Of Procedure",
-                            ),
+                          imagePath: "rules_of_procedure.jpg",
+                          websitePath: "https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing",
+                          name: "Rules Of Procedure",
+                        ),
                       ],
                     ),
                   ),

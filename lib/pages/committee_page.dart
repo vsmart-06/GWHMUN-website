@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
 import "package:website/pages/header.dart";
-import 'package:website/pages/committeeButton.dart';
+import 'package:website/pages/committee_button.dart';
 
 class Committee extends StatefulWidget {
   @override
@@ -17,9 +17,7 @@ class _CommitteeState extends State<Committee> {
   
   @override
   Widget build(BuildContext context) {
-    Size cardSize = Size(MediaQuery.of(context).size.width/4, MediaQuery.of(context).size.width/4);
-    return Scaffold(
-      
+    return Scaffold( 
       backgroundColor: Colors.black,
       body: Center(
         child: Column(
