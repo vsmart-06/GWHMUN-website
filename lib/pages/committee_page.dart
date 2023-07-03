@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
 import "package:website/pages/header.dart";
+import 'package:website/pages/committeeButton.dart';
 
 class Committee extends StatefulWidget {
   @override
@@ -49,285 +50,45 @@ class _CommitteeState extends State<Committee> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Card(
-                              color: cardColors[0],
-                              elevation: 10,
-                              borderOnForeground: true,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                side: BorderSide(color: Colors.white)
-                              ),
-                              child: TextButton(
-                                style: ButtonStyle(
-                                  minimumSize: MaterialStateProperty.all<Size>(cardSize),
-                                  maximumSize: MaterialStateProperty.all<Size>(cardSize)
-                                ),
-                                onHover: (value) {
-                                  if (value) {
-                                    setState(() {
-                                    cardColors[0] = Color(0x99313133);
-                                    });
-                                  }
-                                  else {
-                                    setState(() {
-                                    cardColors[0] = Colors.black;
-                                    });
-                                  }
-                                },
-                                onPressed: () {Navigator.pushNamed(context, "/unhrc");},
-                                child: Image(image: 
-                                  AssetImage("committeePage/UNHRC.png"))
-                              )
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Card(
-                              color: cardColors[1],
-                              elevation: 10,
-                              borderOnForeground: true,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                side: BorderSide(color: Colors.white)
-                              ),
-                              child: TextButton(
-                                style: ButtonStyle(
-                                  minimumSize: MaterialStateProperty.all<Size>(cardSize),
-                                  maximumSize: MaterialStateProperty.all<Size>(cardSize)
-                                ),
-                                onHover: (value) {
-                                  if (value) {
-                                    setState(() {
-                                    cardColors[1] = Color(0x99313133);
-                                    });
-                                  }
-                                  else {
-                                    setState(() {
-                                    cardColors[1] = Colors.black;
-                                    });
-                                  }
-                                },
-                                onPressed: () {Navigator.pushNamed(context, "/unep");},
-                                child: Image(image: 
-                                  AssetImage("committeePage/UNEP.png"))
-                              )
-                            ),
-                          ),
+                          CommitteeButton(
+                            imagePath: 'committeePage/UNHRC.png',
+                            websitePath: "/unhrc",),
+                          CommitteeButton(
+                            imagePath: 'committeePage/UNEP.png',
+                            websitePath: "/unep",),
                         ],
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Card(
-                              color: cardColors[2],
-                              elevation: 10,
-                              borderOnForeground: true,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                side: BorderSide(color: Colors.white)
-                              ),
-                              child: TextButton(
-                                style: ButtonStyle(
-                                  minimumSize: MaterialStateProperty.all<Size>(cardSize),
-                                  maximumSize: MaterialStateProperty.all<Size>(cardSize)
-                                ),
-                                onHover: (value) {
-                                  if (value) {
-                                    setState(() {
-                                    cardColors[2] = Color(0x99313133);
-                                    });
-                                  }
-                                  else {
-                                    setState(() {
-                                    cardColors[2] = Colors.black;
-                                    });
-                                  }
-                                },
-                                onPressed: () {Navigator.pushNamed(context, "/disec");},
-                                child: Image(image: 
-                                  AssetImage("committeePage/DISEC.png"))
-                                )
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Card(
-                              color: cardColors[3],
-                              elevation: 10,
-                              borderOnForeground: true,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                side: BorderSide(color: Colors.white)
-                              ),
-                              child: TextButton(
-                                style: ButtonStyle(
-                                  minimumSize: MaterialStateProperty.all<Size>(cardSize),
-                                  maximumSize: MaterialStateProperty.all<Size>(cardSize)
-                                ),
-                                onHover: (value) {
-                                  if (value) {
-                                    setState(() {
-                                    cardColors[3] = Color(0x99313133);
-                                    });
-                                  }
-                                  else {
-                                    setState(() {
-                                    cardColors[3] = Colors.black;
-                                    });
-                                  }
-                                },
-                                onPressed: () {Navigator.pushNamed(context, "/unsc");},
-                                child: Image(image: 
-                                  AssetImage("committeePage/UNSC.png"))
-                              )
-                            ),
-                          ),
+                          CommitteeButton(
+                            imagePath: 'committeePage/DISEC.png',
+                            websitePath: "/disec",),
+                          CommitteeButton(
+                            imagePath: 'committeePage/UNSC.png',
+                            websitePath: "/unsc",),
                         ],
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Card(
-                              color: cardColors[4],
-                              elevation: 10,
-                              borderOnForeground: true,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                side: BorderSide(color: Colors.white)
-                              ),
-                              child: TextButton(
-                                style: ButtonStyle(
-                                  minimumSize: MaterialStateProperty.all<Size>(cardSize),
-                                  maximumSize: MaterialStateProperty.all<Size>(cardSize)
-                                ),
-                                onHover: (value) {
-                                  if (value) {
-                                    setState(() {
-                                    cardColors[4] = Color(0x99313133);
-                                    });
-                                  }
-                                  else {
-                                    setState(() {
-                                    cardColors[4] = Colors.black;
-                                    });
-                                  }
-                                },
-                                onPressed: () {Navigator.pushNamed(context, "/disec");},
-                                child: Image(image: 
-                                  AssetImage("committeePage/AIPPM.png"))
-                              )
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Card(
-                              color: cardColors[5],
-                              elevation: 10,
-                              borderOnForeground: true,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                side: BorderSide(color: Colors.white)
-                              ),
-                              child: TextButton(
-                                style: ButtonStyle(
-                                  minimumSize: MaterialStateProperty.all<Size>(cardSize),
-                                  maximumSize: MaterialStateProperty.all<Size>(cardSize)
-                                ),
-                                onHover: (value) {
-                                  if (value) {
-                                    setState(() {
-                                    cardColors[5] = Color(0x99313133);
-                                    });
-                                  }
-                                  else {
-                                    setState(() {
-                                    cardColors[5] = Colors.black;
-                                    });
-                                  }
-                                },
-                                onPressed: () {Navigator.pushNamed(context, "/unsc");},
-                                child: Image(image: 
-                                  AssetImage("committeePage/IPC.png"))
-                              )
-                            ),
-                          ),
+                          CommitteeButton(
+                            imagePath: 'committeePage/AIPPM.png',
+                            websitePath: "/unhrc",),
+                          CommitteeButton(
+                            imagePath: 'committeePage/IPC.png',
+                            websitePath: "/unep",),
                         ],
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Card(
-                              color: cardColors[6],
-                              elevation: 10,
-                              borderOnForeground: true,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                side: BorderSide(color: Colors.white)
-                              ),
-                              child: TextButton(
-                                style: ButtonStyle(
-                                  minimumSize: MaterialStateProperty.all<Size>(cardSize),
-                                  maximumSize: MaterialStateProperty.all<Size>(cardSize)
-                                ),
-                                onHover: (value) {
-                                  if (value) {
-                                    setState(() {
-                                    cardColors[6] = Color(0x99313133);
-                                    });
-                                  }
-                                  else {
-                                    setState(() {
-                                    cardColors[6] = Colors.black;
-                                    });
-                                  }
-                                },
-                                onPressed: () {Navigator.pushNamed(context, "/disec");},
-                                child: Image(image: 
-                                  AssetImage("committeePage/JCC.png"))
-                              )
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Card(
-                              color: cardColors[7],
-                              elevation: 10,
-                              borderOnForeground: true,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20),
-                                side: BorderSide(color: Colors.white)
-                              ),
-                              child: TextButton(
-                                style: ButtonStyle(
-                                  minimumSize: MaterialStateProperty.all<Size>(cardSize),
-                                  maximumSize: MaterialStateProperty.all<Size>(cardSize)
-                                ),
-                                onHover: (value) {
-                                  if (value) {
-                                    setState(() {
-                                    cardColors[7] = Color(0x99313133);
-                                    });
-                                  }
-                                  else {
-                                    setState(() {
-                                    cardColors[7] = Colors.black;
-                                    });
-                                  }
-                                },
-                                onPressed: () {Navigator.pushNamed(context, "/unsc");},
-                                child: Image(image: 
-                                  AssetImage("committeePage/SOCHUM.png"))
-                              )
-                            ),
-                          ),
+                          CommitteeButton(
+                            imagePath: 'committeePage/JCC.png',
+                            websitePath: "/unhrc",),
+                          CommitteeButton(
+                            imagePath: 'committeePage/SOCHUM.png',
+                            websitePath: "/unep",),
                         ],
                       ),
                     ],
