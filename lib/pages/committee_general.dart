@@ -1,6 +1,8 @@
+// ignore_for_file: must_be_immutable
+
 import "package:flutter/material.dart";
-import "package:website/pages/header.dart";
-import "package:website/pages/footer.dart";
+import "package:website/widgets/header.dart";
+import "package:website/widgets/footer.dart";
 import "package:google_fonts/google_fonts.dart";
 import "dart:html";
 

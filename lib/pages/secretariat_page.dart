@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
-import "package:website/pages/header.dart";
+import "package:website/widgets/header.dart";
 
 class Secretariat extends StatelessWidget {
   Secretariat({super.key});

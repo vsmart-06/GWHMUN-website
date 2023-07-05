@@ -1,7 +1,6 @@
 import "package:flutter/material.dart";
 import "dart:html";
 import "package:google_fonts/google_fonts.dart";
-import "package:website/pages/header.dart";
 
 class ResourcesButton extends StatefulWidget {
   final String imagePath;

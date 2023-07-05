@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
-import "package:website/pages/header.dart";
-import 'package:website/pages/committee_button.dart';
+import "package:website/widgets/header.dart";
+import 'package:website/widgets/committee_button.dart';
 
 class Committee extends StatefulWidget {
   @override
