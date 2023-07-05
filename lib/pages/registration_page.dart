@@ -19,8 +19,6 @@ class _RegistrationsState extends State<Registrations> {
 
   @override
   Widget build(BuildContext context) {
-    //iFrame.height = MediaQuery.of(context).size.height.toString();
-    //iFrame.width = MediaQuery.of(context).size.width.toString();
     iFrame.src = "https://forms.gle/mUm1AjqPhvWhgA72A";
     iFrame.style.border = "none";
     // ignore: undefined_prefixed_name
