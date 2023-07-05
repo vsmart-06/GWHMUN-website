@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
 import "package:website/widgets/header.dart";
 import 'package:website/widgets/resources_button.dart';
+import "package:website/widgets/footer.dart";
 
 class Resources extends StatefulWidget {
   @override
@@ -64,6 +65,7 @@ class _ResourcesState extends State<Resources> {
                           websitePath: "https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing",
                           name: "Rules Of Procedure",
                         ),
+                        Footer(),
                       ],
                     ),
                   ),

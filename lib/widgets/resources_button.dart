@@ -13,63 +13,63 @@ class ResourcesButton extends StatefulWidget {
 }
 
 class _ResourcesButtonState extends State<ResourcesButton> {
-  bool _isHovered = false;
+  ColorFilter filter = ColorFilter.matrix([
+    0.2126, 0.7152, 0.0722, 0, 0,
+    0.2126, 0.7152, 0.0722, 0, 0,
+    0.2126, 0.7152, 0.0722, 0, 0,
+    0, 0, 0, 1, 0
+  ]);
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        window.open(widget.websitePath,widget.name);
-      },
-      onHover: (value) {
-        setState(() {
-          _isHovered = value;
-        });
-      },
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            ColorFiltered(
-              colorFilter: _isHovered
-                  ? ColorFilter.mode(Colors.transparent, BlendMode.clear)
-                  : ColorFilter.matrix([
-                      0.2126, 0.7152, 0.0722, 0, 0,
-                      0.2126, 0.7152, 0.0722, 0, 0,
-                      0.2126, 0.7152, 0.0722, 0, 0,
-                      0, 0, 0, 1, 0
-                    ]),
-              child: ClipRRect(
-              borderRadius: BorderRadius.circular(20.0),
-                child: Image.asset(
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: ColorFiltered(
+        colorFilter: filter,
+        child: TextButton(
+          onPressed: () {Navigator.popAndPushNamed(context, widget.websitePath);},
+          onHover: (hover) {
+            if (hover) {
+              setState(() {
+                filter = ColorFilter.mode(Colors.transparent, BlendMode.clear);
+              });
+            }
+            else {
+              setState(() {
+                filter = ColorFilter.matrix([
+                  0.2126, 0.7152, 0.0722, 0, 0,
+                  0.2126, 0.7152, 0.0722, 0, 0,
+                  0.2126, 0.7152, 0.0722, 0, 0,
+                  0, 0, 0, 1, 0
+                ]);
+              });
+            }
+          },
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(20.0),
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Image.asset(
                   widget.imagePath,
                   fit: BoxFit.cover,
                   width: 2.4*MediaQuery.of(context).size.width/4,
                   height: MediaQuery.of(context).size.width/4,
                 ),
-              ),
-            ),
-            Positioned.fill(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(_isHovered ? 0.2 : 0), // Adjust the opacity and color as desired
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
-                ),
-              ),
-            ),
-            Positioned(child: Text(
+                Text(
                   widget.name,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 35,
-                    fontFamily: GoogleFonts.ebGaramond().fontFamily
-                    ),
-                  ))
-          ],
+                    fontSize: 40,
+                    fontFamily: GoogleFonts.ebGaramond().fontFamily,
+                    fontWeight: FontWeight.bold
+                  ),
+                )
+              ],
+            )
+          )
         ),
       ),
-      
     );
   }
 }

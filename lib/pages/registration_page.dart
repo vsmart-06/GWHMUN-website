@@ -19,7 +19,7 @@ class _RegistrationsState extends State<Registrations> {
 
   @override
   Widget build(BuildContext context) {
-    iFrame.src = "https://forms.gle/mUm1AjqPhvWhgA72A";
+    iFrame.src = "https://forms.gle/4viXkb1j5Q2oeQzF6";
     iFrame.style.border = "none";
     // ignore: undefined_prefixed_name
     ui.platformViewRegistry.registerViewFactory("iFrame", (int viewId) => iFrame);
@@ -36,7 +36,7 @@ class _RegistrationsState extends State<Registrations> {
                 padding: EdgeInsets.all(50.0),
                 child: formContainer
               ),
-            )
+            ),
           ],
         ),
       ),
