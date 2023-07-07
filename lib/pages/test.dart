@@ -1,34 +1,19 @@
-import 'package:flutter/material.dart';
+import 'dart:io';
 
-class HoverableImage extends StatefulWidget {
-  final String imagePath;
+void listDirectoryContents() {
+  Directory directory = Directory('/assets/carousel');
 
-  HoverableImage({required this.imagePath});
+  if (directory.existsSync()) {
+    List<FileSystemEntity> files = directory.listSync();
 
-  @override
-  _HoverableImageState createState() => _HoverableImageState();
-}
-
-class _HoverableImageState extends State<HoverableImage> {
-  bool _isHovered = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        Navigator.pushNamed(context, "/unhrc");
-      },
-      onHover: (bool isHovered) {
-        setState(() {
-          _isHovered = isHovered;
-        });
-      },
-      child: Image.asset(
-        widget.imagePath,
-        color: _isHovered ? Colors.black : Colors.transparent, // Change color based on hover state
-        width: MediaQuery.of(context).size.width/4,
-        height: MediaQuery.of(context).size.width/4,
-      ),
-    );
+    for (var file in files) {
+      if (file is File) {
+        print('File: ${file.path}');
+      } else if (file is Directory) {
+        print('Directory: ${file.path}');
+      }
+    }
+  } else {
+    print('Directory does not exist.');
   }
 }

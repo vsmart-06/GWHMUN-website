@@ -3,6 +3,8 @@ import "dart:async";
 import "package:google_fonts/google_fonts.dart";
 import "package:website/widgets/header.dart";
 import "package:website/widgets/footer.dart";
+import 'package:carousel_slider/carousel_slider.dart';
+import "dart:io";
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -27,6 +29,8 @@ class _HomeState extends State<Home> {
   ScrollController? scroll = ScrollController();
   List<Color> buttonColors = [Colors.black, Colors.black, Colors.black];
   Color textcolor = Colors.white;
+  List imageCarousel = [1, 2, 3, 4];
+  
 
   @override
   void initState() {
@@ -47,6 +51,7 @@ class _HomeState extends State<Home> {
       });
     }
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -97,8 +102,7 @@ class _HomeState extends State<Home> {
                       Image(
                         width: MediaQuery.of(context).size.width / 3,
                         height: MediaQuery.of(context).size.width / 5,
-                        image: NetworkImage(
-                            "https://media.discordapp.net/attachments/1022434825115815937/1121068938416103454/mun_logo.png?width=1452&height=1026"),
+                        image: AssetImage("assets/gwhmun_logo.png"),
                       ),
                       Text(
                         "Greenwood High Model\nUnited Nations 2023",
@@ -267,6 +271,30 @@ class _HomeState extends State<Home> {
                           ),
                         ],
                       ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: CarouselSlider(
+                          options: CarouselOptions(
+                              height: 400.0,
+                              enableInfiniteScroll: true,
+                              autoPlay: true,
+                              autoPlayInterval: Duration(seconds: 2)),
+                          items: imageCarousel.map((i) {
+                            return Builder(
+                              builder: (BuildContext context) {
+                                return Container(
+                                  width: MediaQuery.of(context).size.width,
+                                  child: Image(
+                                    image: AssetImage(
+                                      "carousel/image_$i.jpg"
+                                    )
+                                  )
+                                );
+                              },
+                            );
+                          }).toList(),
+                        ),
+                      ),
                       Footer(),
                     ],
                   ),
@@ -274,6 +302,8 @@ class _HomeState extends State<Home> {
               ),
             ),
           ],
-        )));
+        )
+      )
+    );
   }
 }

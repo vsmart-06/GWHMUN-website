@@ -27,7 +27,7 @@ class _ResourcesButtonState extends State<ResourcesButton> {
       child: ColorFiltered(
         colorFilter: filter,
         child: TextButton(
-          onPressed: () {Navigator.popAndPushNamed(context, widget.websitePath);},
+          onPressed: () {window.open(widget.websitePath, "Resource");},
           onHover: (hover) {
             if (hover) {
               setState(() {

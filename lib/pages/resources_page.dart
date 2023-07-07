@@ -21,8 +21,7 @@ class _ResourcesState extends State<Resources> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
-        child:
-        Column(
+        child: Column(
           children: [
             Header(),
             Padding(
@@ -30,10 +29,7 @@ class _ResourcesState extends State<Resources> {
               child: Text(
                 "RESOURCES",
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 35,
-                  fontFamily: titleFont
-                ),
+                    color: Colors.white, fontSize: 35, fontFamily: titleFont),
               ),
             ),
             Expanded(
@@ -52,17 +48,20 @@ class _ResourcesState extends State<Resources> {
                       children: [
                         ResourcesButton(
                           imagePath: 'assets/code_of_conduct.jpg',
-                          websitePath: "https://docs.google.com/document/d/1MSTvjv-TC2RxX49Iq090i7dr5wusqyjWmXL8sTFZis8/edit?usp=drivesdk",
+                          websitePath:
+                              "https://docs.google.com/document/d/1MSTvjv-TC2RxX49Iq090i7dr5wusqyjWmXL8sTFZis8/edit?usp=drivesdk",
                           name: "Code of Conduct",
                         ),
                         ResourcesButton(
                           imagePath: 'assets/background_guides.jpg',
-                          websitePath: "https://drive.google.com/drive/folders/1PvWVxG5gLpb0p990iga8NNrM7OZJnFxJ?usp=sharing",
+                          websitePath:
+                              "https://drive.google.com/drive/folders/1PvWVxG5gLpb0p990iga8NNrM7OZJnFxJ?usp=sharing",
                           name: "Background Guides",
                         ),
                         ResourcesButton(
                           imagePath: "rules_of_procedure.jpg",
-                          websitePath: "https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing",
+                          websitePath:
+                              "https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing",
                           name: "Rules Of Procedure",
                         ),
                         Footer(),
