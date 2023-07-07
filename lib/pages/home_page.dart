@@ -5,6 +5,8 @@ import "package:website/widgets/header.dart";
 import "package:website/widgets/footer.dart";
 import 'package:carousel_slider/carousel_slider.dart';
 import "dart:io";
+import 'package:flutter/services.dart' show rootBundle;
+import 'dart:convert';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -29,7 +31,7 @@ class _HomeState extends State<Home> {
   ScrollController? scroll = ScrollController();
   List<Color> buttonColors = [Colors.black, Colors.black, Colors.black];
   Color textcolor = Colors.white;
-  List imageCarousel = [1, 2, 3, 4];
+  List imageCarousel = [];
   
 
   @override
@@ -52,6 +54,15 @@ class _HomeState extends State<Home> {
     }
   }
 
+void listAssetFiles() async {
+    String manifestContent = await rootBundle.loadString('AssetManifest.json');
+    Map<String, dynamic> manifest = json.decode(manifestContent);
+    List<String> assetFiles = manifest.keys.where((String key) => key.contains("assets/carousel")).toList();
+    imageCarousel = assetFiles;
+    /*for (var assetFile in assetFiles) {
+        print(assetFile);
+    }*/
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -80,7 +91,7 @@ class _HomeState extends State<Home> {
     } else {
       time_string[3] = seconds.toString();
     }
-
+    listAssetFiles();
     return Scaffold(
         backgroundColor: Colors.black,
         body: Center(
@@ -279,14 +290,14 @@ class _HomeState extends State<Home> {
                               enableInfiniteScroll: true,
                               autoPlay: true,
                               autoPlayInterval: Duration(seconds: 2)),
-                          items: imageCarousel.map((i) {
+                          items: imageCarousel.map((assetfile) {
                             return Builder(
                               builder: (BuildContext context) {
                                 return Container(
                                   width: MediaQuery.of(context).size.width,
                                   child: Image(
                                     image: AssetImage(
-                                      "carousel/image_$i.jpg"
+                                      assetfile
                                     )
                                   )
                                 );
