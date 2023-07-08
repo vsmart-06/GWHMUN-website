@@ -41,66 +41,55 @@ class _CommitteeState extends State<Committee> {
                 thumbVisibility: true,
                 trackVisibility: true,
                 controller: scroll,
-                child: Container(
-                  /* decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage(
-                        "assets/gwhmun_logo.png",
+                child: SingleChildScrollView(
+                  controller: scroll,
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CommitteeButton(
+                            imagePath: 'committee_page/UNHRC.png',
+                            websitePath: "/unhrc",),
+                          CommitteeButton(
+                            imagePath: 'committee_page/UNEP.png',
+                            websitePath: "/unep",),
+                        ],
                       ),
-                      opacity: 0.4,
-                      fit: BoxFit.fitHeight
-                    ),
-                  ),*/
-                  child: SingleChildScrollView(
-                    controller: scroll,
-                    child: Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CommitteeButton(
-                              imagePath: 'committeePage/UNHRC.png',
-                              websitePath: "/unhrc",),
-                            CommitteeButton(
-                              imagePath: 'committeePage/UNEP.png',
-                              websitePath: "/unep",),
-                          ],
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CommitteeButton(
-                              imagePath: 'committeePage/DISEC.png',
-                              websitePath: "/disec",),
-                            CommitteeButton(
-                              imagePath: 'committeePage/UNSC.png',
-                              websitePath: "/unsc",),
-                          ],
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CommitteeButton(
-                              imagePath: 'committeePage/AIPPM.png',
-                              websitePath: "/unhrc",),
-                            CommitteeButton(
-                              imagePath: 'committeePage/IPC.png',
-                              websitePath: "/unep",),
-                          ],
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CommitteeButton(
-                              imagePath: 'committeePage/JCC.png',
-                              websitePath: "/unhrc",),
-                            CommitteeButton(
-                              imagePath: 'committeePage/SOCHUM.png',
-                              websitePath: "/unep",),
-                          ],
-                        ),
-                      ],
-                    ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CommitteeButton(
+                            imagePath: 'committee_page/DISEC.png',
+                            websitePath: "/disec",),
+                          CommitteeButton(
+                            imagePath: 'committee_page/UNSC.png',
+                            websitePath: "/unsc",),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CommitteeButton(
+                            imagePath: 'committee_page/AIPPM.png',
+                            websitePath: "/aippm",),
+                          CommitteeButton(
+                            imagePath: 'committee_page/IPC.png',
+                            websitePath: "/unhrc",),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CommitteeButton(
+                            imagePath: 'committee_page/JCC.png',
+                            websitePath: "/unhrc",),
+                          CommitteeButton(
+                            imagePath: 'committee_page/SOCHUM.png',
+                            websitePath: "/unep",),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ),

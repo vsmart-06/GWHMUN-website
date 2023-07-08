@@ -34,7 +34,7 @@ class _HeaderState extends State<Header> {
               )
             ),
             icon: Image(
-              image: NetworkImage("https://media.discordapp.net/attachments/1022434825115815937/1121068938416103454/mun_logo.png"), 
+              image: AssetImage("assets/gwhmun_logo.png"), 
               width: 50, 
               height: 50
             ), 
