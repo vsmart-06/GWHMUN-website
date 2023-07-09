@@ -32,10 +32,7 @@ class _RegistrationsState extends State<Registrations> {
           children: [
             Header(),
             Expanded(
-              child: Padding(
-                padding: EdgeInsets.all(50.0),
-                child: formContainer
-              ),
+              child: formContainer,
             ),
           ],
         ),

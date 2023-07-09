@@ -344,10 +344,12 @@ class _HomeState extends State<Home> {
                     thumbVisibility: true,
                     trackVisibility: true,
                     controller: scrollers?[3],
-                    child: Center(
-                      child: SingleChildScrollView(
-                        controller: scrollers?[3],
+                    child: SingleChildScrollView(
+                      controller: scrollers?[3],
+                      child: Container(
+                        height: MediaQuery.of(context).size.height,
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(10.0),
