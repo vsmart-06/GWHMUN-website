@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 class CommitteeButton extends StatefulWidget {
   final String imagePath;
   final String websitePath;
-
-  CommitteeButton({required this.imagePath, required this.websitePath});
-
+  double size;
+  CommitteeButton({required this.imagePath, required this.websitePath, required this.size});
   @override
   _CommitteeButtonState createState() => _CommitteeButtonState();
 }
@@ -25,8 +24,8 @@ class _CommitteeButtonState extends State<CommitteeButton> {
         },
         child: Image.asset(
           widget.imagePath,
-          width: MediaQuery.of(context).size.width/4,
-          height: MediaQuery.of(context).size.width/4,
+          width: MediaQuery.of(context).size.width*widget.size,
+          height: MediaQuery.of(context).size.width*widget.size,
         ),
       ),
     );

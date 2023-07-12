@@ -25,12 +25,13 @@ class _RegistrationsState extends State<Registrations> {
     ui.platformViewRegistry.registerViewFactory("iFrame", (int viewId) => iFrame);
     formContainer = HtmlElementView(viewType: "iFrame");
     return Scaffold(
+      appBar: getTopBar(context),
+      drawer: getDrawer(context),
       backgroundColor: Colors.black,
       body: Center(
         child:
         Column(
           children: [
-            Header(),
             Expanded(
               child: formContainer,
             ),

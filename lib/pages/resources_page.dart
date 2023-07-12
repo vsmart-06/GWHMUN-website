@@ -19,11 +19,12 @@ class _ResourcesState extends State<Resources> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: getTopBar(context),
+      drawer: getDrawer(context),
       backgroundColor: Colors.black,
       body: Center(
         child: Column(
           children: [
-            Header(),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Text(

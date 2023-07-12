@@ -15,7 +15,6 @@ class Secretariat extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Column(
         children: [
-          Header(),
           Expanded(
             child: RawScrollbar(
               thumbColor: Color(0xFF313133),

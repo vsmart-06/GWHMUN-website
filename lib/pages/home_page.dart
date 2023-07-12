@@ -93,10 +93,11 @@ class _HomeState extends State<Home> {
     listAssetFiles();
     return Scaffold(
         backgroundColor: Colors.black,
+        appBar: getTopBar(context),
+        drawer: getDrawer(context),
         body: Center(
             child: Column(
           children: [
-            Header(),
             Expanded(
               child: PageView(
                 scrollDirection: Axis.vertical,
@@ -382,7 +383,7 @@ class _HomeState extends State<Home> {
                                 }).toList(),
                               ),
                             ),
-                            Footer(),
+                            footer(context),
                           ],
                         ),
                       ),
