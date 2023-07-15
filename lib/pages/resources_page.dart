@@ -65,7 +65,7 @@ class _ResourcesState extends State<Resources> {
                               "https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing",
                           name: "Rules Of Procedure",
                         ),
-                        Footer(),
+                        footer(context),
                       ],
                     ),
                   ),

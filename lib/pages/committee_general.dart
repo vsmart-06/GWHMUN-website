@@ -31,43 +31,64 @@ class _CommitteeState extends State<Committee> {
   List<Row> generateBoard() {
     List<Row> board = [];
     bool flag = true;
-    for (List<String> member in widget.executiveBoard) {
-      if (flag) {
-        board.add(Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(50.0),
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Image(
-                      image: NetworkImage(member[2]),
-                      width: MediaQuery.of(context).size.width/4,
+    if(MediaQuery.of(context).orientation==Orientation.landscape){
+      for (List<String> member in widget.executiveBoard) {
+        if (flag) {
+          board.add(Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(50.0),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Image(
+                        image: NetworkImage(member[2]),
+                        width: MediaQuery.of(context).size.width/4,
+                      ),
                     ),
-                  ),
-                  Text(
-                    member[0],
-                    style:TextStyle(
-                      fontFamily: fontMain,
-                      fontSize: 30,
-                      color: Colors.white
-                    )),
-                  Text(
-                    member[1],
-                    style:TextStyle(
-                      fontFamily: fontMain,
-                      fontSize: 30,
-                      color: Color.fromRGBO(245, 245, 220, 1)
-                    )),
-                ],
+                    Text(
+                      member[0],
+                      style:TextStyle(
+                        fontFamily: fontMain,
+                        fontSize: 30,
+                        color: Colors.white
+                      )),
+                    Text(
+                      member[1],
+                      style:TextStyle(
+                        fontFamily: fontMain,
+                        fontSize: 30,
+                        color: Color.fromRGBO(245, 245, 220, 1)
+                      )),
+                  ],
+                ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                width: MediaQuery.of(context).size.width*2/5, 
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width*2/5, 
+                  child: Text(
+                    member[3], 
+                    style: TextStyle(
+                      fontFamily: fontMain,
+                      color: Colors.white,
+                      fontSize: 20
+                    )
+                  ),
+                ),
+              )
+            ],
+          ));
+          flag = false;
+        }
+        else {
+          board.add(Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                width: MediaQuery.of(context).size.width*2/5,
                 child: Text(
                   member[3], 
                   style: TextStyle(
@@ -75,59 +96,98 @@ class _CommitteeState extends State<Committee> {
                     color: Colors.white,
                     fontSize: 20
                   )
+                )
+              ),
+              Padding(
+                padding: const EdgeInsets.all(50.0),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Image(
+                        image: NetworkImage(member[2]),
+                        width: MediaQuery.of(context).size.width/4,
+                      ),
+                    ),
+                    Text(
+                        member[0],
+                        style:TextStyle(
+                          fontFamily: fontMain,
+                          fontSize: 30,
+                          color: Colors.white
+                        )),
+                    Text(
+                        member[1],
+                        style:TextStyle(
+                          fontFamily: fontMain,
+                          fontSize: 30,
+                          color: Color.fromRGBO(245, 245, 220, 1)
+                        )),
+                  ],
                 ),
               ),
-            )
-          ],
-        ));
-        flag = false;
+            ],
+          ));
+          flag = true;
+        }
       }
-      else {
+    }
+    else{
+      for (List<String> member in widget.executiveBoard) {
         board.add(Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              width: MediaQuery.of(context).size.width*2/5,
-              child: Text(
-                member[3], 
-                style: TextStyle(
-                  fontFamily: fontMain,
-                  color: Colors.white,
-                  fontSize: 20
-                )
-              )
-            ),
-            Padding(
-              padding: const EdgeInsets.all(50.0),
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Image(
-                      image: NetworkImage(member[2]),
-                      width: MediaQuery.of(context).size.width/4,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Image(
+                        image: NetworkImage(member[2]),
+                        width: MediaQuery.of(context).size.width*0.7,
+                      ),
                     ),
-                  ),
-                  Text(
+                    Text(
                       member[0],
                       style:TextStyle(
                         fontFamily: fontMain,
                         fontSize: 30,
                         color: Colors.white
                       )),
-                  Text(
+                    Text(
                       member[1],
                       style:TextStyle(
                         fontFamily: fontMain,
                         fontSize: 30,
                         color: Color.fromRGBO(245, 245, 220, 1)
                       )),
-                ],
+                  ],
+                ),
+              ),],
+          )
+          );
+        board.add(Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+              width: MediaQuery.of(context).size.width*0.8, 
+              child: Text(
+                member[3], 
+                style: TextStyle(
+                fontFamily: fontMain,
+                color: Colors.white,
+                fontSize: 20
+                )
               ),
-            ),
+              ),
+            )
           ],
-        ));
-        flag = true;
+        ),
+        );
+      
       }
     }
     return board;
@@ -160,14 +220,16 @@ class _CommitteeState extends State<Committee> {
                           opacity: 0.35
                         ),
                       ),
-                      height: MediaQuery.of(context).size.height,
+                      height: (MediaQuery.of(context).orientation == Orientation.landscape) ? MediaQuery.of(context).size.height : MediaQuery.of(context).size.height * 0.6,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
                             widget.title,
                             style: TextStyle(
-                                color: Colors.white, fontSize: 60, fontFamily: fontMain),
+                                color: Colors.white, 
+                                fontSize: (MediaQuery.of(context).orientation==Orientation.landscape)?60:35, 
+                                fontFamily: fontMain),
                             textAlign: TextAlign.center,
                           ),
                           Padding(
@@ -175,7 +237,9 @@ class _CommitteeState extends State<Committee> {
                             child: Text(
                               widget.agenda,
                               style: TextStyle(
-                                  color: Colors.white, fontSize: 35, fontFamily: fontMain),
+                                  color: Colors.white, 
+                                  fontSize: (MediaQuery.of(context).orientation==Orientation.landscape)?35:20, 
+                                  fontFamily: fontMain),
                               textAlign: TextAlign.center,
                             ),
                           ),
@@ -228,7 +292,7 @@ class _CommitteeState extends State<Committee> {
                             Column(
                               children: generateBoard(),
                             ),
-                            Footer()
+                            footer(context)
                           ],
                         ),
                     ),

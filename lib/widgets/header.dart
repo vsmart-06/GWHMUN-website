@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:website/widgets/header_button.dart';
+import "package:website/widgets/footer.dart";
 import "package:google_fonts/google_fonts.dart";
+import "dart:html";
 
 AppBar? getTopBar(BuildContext context) {
   try{
@@ -78,8 +80,7 @@ Drawer? getDrawer(BuildContext context){
     return Drawer(
       backgroundColor: Colors.grey[900],
       width: MediaQuery.of(context).size.width * 0.75,
-      child: ListView(
-        padding: EdgeInsets.zero,
+      child: Column(
         children: [
           Container(
             height: MediaQuery.of(context).size.height / 10,
@@ -169,6 +170,108 @@ Drawer? getDrawer(BuildContext context){
               Navigator.popAndPushNamed(context, "/registrations");
             },
           ),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "CONTACT US",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: font,
+                    fontSize: 25
+                  )
+                ),
+                Row(
+                  children: [
+                    Text(
+                      "SOCIALS",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: font
+                      )
+                    ),
+                    TextButton.icon(
+                      onPressed: () {
+                        window.open("https://www.instagram.com/gwhmun.2023/?igshid=MzRlODBiNWFlZA", "Instagram");
+                      },
+                      icon: Image(image: NetworkImage("https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584853.png"), width: 30, height: 30), 
+                      label: Text(
+                        "INSTAGRAM",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: font
+                        )
+                      ),
+                    )
+                  ],
+                ),
+                Row(
+                  children: [
+                    Text(
+                      "LOCATION",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: font
+                      )
+                    ),
+                    TextButton(
+                      onPressed: () {
+                      window.open("https://goo.gl/maps/DUGyBHCAu287hoAD9", "school");
+                      },
+                      child: Text(
+                        "Greenwood High School Sarjapur",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: font
+                        )
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Text(
+                      "EMAILS",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: font
+                      )
+                    ),
+                    TextButton(
+                      onPressed: () {
+                      window.open("mailto:vansh052398@greenwoodhigh.edu.in", "vanshEmail");
+                      },
+                      child: Text(
+                        "Secretary General- vansh052398@greenwoodhigh.edu.in",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: font
+                        )
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children:[
+                  TextButton(
+                      onPressed: () {
+                      window.open("mailto:rahul.p@greenwoodhigh.edu.in", "rahulEmail");
+                      },
+                      child: Text(
+                        "\tDirector General- rahul.p@greenwoodhigh.edu.in",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: font
+                        )
+                      ),
+                    ),
+                  ]
+                )
+              ],
+            ),
+          )
         ],
       ),
     );

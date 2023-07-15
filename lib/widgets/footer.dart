@@ -59,7 +59,7 @@ class Footer extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      "LOCATION ",
+                      "LOCATION",
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: fontMain
@@ -67,7 +67,7 @@ class Footer extends StatelessWidget {
                     ),
                     TextButton(
                       onPressed: () {
-                      window.open("https://goo.gl/maps/DUGyBHCAu287hoAD9", "school");
+                        window.open("https://goo.gl/maps/DUGyBHCAu287hoAD9", "school");
                       },
                       child: Text(
                         "Greenwood High School Sarjapur",
@@ -82,42 +82,42 @@ class Footer extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      "EMAILS ",
+                      "EMAILS",
                       style: TextStyle(
                         color: Colors.white,
                         fontFamily: fontMain
                       )
                     ),
-                    TextButton(
-                      onPressed: () {
-                      window.open("mailto:vansh052398@greenwoodhigh.edu.in", "vanshEmail");
-                      },
-                      child: Text(
-                        "Secretary General- vansh052398@greenwoodhigh.edu.in",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: fontMain
-                        )
-                      ),
-                    ),
+                    Column(
+                      children:[
+                        TextButton(
+                          onPressed: () {
+                            window.open("mailto:vansh052398@greenwoodhigh.edu.in", "vanshEmail");
+                          },
+                          child: Text(
+                            "Secretary General- vansh052398@greenwoodhigh.edu.in",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: fontMain
+                            )
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            window.open("mailto:rahul.p@greenwoodhigh.edu.in", "rahulEmail");
+                          },
+                          child: Text(
+                            "Director General- rahul.p@greenwoodhigh.edu.in",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: fontMain
+                            )
+                          ),
+                        ),
+                      ]
+                    )
                   ],
                 ),
-                Row(
-                  children:[
-                  TextButton(
-                      onPressed: () {
-                      window.open("mailto:rahul.p@greenwoodhigh.edu.in", "rahulEmail");
-                      },
-                      child: Text(
-                        "Director General- rahul.p@greenwoodhigh.edu.in",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: fontMain
-                        )
-                      ),
-                    ),
-                  ]
-                )
               ],
             )
           ],
@@ -145,22 +145,28 @@ class Footer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "CONTACT US",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: fontMain,
-                    fontSize: 25
-                  )
+                TextButton(
+                  onPressed: null,
+                  child: Text(
+                    "CONTACT US",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: fontMain,
+                      fontSize: 25
+                    )
+                  ),
                 ),
                 Row(
                   children: [
-                    Text(
-                      "SOCIALS",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: fontMain
-                      )
+                    TextButton(
+                      onPressed: null,
+                      child: Text(
+                        "SOCIALS",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: fontMain
+                        )
+                      ),
                     ),
                     TextButton.icon(
                       onPressed: () {
@@ -179,12 +185,15 @@ class Footer extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Text(
-                      "LOCATION ",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: fontMain
-                      )
+                    TextButton(
+                      onPressed: null,
+                      child: Text(
+                        "LOCATION",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: fontMain
+                        )
+                      ),
                     ),
                     TextButton(
                       onPressed: () {
@@ -201,44 +210,49 @@ class Footer extends StatelessWidget {
                   ],
                 ),
                 Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "EMAILS ",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: fontMain
-                      )
-                    ),
                     TextButton(
-                      onPressed: () {
-                      window.open("mailto:vansh052398@greenwoodhigh.edu.in", "vanshEmail");
-                      },
+                      onPressed: null,
                       child: Text(
-                        "Secretary General- vansh052398@greenwoodhigh.edu.in",
+                        "EMAILS",
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: fontMain
                         )
                       ),
                     ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children:[
+                        TextButton(
+                          onPressed: () {
+                            window.open("mailto:vansh052398@greenwoodhigh.edu.in", "vanshEmail");
+                          },
+                          child: Text(
+                            "Secretary General- vansh052398@greenwoodhigh.edu.in",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: fontMain
+                            )
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            window.open("mailto:rahul.p@greenwoodhigh.edu.in", "rahulEmail");
+                          },
+                          child: Text(
+                            "Director General- rahul.p@greenwoodhigh.edu.in",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: fontMain
+                            )
+                          ),
+                        ),
+                      ]
+                    )
                   ],
                 ),
-                Row(
-                  children:[
-                  TextButton(
-                      onPressed: () {
-                      window.open("mailto:rahul.p@greenwoodhigh.edu.in", "rahulEmail");
-                      },
-                      child: Text(
-                        "\tDirector General- rahul.p@greenwoodhigh.edu.in",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: fontMain
-                        )
-                      ),
-                    ),
-                  ]
-                )
               ],
             )
           ],
