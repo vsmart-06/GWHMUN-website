@@ -72,12 +72,12 @@ AppBar? getTopBar(BuildContext context) {
   }
   }
   catch(Exception){}
+  
 }
 
 String? font = GoogleFonts.questrial().fontFamily;
-Drawer? getDrawer(BuildContext context){
-  if (MediaQuery.of(context).orientation == Orientation.portrait) {
-    return Drawer(
+Drawer getDrawer(BuildContext context){
+  return Drawer(
       backgroundColor: Colors.grey[900],
       width: MediaQuery.of(context).size.width * 0.75,
       child: Column(
@@ -171,26 +171,34 @@ Drawer? getDrawer(BuildContext context){
             },
           ),
           Expanded(
+            child: Container(
+              color: Color(0xFF1D1C1C),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Text(
-                  "CONTACT US",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: font,
-                    fontSize: 25
-                  )
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Text(
+                    "CONTACT US",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: font,
+                      fontSize: 25
+                    )
+                  ),
                 ),
                 Row(
                   children: [
-                    Text(
-                      "SOCIALS",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: font
-                      )
+                    Padding(
+                      padding: const EdgeInsets.only(left:10),
+                      child: Text(
+                        "SOCIALS",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: font
+                        )
+                      ),
                     ),
                     TextButton.icon(
                       onPressed: () {
@@ -209,16 +217,19 @@ Drawer? getDrawer(BuildContext context){
                 ),
                 Row(
                   children: [
-                    Text(
-                      "LOCATION",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: font
-                      )
+                    Padding(
+                      padding: const EdgeInsets.only(left:10, bottom: 15, top:15),
+                      child: Text(
+                        "LOCATION",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: font
+                        )
+                      ),
                     ),
                     TextButton(
                       onPressed: () {
-                      window.open("https://goo.gl/maps/DUGyBHCAu287hoAD9", "school");
+                        window.open("https://goo.gl/maps/DUGyBHCAu287hoAD9", "school");
                       },
                       child: Text(
                         "Greenwood High School Sarjapur",
@@ -230,50 +241,58 @@ Drawer? getDrawer(BuildContext context){
                     ),
                   ],
                 ),
-                Row(
-                  children: [
-                    Text(
-                      "EMAILS",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: font
-                      )
-                    ),
-                    TextButton(
-                      onPressed: () {
-                      window.open("mailto:vansh052398@greenwoodhigh.edu.in", "vanshEmail");
-                      },
-                      child: Text(
-                        "Secretary General- vansh052398@greenwoodhigh.edu.in",
+                Padding(
+                  padding: const EdgeInsets.only(left:10),
+                  child: Text(
+                        "EMAILS",
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: font
                         )
                       ),
-                    ),
-                  ],
                 ),
-                Row(
-                  children:[
-                  TextButton(
-                      onPressed: () {
-                      window.open("mailto:rahul.p@greenwoodhigh.edu.in", "rahulEmail");
-                      },
-                      child: Text(
-                        "\tDirector General- rahul.p@greenwoodhigh.edu.in",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: font
-                        )
-                      ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                      children:[
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextButton(
+                            onPressed: () {
+                              window.open("mailto:vansh052398@greenwoodhigh.edu.in", "vanshEmail");
+                            },
+                            child: Text(
+                              "Secretary General- \nvansh052398@greenwoodhigh.edu.in",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: font
+                              )
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: TextButton(
+                            onPressed: () {
+                              window.open("mailto:rahul.p@greenwoodhigh.edu.in", "rahulEmail");
+                            },
+                            child: Text(
+                              "Director General- \nrahul.p@greenwoodhigh.edu.in",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: font
+                              )
+                            ),
+                          ),
+                        ),
+                      ]
                     ),
-                  ]
-                )
-              ],
-            ),
-          )
+          Padding(padding: const EdgeInsets.only(bottom: 50),)
+        ]
+        ),
+      ),
+    )
         ],
       ),
     );
-  }
+  
 }

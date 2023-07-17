@@ -2,6 +2,7 @@ import "dart:html";
 import "dart:ui" as ui;
 
 import "package:flutter/material.dart";
+import "package:pointer_interceptor/pointer_interceptor.dart";
 import "package:website/widgets/header.dart";
 
 
@@ -26,7 +27,7 @@ class _RegistrationsState extends State<Registrations> {
     formContainer = HtmlElementView(viewType: "iFrame");
     return Scaffold(
       appBar: getTopBar(context),
-      drawer: getDrawer(context),
+      drawer: PointerInterceptor(child: getDrawer(context)),
       backgroundColor: Colors.black,
       body: Center(
         child:

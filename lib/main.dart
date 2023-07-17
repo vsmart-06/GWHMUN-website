@@ -16,6 +16,7 @@ void main() {
 
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => Home(),
         "/committees": (context) => Committee(),

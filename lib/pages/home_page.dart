@@ -8,6 +8,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
 
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -366,10 +367,11 @@ class _HomeState extends State<Home> {
                               padding: const EdgeInsets.all(8.0),
                               child: CarouselSlider(
                                 options: CarouselOptions(
-                                    height: 400.0,
-                                    enableInfiniteScroll: true,
-                                    autoPlay: true,
-                                    autoPlayInterval: Duration(seconds: 2)),
+                                  viewportFraction: 0.5,
+                                  height: 400.0,
+                                  enableInfiniteScroll: true,
+                                  autoPlay: true,
+                                  autoPlayInterval: Duration(seconds: 2)),
                                 items: imageCarousel.map((assetfile) {
                                   return Builder(
                                     builder: (BuildContext context) {
@@ -377,7 +379,10 @@ class _HomeState extends State<Home> {
                                           width:
                                               MediaQuery.of(context).size.width,
                                           child: Image(
-                                              image: AssetImage(assetfile)));
+                                              image: AssetImage(assetfile),
+                                              width: MediaQuery.of(context).size.width/2,
+                                              height: MediaQuery.of(context).size.height/3
+                                          ));
                                     },
                                   );
                                 }).toList(),
