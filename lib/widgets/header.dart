@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:website/widgets/header_button.dart';
-import "package:website/widgets/footer.dart";
 import "package:google_fonts/google_fonts.dart";
 import "dart:html";
 
@@ -71,7 +70,13 @@ AppBar? getTopBar(BuildContext context) {
     );
   }
   }
-  catch(Exception){}
+  catch(Exception){
+    return AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 0.0,
+      iconTheme: IconThemeData(color: Colors.white),
+    );
+  }
   
 }
 

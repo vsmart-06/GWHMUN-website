@@ -128,10 +128,10 @@ class Footer extends StatelessWidget {
 }
 
 
-  Widget footer(BuildContext context) {
+  Widget footer(bool landscape) {
     String? fontMain = GoogleFonts.questrial().fontFamily;
     try{
-    if(MediaQuery.of(context).orientation==Orientation.landscape){
+    if(landscape) {
       return Padding(
       padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
       child: Container(

@@ -292,7 +292,7 @@ class _CommitteeState extends State<Committee> {
                             Column(
                               children: generateBoard(),
                             ),
-                            footer(context)
+                            footer(MediaQuery.of(context).orientation==Orientation.landscape)
                           ],
                         ),
                     ),

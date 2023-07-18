@@ -348,49 +348,48 @@ class _HomeState extends State<Home> {
                     controller: scrollers?[3],
                     child: SingleChildScrollView(
                       controller: scrollers?[3],
-                      child: Container(
-                        height: MediaQuery.of(context).size.height,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: IconButton(
-                                icon: Icon(Icons.arrow_upward),
-                                onPressed: () {pageScroll?.previousPage(duration: Duration(seconds: 1), curve: Curves.easeOut);},
-                                iconSize: 50,
-                                color: Colors.white,
-                                hoverColor: Colors.green,
-                              ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: IconButton(
+                              icon: Icon(Icons.arrow_upward),
+                              onPressed: () {pageScroll?.previousPage(duration: Duration(seconds: 1), curve: Curves.easeOut);},
+                              iconSize: 50,
+                              color: Colors.white,
+                              hoverColor: Colors.green,
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: CarouselSlider(
-                                options: CarouselOptions(
-                                  viewportFraction: 0.5,
-                                  height: 400.0,
-                                  enableInfiniteScroll: true,
-                                  autoPlay: true,
-                                  autoPlayInterval: Duration(seconds: 2)),
-                                items: imageCarousel.map((assetfile) {
-                                  return Builder(
-                                    builder: (BuildContext context) {
-                                      return Container(
-                                          width:
-                                              MediaQuery.of(context).size.width,
-                                          child: Image(
-                                              image: AssetImage(assetfile),
-                                              width: MediaQuery.of(context).size.width/2,
-                                              height: MediaQuery.of(context).size.height/3
-                                          ));
-                                    },
-                                  );
-                                }).toList(),
-                              ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: CarouselSlider(
+                              options: CarouselOptions(
+                                viewportFraction: 0.5,
+                                height: 400.0,
+                                enableInfiniteScroll: true,
+                                autoPlay: true,
+                                autoPlayInterval: Duration(seconds: 2)),
+                              items: imageCarousel.map((assetfile) {
+                                return Builder(
+                                  builder: (BuildContext context) {
+                                    return Padding(
+                                      padding: const EdgeInsets.all(30),
+                                      child: Image(
+                                          image: AssetImage(assetfile),
+                                          width: MediaQuery.of(context).size.width/2,
+                                          height: MediaQuery.of(context).size.height/3,
+                                          fit: BoxFit.contain
+                                      ),
+                                    );
+                                  },
+                                );
+                              }).toList(),
                             ),
-                            footer(context),
-                          ],
-                        ),
+                          ),
+                          footer(MediaQuery.of(context).orientation==Orientation.landscape),
+                        ],
                       ),
                     ),
                   )
