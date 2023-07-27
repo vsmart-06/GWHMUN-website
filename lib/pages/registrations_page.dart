@@ -14,12 +14,19 @@ class _RegistrationsState extends State<Registrations> {
   List<Color> cardColors = [Colors.black, Colors.black, Colors.black];
   ScrollController scroll = ScrollController();
   String? clickedLink;
-  double fontSize = 50;
+  double? fontSize;
   late double cardWidth;
 
   @override
   Widget build(BuildContext context) {
-    cardWidth = MediaQuery.of(context).size.width/4;
+    if (MediaQuery.of(context).orientation == Orientation.landscape) {
+      fontSize = 50;
+      cardWidth = MediaQuery.of(context).size.width/4;
+    }
+    else {
+      fontSize = 30;
+      cardWidth = MediaQuery.of(context).size.width/1.5;
+    }
     if (clickedLink == null) {
       return Scaffold(
         appBar: getTopBar(context),

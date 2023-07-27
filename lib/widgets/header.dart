@@ -84,7 +84,7 @@ String? font = GoogleFonts.questrial().fontFamily;
 Drawer getDrawer(BuildContext context){
   return Drawer(
       backgroundColor: Colors.grey[900],
-      width: MediaQuery.of(context).size.width * 0.75,
+      width: MediaQuery.of(context).size.width * 0.8,
       child: Column(
         children: [
           Container(
@@ -220,31 +220,30 @@ Drawer getDrawer(BuildContext context){
                     )
                   ],
                 ),
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left:10, bottom: 15, top:15),
-                      child: Text(
-                        "LOCATION",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: font
-                        )
-                      ),
+                Padding(
+                  padding: const EdgeInsets.only(left:10, bottom: 15, top:15),
+                  child: Text(
+                    "LOCATION",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: font
+                    )
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 15),
+                  child: TextButton(
+                    onPressed: () {
+                      window.open("https://goo.gl/maps/DUGyBHCAu287hoAD9", "school");
+                    },
+                    child: Text(
+                      "Greenwood High School Sarjapur",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: font
+                      )
                     ),
-                    TextButton(
-                      onPressed: () {
-                        window.open("https://goo.gl/maps/DUGyBHCAu287hoAD9", "school");
-                      },
-                      child: Text(
-                        "Greenwood High School Sarjapur",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: font
-                        )
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left:10),
@@ -260,7 +259,7 @@ Drawer getDrawer(BuildContext context){
                   crossAxisAlignment: CrossAxisAlignment.start,
                       children:[
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
                           child: TextButton(
                             onPressed: () {
                               window.open("mailto:vansh052398@greenwoodhigh.edu.in", "vanshEmail");
@@ -275,7 +274,8 @@ Drawer getDrawer(BuildContext context){
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.fromLTRB(0, 8, 0, 8),
+
                           child: TextButton(
                             onPressed: () {
                               window.open("mailto:rahul.p@greenwoodhigh.edu.in", "rahulEmail");
