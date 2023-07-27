@@ -221,7 +221,7 @@ Drawer getDrawer(BuildContext context){
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left:10, bottom: 15, top:15),
+                  padding: const EdgeInsets.only(left:10, top:15),
                   child: Text(
                     "LOCATION",
                     style: TextStyle(

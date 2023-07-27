@@ -3,6 +3,7 @@ import "package:google_fonts/google_fonts.dart";
 import "package:website/widgets/header.dart";
 import "package:website/widgets/footer.dart";
 import "package:website/pages/registrations_general.dart";
+import "dart:html";
 
 class Registrations extends StatefulWidget {
   @override
@@ -16,16 +17,19 @@ class _RegistrationsState extends State<Registrations> {
   String? clickedLink;
   double? fontSize;
   late double cardWidth;
+  late double cardHeight;
 
   @override
   Widget build(BuildContext context) {
     if (MediaQuery.of(context).orientation == Orientation.landscape) {
       fontSize = 50;
       cardWidth = MediaQuery.of(context).size.width/4;
+      cardHeight = MediaQuery.of(context).size.height/4;
     }
     else {
       fontSize = 30;
       cardWidth = MediaQuery.of(context).size.width/1.5;
+      cardHeight = MediaQuery.of(context).size.height/4;
     }
     if (clickedLink == null) {
       return Scaffold(
@@ -61,6 +65,7 @@ class _RegistrationsState extends State<Registrations> {
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
                               width: cardWidth,
+                              height: cardHeight,
                               child: Card(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20),
@@ -82,11 +87,12 @@ class _RegistrationsState extends State<Registrations> {
                                     ),
                                   ),
                                   onPressed: () {
-                                    setState(
+                                    /* setState(
                                       () {
                                         clickedLink = "https://forms.gle/NgbqfwUfYFatWRCfA";
                                       }
-                                    );
+                                    ); */
+                                    window.open("https://forms.gle/NgbqfwUfYFatWRCfA", "Internals");
                                   },
                                   onHover: (value) {
                                     value ? setState(() {cardColors[0] = Color(0xFF313133);}) : setState(() {cardColors[0] = Colors.black;});
@@ -99,6 +105,7 @@ class _RegistrationsState extends State<Registrations> {
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
                               width: cardWidth,
+                              height: cardHeight,
                               child: Card(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20),
@@ -120,11 +127,12 @@ class _RegistrationsState extends State<Registrations> {
                                     ),
                                   ),
                                   onPressed: () {
-                                    setState(
+                                    /* setState(
                                       () {
                                         clickedLink = "https://forms.gle/9q4M4pGnKbTGWcbp6";
                                       }
-                                    );
+                                    ); */
+                                    window.open("https://forms.gle/9q4M4pGnKbTGWcbp6", "Externals");
                                   },
                                   onHover: (value) {
                                     value ? setState(() {cardColors[1] = Color(0xFF313133);}) : setState(() {cardColors[1] = Colors.black;});
@@ -137,6 +145,7 @@ class _RegistrationsState extends State<Registrations> {
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
                               width: cardWidth,
+                              height: cardHeight,
                               child: Card(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20),
@@ -158,11 +167,12 @@ class _RegistrationsState extends State<Registrations> {
                                     ),
                                   ),
                                   onPressed: () {
-                                    setState(
+                                    /* setState(
                                       () {
                                         clickedLink = "https://forms.gle/kVFvQY3TycQzTE4e6";
                                       }
-                                    );
+                                    ); */
+                                    window.open("https://forms.gle/kVFvQY3TycQzTE4e6", "Delegation");
                                   },
                                   onHover: (value) {
                                     value ? setState(() {cardColors[2] = Color(0xFF313133);}) : setState(() {cardColors[2] = Colors.black;});

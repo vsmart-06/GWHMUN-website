@@ -9,6 +9,8 @@ import "package:website/pages/unep_page.dart";
 import "package:website/pages/disec_page.dart";
 import "package:website/pages/aippm_page.dart";
 import "package:website/pages/registrations_page.dart";
+import "package:website/pages/ipc_page.dart";
+import "package:website/pages/jcc_page.dart";
 
 void main() {
 
@@ -27,9 +29,9 @@ void main() {
         "/disec": (context) => DISEC(),
         "/unhrc": (context) => UNHRC(),
         "/unep": (context) => UNEP(),
-        //"/ipc": (context) => IPC(),
+        "/ipc": (context) => IPC(),
         "/aippm": (context) => AIPPM(),
-        //"/jcc": (context) => JCC(),
+        "/jcc": (context) => JCC(),
         //"/sochum": (context) => SOCHUM()
       }
     )

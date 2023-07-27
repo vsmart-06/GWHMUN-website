@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
 import "package:website/widgets/header.dart";
 import 'package:website/widgets/committee_button.dart';
+import "package:website/widgets/footer.dart";
 
 class Committee extends StatefulWidget {
   @override
@@ -53,11 +54,13 @@ class _CommitteeState extends State<Committee> {
                             CommitteeButton(
                               imagePath: 'committee_page/UNHRC.png',
                               websitePath: "/unhrc",
-                              size: 0.4),
+                              size: 0.4,
+                              name: "UNHRC"),
                             CommitteeButton(
                               imagePath: 'committee_page/UNEP.png',
                               websitePath: "/unep",
-                              size: 0.4),
+                              size: 0.4,
+                              name: "UNEP"),
                           ],
                         ),
                         Row(
@@ -66,11 +69,13 @@ class _CommitteeState extends State<Committee> {
                             CommitteeButton(
                               imagePath: 'committee_page/DISEC.png',
                               websitePath: "/disec",
-                              size: 0.4),
+                              size: 0.4,
+                              name: "DISEC"),
                             CommitteeButton(
                               imagePath: 'committee_page/UNSC.png',
                               websitePath: "/unsc",
-                              size: 0.4),
+                              size: 0.4,
+                              name: "UNSC"),
                           ],
                         ),
                         Row(
@@ -79,11 +84,13 @@ class _CommitteeState extends State<Committee> {
                             CommitteeButton(
                               imagePath: 'committee_page/AIPPM.png',
                               websitePath: "/aippm",
-                              size: 0.4),
+                              size: 0.4,
+                              name: "AIPPM"),
                             CommitteeButton(
                               imagePath: 'committee_page/IPC.png',
-                              websitePath: "/unhrc",
-                              size: 0.4),
+                              websitePath: "/ipc",
+                              size: 0.4,
+                              name: "IPC"),
                           ],
                         ),
                         Row(
@@ -91,12 +98,14 @@ class _CommitteeState extends State<Committee> {
                           children: [
                             CommitteeButton(
                               imagePath: 'committee_page/JCC.png',
-                              websitePath: "/unhrc",
-                              size: 0.4),
+                              websitePath: "/jcc",
+                              size: 0.4,
+                              name: "JCC"),
                             CommitteeButton(
                               imagePath: 'committee_page/SOCHUM.png',
-                              websitePath: "/unep",
-                              size: 0.4),
+                              websitePath: "/sochum",
+                              size: 0.4,
+                              name: "SOCHUM"),
                           ],
                         ),
                       ],
@@ -145,19 +154,23 @@ class _CommitteeState extends State<Committee> {
                           CommitteeButton(
                             imagePath: 'committee_page/UNHRC.png',
                             websitePath: "/unhrc",
-                            size: 0.2),
+                            size: 0.18,
+                            name: "UNHRC"),
                           CommitteeButton(
                             imagePath: 'committee_page/UNEP.png',
                             websitePath: "/unep",
-                            size: 0.2),
+                            size: 0.18,
+                            name: "UNEP"),
                           CommitteeButton(
                             imagePath: 'committee_page/DISEC.png',
                             websitePath: "/disec",
-                            size: 0.2),
+                            size: 0.18,
+                            name: "DISEC"),
                           CommitteeButton(
                             imagePath: 'committee_page/UNSC.png',
                             websitePath: "/unsc",
-                            size: 0.2),
+                            size: 0.18,
+                            name: "UNSC"),
                         ],
                       ),
                       Row(
@@ -166,21 +179,28 @@ class _CommitteeState extends State<Committee> {
                           CommitteeButton(
                             imagePath: 'committee_page/AIPPM.png',
                             websitePath: "/aippm",
-                            size: 0.2),
+                            size: 0.18,
+                            name: "AIPPM"),
                           CommitteeButton(
                             imagePath: 'committee_page/IPC.png',
-                            websitePath: "/unhrc",
-                            size: 0.2),
+                            websitePath: "/ipc",
+                            size: 0.18,
+                            name: "IPC"
+                            ),
                           CommitteeButton(
                             imagePath: 'committee_page/JCC.png',
-                            websitePath: "/unhrc",
-                            size: 0.2),
+                            websitePath: "/jcc",
+                            size: 0.18,
+                            name: "JCC"),
                           CommitteeButton(
                             imagePath: 'committee_page/SOCHUM.png',
-                            websitePath: "/unep",
-                            size: 0.2),
+                            websitePath: "/sochum",
+                            size: 0.18,
+                            name: "SOCHUM"),
                         ],
                       ),
+                      Padding(padding: EdgeInsets.only(top: 20)),
+                      footer(MediaQuery.of(context).orientation == Orientation.landscape)
                     ],
                   ),
                 ),

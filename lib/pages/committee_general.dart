@@ -10,13 +10,15 @@ class Committee extends StatefulWidget {
   String title;
   String agenda;
   String bgLink;
+  String logoLink;
   List<List<String>> executiveBoard;
   Committee(
       {key,
       required this.title,
       required this.agenda,
       required this.bgLink,
-      required this.executiveBoard})
+      required this.executiveBoard,
+      required this.logoLink})
       : super(key: key);
 
   @override
@@ -44,7 +46,7 @@ class _CommitteeState extends State<Committee> {
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Image(
-                        image: NetworkImage(member[2]),
+                        image: AssetImage(member[2]),
                         width: MediaQuery.of(context).size.width/4,
                       ),
                     ),
@@ -105,7 +107,7 @@ class _CommitteeState extends State<Committee> {
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Image(
-                        image: NetworkImage(member[2]),
+                        image: AssetImage(member[2]),
                         width: MediaQuery.of(context).size.width/4,
                       ),
                     ),
@@ -144,7 +146,7 @@ class _CommitteeState extends State<Committee> {
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Image(
-                        image: NetworkImage(member[2]),
+                        image: AssetImage(member[2]),
                         width: MediaQuery.of(context).size.width*0.7,
                       ),
                     ),
@@ -215,7 +217,7 @@ class _CommitteeState extends State<Committee> {
                     Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage("AIPPM_copy.png"),
+                          image: AssetImage(widget.logoLink),
                           fit: BoxFit.contain,
                           opacity: 0.35
                         ),
@@ -243,7 +245,7 @@ class _CommitteeState extends State<Committee> {
                               textAlign: TextAlign.center,
                             ),
                           ),
-                          TextButton(
+                          /*TextButton(
                               style: ButtonStyle(
                                   backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
                                   foregroundColor: MaterialStateProperty.all<Color>(buttonColor),
@@ -270,6 +272,7 @@ class _CommitteeState extends State<Committee> {
                                     style: TextStyle(
                                         color: buttonColor, fontFamily: fontMain, fontSize: 30)),
                               )),
+                          */
                           const Padding(
                             padding: EdgeInsets.all(30.0),
                             
