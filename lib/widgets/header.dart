@@ -28,8 +28,8 @@ AppBar? getTopBar(BuildContext context) {
                     ),
                     icon: Image(
                       image: AssetImage("assets/gwhmun_logo.png"), 
-                      width: 50, 
-                      height: 50
+                      width: 55, 
+                      height: 55
                     ), 
                     label: Text(""),
                     onPressed: () {
@@ -83,7 +83,7 @@ AppBar? getTopBar(BuildContext context) {
 String? font = GoogleFonts.questrial().fontFamily;
 Drawer getDrawer(BuildContext context){
   return Drawer(
-      backgroundColor: Colors.grey[900],
+      backgroundColor: Color(0xFF1D1C1C),
       width: MediaQuery.of(context).size.width * 0.8,
       child: Column(
         children: [

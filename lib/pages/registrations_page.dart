@@ -42,7 +42,7 @@ class _RegistrationsState extends State<Registrations> {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                  "Registrations",
+                  "REGISTRATIONS",
                   style: TextStyle(
                       color: Colors.white, fontSize: 35, fontFamily: titleFont),
                 ),

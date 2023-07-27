@@ -67,6 +67,7 @@ flutter:
     - assets/carousel/
     - assets/committee_page/
     - assets/ocs/
+    - assets/EB/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

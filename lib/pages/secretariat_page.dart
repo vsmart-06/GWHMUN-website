@@ -9,7 +9,7 @@ class Secretariat extends StatelessWidget {
   final String? fontMain = GoogleFonts.ebGaramond().fontFamily;
   final ScrollController scroll = ScrollController();
   
-  Container Person(String imagelink, String name, String title, double sizeImg, double fontSize, double width){
+  Container Person(String imagelink, String name, double sizeImg, double fontSize, double width){
     return Container(
       width: width*sizeImg,
       child: Column(
@@ -27,14 +27,6 @@ class Secretariat extends StatelessWidget {
             fontFamily: fontMain,
             fontSize: fontSize,
             color: Color.fromARGB(255,103, 200, 171)
-          )
-        ),
-        Text(
-          title,
-          style:TextStyle(
-            fontFamily: fontMain,
-            fontSize: fontSize-5,
-            color: Color.fromARGB(255, 213, 197, 158)
           )
         ),
         ]
@@ -78,8 +70,31 @@ class Secretariat extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Person("assets/ocs/nopicgiven.png", "Vansh Abrol", "Secretary General", 1/3, 35, width),
-                            Person("assets/ocs/nopicgiven.png", "Rahul Prabhu", "Director General", 1/3, 35, width),
+                            Column(
+                              children: [
+                                Person("assets/ocs/vansh.png", "Vansh Abrol", 1/3, 35, width),
+                                Text(
+                                  "Secretary General", 
+                                  style: TextStyle(
+                                    color: Color.fromARGB(255, 255, 211, 157),
+                                    fontSize: 30,
+                                    fontFamily: fontMain),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                Person("assets/ocs/rahul.png", "Rahul Prabhu", 1/3, 35, width),
+                                Text(
+                                  "Director General", 
+                                  style: TextStyle(
+                                    color: Color.fromARGB(255, 255, 211, 157),
+                                    fontSize: 30,
+                                    fontFamily: fontMain
+                                    ),
+                                ),
+                              ],
+                            ),
                           ],
                         ),
                       ),
@@ -107,18 +122,8 @@ class Secretariat extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Person("assets/ocs/vishnu.png", "Vishnu Vusirikala", "USG", 1/4, 30, width),
-                            Person("assets/ocs/asheera.png", "Asheera Kaul", "USG", 1/4, 30, width),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(20),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Person("assets/ocs/nopicgiven.png", "Arushi Goel", "", 1/4, 30, width),
+                            Person("assets/ocs/vishnu.png", "Srivishnu Vusirikala", 1/4, 30, width),
+                            Person("assets/ocs/asheera.png", "Asheera Kaul", 1/4, 30, width),
                           ],
                         ),
                       ),
@@ -137,8 +142,8 @@ class Secretariat extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Person("assets/ocs/ananya.png", "Ananya Mehrotra", "USG", 1/4, 30, width),
-                            Person("assets/ocs/lalitha.png", "Lalitha Rao", "USG", 1/4, 30, width),
+                            Person("assets/ocs/ananya.png", "Ananya Mehrotra", 1/4, 30, width),
+                            Person("assets/ocs/lalitha.png", "Lalitha Rao", 1/4, 30, width),
                           ],
                         ),
                       ),
@@ -148,31 +153,54 @@ class Secretariat extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Person("assets/ocs/sanvi.png", "Sanvi Dange", "USG", 1/4, 30, width),
-                            Person("assets/ocs/nopicgiven.png", "Soham Vasta", "USG", 1/4, 30, width),
+                            Person("assets/ocs/sanvi.png", "Sanvi Dange", 1/4, 30, width),
+                            Person("assets/ocs/soham.png", "Soham Vasta", 1/4, 30, width),
                           ],
                         ),
                       ),
-                      Text(
-                        "LOGISTICS",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 45,
-                          fontFamily: titleFont
-                        ),
-                        textAlign: TextAlign.center,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Column(
+                            children: [
+                              Text(
+                                "LOGISTICS",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 45,
+                                  fontFamily: titleFont
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(20),
+                                child:
+                                Person("assets/ocs/adyaa.png", "Adyaa Mishra", 1/4, 30, width),
+                              ),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                "RESOURCES",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 45,
+                                  fontFamily: titleFont
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(20),
+                                child:
+                                Person("assets/ocs/kaavya.png", "Kaavya Dasgupta", 1/4, 30, width),
+                              ),
+                            ],
+                          ),
+                          
+                        ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(20),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Person("assets/ocs/adyaa.png", "Adyaa Mishra", "USG", 1/4, 30, width),
-                            Person("assets/ocs/nopicgiven.png", "ISC", "USG", 1/4, 30, width),
-                          ],
-                        ),
-                      ),
+                      
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
@@ -190,7 +218,7 @@ class Secretariat extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(20),
                                 child:
-                                Person("assets/ocs/pavan.png", "Pavan Nandhakumar", "USG", 1/4, 30, width),
+                                Person("assets/ocs/pavan.png", "Pavan Nandhakumar", 1/4, 30, width),
                               ),
                             ],
                           ),
@@ -208,7 +236,7 @@ class Secretariat extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(20),
                               child:
-                              Person("assets/ocs/ananya.png", "Ananya Mehrotra", "USG", 1/4, 30, width),
+                              Person("assets/ocs/ananya.png", "Ananya Mehrotra", 1/4, 30, width),
                             ),
                             ],
                           ),
@@ -231,7 +259,7 @@ class Secretariat extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(20),
                                 child:
-                                Person("assets/ocs/ishaan.png", "Ishan Wanchoo", "USG", 1/4, 30, width),
+                                Person("assets/ocs/ishaan.png", "Ishan Wanchoo", 1/4, 30, width),
                               ),
                             ],
                           ),
@@ -249,7 +277,7 @@ class Secretariat extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(20),
                               child:
-                              Person("assets/ocs/neve.png", "Neve Bangalore ", "USG", 1/4, 30, width),
+                              Person("assets/ocs/neve.png", "Neve Bangalore ", 1/4, 30, width),
                             ),
                             ],
                           ),
@@ -272,7 +300,7 @@ class Secretariat extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(20),
                                 child:
-                                Person("assets/ocs/nopicgiven.png", "Allen Goveas", "USG", 1/4, 30, width),
+                                Person("assets/ocs/allen.png", "Allen Goveas", 1/4, 30, width),
                               ),
                             ],
                           ),
@@ -290,7 +318,7 @@ class Secretariat extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(20),
                               child:
-                              Person("assets/ocs/kriti.png", "Kriti farswal", "USG", 1/4, 30, width),
+                              Person("assets/ocs/kriti.png", "Kriti farswal", 1/4, 30, width),
                             ),
                             ],
                           ),
@@ -311,8 +339,8 @@ class Secretariat extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Person("assets/ocs/nopicgiven.png", "Yuthika Goel", "USG", 1/4, 30, width),
-                            Person("assets/ocs/surya.png", "Surya Sivakumar ", "USG", 1/4, 30, width),
+                            Person("assets/ocs/yuthika.png", "Yuthika Goel", 1/4, 30, width),
+                            Person("assets/ocs/surya.png", "Surya Sivakumar ", 1/4, 30, width),
                           ],
                         ),
                       ),
@@ -331,8 +359,8 @@ class Secretariat extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Person("assets/ocs/nopicgiven.png", "Puja Shirguppi", "USG", 1/4, 30, width),
-                            Person("assets/ocs/adit.png", "Adit Mohan Bakshi ", "USG", 1/4, 30, width),
+                            Person("assets/ocs/puja.png", "Puja Shirguppi", 1/4, 30, width),
+                            Person("assets/ocs/adit.png", "Adit Mohan Bakshi ", 1/4, 30, width),
                           ],
                         ),
                       ),
@@ -353,7 +381,7 @@ class Secretariat extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(20),
                                 child:
-                                Person("assets/ocs/rishab.png", "Rishabh Kumar", "USG", 1/4, 30, width),
+                                Person("assets/ocs/rishab.png", "Rishabh Kumar", 1/4, 30, width),
                               ),
                             ],
                           ),
@@ -371,51 +399,10 @@ class Secretariat extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(20),
                               child:
-                              Person("assets/ocs/ash.png", "Aashir Nair", "USG", 1/4, 30, width),
+                              Person("assets/ocs/ash.png", "Aashir Nair", 1/4, 30, width),
                             ),
                             ],
                           ),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Column(
-                            children: [
-                              Text(
-                                "RESOURCES",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 45,
-                                  fontFamily: titleFont
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(20),
-                                child:
-                                Person("assets/ocs/kaavya.png", "Kaavya Dasgupta", "USG", 1/4, 30, width),
-                              ),
-                            ],
-                          ),
-                          /*Column(
-                            children: [
-                            Text(
-                              "Academics",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 45,
-                                fontFamily: titleFont
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(20),
-                              child:
-                              Person("assets/ocs/ash.png", "Aashir Nair", "USG", 1/4, 30, width),
-                            ),
-                            ],
-                          ),*/
                         ],
                       ),
                       
@@ -460,12 +447,26 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/nopicgiven.png", "Vansh Abrol", "Secretary General", 0.7, 32, width),
-                      Person("assets/ocs/nopicgiven.png", "Rahul Prabhu", "Director General", 0.7, 32, width),
+                      Person("assets/ocs/vansh.png", "Vansh Abrol", 0.8, 32, width),
+                      Text(
+                        "Secretary General", 
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 255, 211, 157),
+                          fontFamily: fontMain,
+                          fontSize: 25),
+                      ),
+                      Person("assets/ocs/rahul.png", "Rahul Prabhu", 0.8, 32, width),
+                      Text(
+                        "Director General", 
+                        style: TextStyle(
+                          color:Color.fromARGB(255, 255, 211, 157),
+                          fontFamily: fontMain,
+                          fontSize: 25),
+                      ),
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child: Text(
-                          "ORGANIZING COMMITTEE",
+                          "ORGANIZING COMMITTEE OCS",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 40,
@@ -486,9 +487,8 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/vishnu.png", "Vishnu Vusirikala", "USG", size, fontsize, width),
-                      Person("assets/ocs/asheera.png", "Asheera Kaul", "USG", size, fontsize, width),
-                      Person("assets/ocs/nopicgiven.png", "Arushi Goel", "", size, fontsize, width),
+                      Person("assets/ocs/vishnu.png", "Srivishnu Vusirikala", size, fontsize, width),
+                      Person("assets/ocs/asheera.png", "Asheera Kaul", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -501,10 +501,10 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/ananya.png", "Ananya Mehrotra", "USG", size, fontsize, width),
-                      Person("assets/ocs/lalitha.png", "Lalitha Rao", "USG", size, fontsize, width),
-                      Person("assets/ocs/sanvi.png", "Sanvi Dange", "USG", size, fontsize, width),
-                      Person("assets/ocs/nopicgiven.png", "Soham Vasta", "USG", size, fontsize, width),
+                      Person("assets/ocs/ananya.png", "Ananya Mehrotra", size, fontsize, width),
+                      Person("assets/ocs/lalitha.png", "Lalitha Rao", size, fontsize, width),
+                      Person("assets/ocs/sanvi.png", "Sanvi Dange", size, fontsize, width),
+                      Person("assets/ocs/soham.png", "Soham Vasta", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -517,8 +517,7 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/adyaa.png", "Adyaa Mishra", "USG", size, fontsize, width),
-                      Person("assets/ocs/nopicgiven.png", "ISC", "USG", size, fontsize, width),
+                      Person("assets/ocs/adyaa.png", "Adyaa Mishra", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -531,7 +530,7 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/pavan.png", "Pavan Nandhakumar", "USG", size, fontsize, width),
+                      Person("assets/ocs/pavan.png", "Pavan Nandhakumar", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -544,7 +543,7 @@ class Secretariat extends StatelessWidget {
                         textAlign: TextAlign.center,
                                           ),
                       ),
-                      Person("assets/ocs/ananya.png", "Ananya Mehrotra", "USG", size, fontsize, width),
+                      Person("assets/ocs/ananya.png", "Ananya Mehrotra", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -557,7 +556,7 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/ishaan.png", "Ishan Wanchoo", "USG", size, fontsize, width),
+                      Person("assets/ocs/ishaan.png", "Ishan Wanchoo", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -570,7 +569,7 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/neve.png", "Neve Bangalore ", "USG", size, fontsize, width),
+                      Person("assets/ocs/neve.png", "Neve Bangalore ", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -583,7 +582,7 @@ class Secretariat extends StatelessWidget {
                                   textAlign: TextAlign.center,
                                 ),
                       ),
-                      Person("assets/ocs/nopicgiven.png", "Allen Goveas", "USG", size, fontsize, width),
+                      Person("assets/ocs/allen.png", "Allen Goveas", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -596,7 +595,7 @@ class Secretariat extends StatelessWidget {
                                 textAlign: TextAlign.center,
                               ),
                       ),
-                      Person("assets/ocs/kriti.png", "Kriti farswal", "USG", size, fontsize, width),
+                      Person("assets/ocs/kriti.png", "Kriti farswal", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -609,8 +608,8 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/nopicgiven.png", "Yuthika Goel", "USG", size, fontsize, width),
-                      Person("assets/ocs/surya.png", "Surya Sivakumar ", "USG", size, fontsize, width),
+                      Person("assets/ocs/surya.png", "Surya Sivakumar ", size, fontsize, width),
+                      Person("assets/ocs/yuthika.png", "Yuthika Goel", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -623,8 +622,8 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/nopicgiven.png", "Puja Shirguppi", "USG", size, fontsize, width),
-                      Person("assets/ocs/adit.png", "Adit Mohan Bakshi ", "USG", size, fontsize, width),
+                      Person("assets/ocs/puja.png", "Puja Shirguppi", size, fontsize, width),
+                      Person("assets/ocs/adit.png", "Adit Mohan Bakshi ", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -637,7 +636,7 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/rishab.png", "Rishabh Kumar", "USG", size, fontsize, width),
+                      Person("assets/ocs/rishab.png", "Rishabh Kumar", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -650,7 +649,7 @@ class Secretariat extends StatelessWidget {
                           textAlign: TextAlign.center,
                         ),
                       ),
-                      Person("assets/ocs/kaavya.png", "Kaavya Dasgupta", "USG", size, fontsize, width),
+                      Person("assets/ocs/kaavya.png", "Kaavya Dasgupta", size, fontsize, width),
                       Padding(padding: const EdgeInsets.fromLTRB(0, 0, 0, 80))
                     ]
                   )

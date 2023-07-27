@@ -54,12 +54,12 @@ class _CommitteeState extends State<Committee> {
                             CommitteeButton(
                               imagePath: 'committee_page/UNHRC.png',
                               websitePath: "/unhrc",
-                              size: 0.4,
+                              size: 0.35,
                               name: "UNHRC"),
                             CommitteeButton(
                               imagePath: 'committee_page/UNEP.png',
                               websitePath: "/unep",
-                              size: 0.4,
+                              size: 0.35,
                               name: "UNEP"),
                           ],
                         ),
@@ -69,12 +69,12 @@ class _CommitteeState extends State<Committee> {
                             CommitteeButton(
                               imagePath: 'committee_page/DISEC.png',
                               websitePath: "/disec",
-                              size: 0.4,
+                              size: 0.35,
                               name: "DISEC"),
                             CommitteeButton(
                               imagePath: 'committee_page/UNSC.png',
                               websitePath: "/unsc",
-                              size: 0.4,
+                              size: 0.35,
                               name: "UNSC"),
                           ],
                         ),
@@ -84,12 +84,12 @@ class _CommitteeState extends State<Committee> {
                             CommitteeButton(
                               imagePath: 'committee_page/AIPPM.png',
                               websitePath: "/aippm",
-                              size: 0.4,
+                              size: 0.35,
                               name: "AIPPM"),
                             CommitteeButton(
                               imagePath: 'committee_page/IPC.png',
                               websitePath: "/ipc",
-                              size: 0.4,
+                              size: 0.35,
                               name: "IPC"),
                           ],
                         ),
@@ -99,12 +99,12 @@ class _CommitteeState extends State<Committee> {
                             CommitteeButton(
                               imagePath: 'committee_page/JCC.png',
                               websitePath: "/jcc",
-                              size: 0.4,
+                              size: 0.35,
                               name: "JCC"),
                             CommitteeButton(
                               imagePath: 'committee_page/SOCHUM.png',
                               websitePath: "/sochum",
-                              size: 0.4,
+                              size: 0.35,
                               name: "SOCHUM"),
                           ],
                         ),

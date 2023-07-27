@@ -15,8 +15,8 @@ class HeaderButton extends StatefulWidget {
 class _HeaderButtonState extends State<HeaderButton> {
 
   Color buttonColor = Colors.transparent;
-  double fontSize = 25;
-  String? fontFamily = GoogleFonts.questrial().fontFamily;
+  double fontSize = 30;
+  String? fontFamily = GoogleFonts.ebGaramond().fontFamily;
 
   @override
   Widget build(BuildContext context) {
