@@ -8,7 +8,7 @@ import "package:website/pages/unhrc_page.dart";
 import "package:website/pages/unep_page.dart";
 import "package:website/pages/disec_page.dart";
 import "package:website/pages/aippm_page.dart";
-import "package:website/pages/registration_page.dart";
+import "package:website/pages/registrations_page.dart";
 
 void main() {
 

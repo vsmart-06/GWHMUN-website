@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import "dart:html";
 import "dart:ui" as ui;
 
@@ -6,21 +8,22 @@ import "package:pointer_interceptor/pointer_interceptor.dart";
 import "package:website/widgets/header.dart";
 
 
-class Registrations extends StatefulWidget {
-  const Registrations({super.key});
+class FormPage extends StatefulWidget {
+  String link;
+  FormPage({super.key, required this.link});
 
   @override
-  State<Registrations> createState() => _RegistrationsState();
+  State<FormPage> createState() => _FormPageState();
 }
 
-class _RegistrationsState extends State<Registrations> {
-
+class _FormPageState extends State<FormPage> {
+  Map? data;
   IFrameElement iFrame = IFrameElement();
   late HtmlElementView formContainer;
 
   @override
   Widget build(BuildContext context) {
-    iFrame.src = "https://forms.gle/4viXkb1j5Q2oeQzF6";
+    iFrame.src = widget.link;
     iFrame.style.border = "none";
     // ignore: undefined_prefixed_name
     ui.platformViewRegistry.registerViewFactory("iFrame", (int viewId) => iFrame);
