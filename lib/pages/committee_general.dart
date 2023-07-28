@@ -219,63 +219,71 @@ class _CommitteeState extends State<Committee> {
                         image: DecorationImage(
                           image: AssetImage(widget.logoLink),
                           fit: BoxFit.contain,
-                          opacity: 0.35
                         ),
                       ),
                       height: (MediaQuery.of(context).orientation == Orientation.landscape) ? MediaQuery.of(context).size.height : MediaQuery.of(context).size.height * 0.6,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      width: MediaQuery.of(context).size.width,
+                      child: Stack(
+                        alignment: Alignment.center,
                         children: [
-                          Text(
-                            widget.title,
-                            style: TextStyle(
-                                color: Colors.white, 
-                                fontSize: (MediaQuery.of(context).orientation==Orientation.landscape)?60:35, 
-                                fontFamily: fontMain),
-                            textAlign: TextAlign.center,
+                          Container(
+                            color: Color(0x99000000)
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Text(
-                              widget.agenda,
-                              style: TextStyle(
-                                  color: Colors.white, 
-                                  fontSize: (MediaQuery.of(context).orientation==Orientation.landscape)?35:20, 
-                                  fontFamily: fontMain),
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          /*TextButton(
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
-                                  foregroundColor: MaterialStateProperty.all<Color>(buttonColor),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                widget.title,
+                                style: TextStyle(
+                                    color: Colors.white, 
+                                    fontSize: (MediaQuery.of(context).orientation==Orientation.landscape)?60:35, 
+                                    fontFamily: fontMain),
+                                textAlign: TextAlign.center,
                               ),
-                              onPressed: () {
-                                window.open(
-                                    widget.bgLink,
-                                    "Background Guide");
-                              },
-                              onHover: (value) {
-                                if (value) {
-                                  setState(() {
-                                    buttonColor = Colors.green;
-                                  });
-                                } else {
-                                  setState(() {
-                                    buttonColor = Colors.white;
-                                  });
-                                }
-                              },
-                              child: Padding(
-                                padding: const EdgeInsets.all(10.0),
-                                child: Text("Background Guide",
-                                    style: TextStyle(
-                                        color: buttonColor, fontFamily: fontMain, fontSize: 30)),
-                              )),
-                          */
-                          const Padding(
-                            padding: EdgeInsets.all(30.0),
-                            
+                              Padding(
+                                padding: const EdgeInsets.all(20.0),
+                                child: Text(
+                                  widget.agenda,
+                                  style: TextStyle(
+                                      color: Colors.white, 
+                                      fontSize: (MediaQuery.of(context).orientation==Orientation.landscape)?35:20, 
+                                      fontFamily: fontMain),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                              /*TextButton(
+                                  style: ButtonStyle(
+                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
+                                      foregroundColor: MaterialStateProperty.all<Color>(buttonColor),
+                                  ),
+                                  onPressed: () {
+                                    window.open(
+                                        widget.bgLink,
+                                        "Background Guide");
+                                  },
+                                  onHover: (value) {
+                                    if (value) {
+                                      setState(() {
+                                        buttonColor = Colors.green;
+                                      });
+                                    } else {
+                                      setState(() {
+                                        buttonColor = Colors.white;
+                                      });
+                                    }
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: Text("Background Guide",
+                                        style: TextStyle(
+                                            color: buttonColor, fontFamily: fontMain, fontSize: 30)),
+                                  )),
+                              */
+                              const Padding(
+                                padding: EdgeInsets.all(30.0),
+                                
+                              ),
+                            ],
                           ),
                         ],
                       ),

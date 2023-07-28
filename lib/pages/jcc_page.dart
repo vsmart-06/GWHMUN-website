@@ -13,7 +13,7 @@ class _JCCState extends State<JCC> {
   Widget build(BuildContext context) {
     return Committee(
       title: "Joint Crisis Cabinet (JCC)",
-      agenda: "Agenda: The Russo - Japanese War 1904 [Freeze Date: 15th February 1904]",
+      agenda: "Agenda: The Russo - Japanese War 1904 \n[Freeze Date: 15th February 1904]",
       logoLink: "committee_page/JCC.png",
       bgLink: "https://drive.google.com/file/d/1jG442BQskB8PictmgwO6T9pjIIkbo30F/view?usp=sharing",
       executiveBoard: [["Siddhant Roy","Head chair","EB/JCC1.png","Siddhant Roy, the Head Chair for JCC, is an avid debater and has been in the circuit for three years. A passionate reader of philosophy and current affairs, he believes in scintillating conversations with substance and logic. He hopes this MUN reaches a successful and meaningful solution to the deep problems posed by the committees. "],
