@@ -15,7 +15,7 @@ AppBar? getTopBar(BuildContext context) {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                TextButton.icon(
+                TextButton(
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
                       foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
@@ -26,12 +26,11 @@ AppBar? getTopBar(BuildContext context) {
                         )
                       )
                     ),
-                    icon: Image(
+                    child: Image(
                       image: AssetImage("assets/gwhmun_logo.png"), 
                       width: 55, 
                       height: 55
                     ), 
-                    label: Text(""),
                     onPressed: () {
                       Navigator.popAndPushNamed(context, "/");
                     },

@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "package:google_fonts/google_fonts.dart";
 import "package:website/widgets/header.dart";
+import "package:website/widgets/footer.dart";
 
 class Secretariat extends StatelessWidget {
   Secretariat({super.key});
@@ -107,14 +108,17 @@ class Secretariat extends StatelessWidget {
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      Text(
-                        "TECH TEAM",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 45,
-                          fontFamily: titleFont
+                      Padding(
+                        padding: const EdgeInsets.only(top:20),
+                        child: Text(
+                          "TECH TEAM",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 45,
+                            fontFamily: titleFont
+                          ),
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
                       ),
                       Padding(
                         padding: const EdgeInsets.all(20),
@@ -127,14 +131,17 @@ class Secretariat extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Text(
-                        "DESIGN TEAM",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 45,
-                          fontFamily: titleFont
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: Text(
+                          "DESIGN TEAM",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 45,
+                            fontFamily: titleFont
+                          ),
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
                       ),
                       Padding(
                         padding: const EdgeInsets.all(20),
@@ -158,56 +165,82 @@ class Secretariat extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Column(
+                      Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: Padding(
+                          padding: const EdgeInsets.all(20),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Text(
-                                "LOGISTICS",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 45,
-                                  fontFamily: titleFont
-                                ),
-                                textAlign: TextAlign.center,
+                              Column(
+                                children: [
+                                  Text(
+                                    "LOGISTICS",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 45,
+                                      fontFamily: titleFont
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(20),
+                                    child:
+                                    Person("assets/ocs/adyaa.png", "Adyaa Mishra", 1/4, 30, width),
+                                  ),
+                                ],
                               ),
-                              Padding(
-                                padding: const EdgeInsets.all(20),
-                                child:
-                                Person("assets/ocs/adyaa.png", "Adyaa Mishra", 1/4, 30, width),
+                              Column(
+                                children: [
+                                  Text(
+                                    "RESOURCES",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 45,
+                                      fontFamily: titleFont
+                                    ),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(20),
+                                    child:
+                                    Person("assets/ocs/kaavya.png", "Kaavya Dasgupta", 1/4, 30, width),
+                                  ),
+                                ],
                               ),
+                              
                             ],
                           ),
-                          Column(
-                            children: [
-                              Text(
-                                "RESOURCES",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 45,
-                                  fontFamily: titleFont
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(20),
-                                child:
-                                Person("assets/ocs/kaavya.png", "Kaavya Dasgupta", 1/4, 30, width),
-                              ),
-                            ],
-                          ),
-                          
-                        ],
+                        ),
                       ),
                       
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Column(
-                            children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Column(
+                              children: [
+                                Text(
+                                  "SECURITY",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 45,
+                                    fontFamily: titleFont
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(20),
+                                  child:
+                                  Person("assets/ocs/pavan.png", "Pavan Nandhakumar", 1/4, 30, width),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              children: [
                               Text(
-                                "SECURITY",
+                                "MARKETING",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 45,
@@ -218,120 +251,112 @@ class Secretariat extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(20),
                                 child:
-                                Person("assets/ocs/pavan.png", "Pavan Nandhakumar", 1/4, 30, width),
+                                Person("assets/ocs/ananya.png", "Ananya Mehrotra", 1/4, 30, width),
                               ),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                            Text(
-                              "MARKETING",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 45,
-                                fontFamily: titleFont
-                              ),
-                              textAlign: TextAlign.center,
+                              ],
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(20),
-                              child:
-                              Person("assets/ocs/ananya.png", "Ananya Mehrotra", 1/4, 30, width),
-                            ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Column(
-                            children: [
-                              Text(
-                                "VIDEOS",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 45,
-                                  fontFamily: titleFont
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(20),
-                                child:
-                                Person("assets/ocs/ishaan.png", "Ishan Wanchoo", 1/4, 30, width),
-                              ),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                            Text(
-                              "PHOTOGRAPHY",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 45,
-                                fontFamily: titleFont
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(20),
-                              child:
-                              Person("assets/ocs/neve.png", "Neve Bangalore ", 1/4, 30, width),
-                            ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Column(
-                            children: [
-                              Text(
-                                "FINANCE",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 45,
-                                  fontFamily: titleFont
-                                ),
-                                textAlign: TextAlign.center,
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(20),
-                                child:
-                                Person("assets/ocs/allen.png", "Allen Goveas", 1/4, 30, width),
-                              ),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                            Text(
-                              "EVENTS",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 45,
-                                fontFamily: titleFont
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(20),
-                              child:
-                              Person("assets/ocs/kriti.png", "Kriti farswal", 1/4, 30, width),
-                            ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      Text(
-                        "REGISTRATIONS",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 45,
-                          fontFamily: titleFont
+                          ],
                         ),
-                        textAlign: TextAlign.center,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Column(
+                              children: [
+                                Text(
+                                  "VIDEOS",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 45,
+                                    fontFamily: titleFont
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(20),
+                                  child:
+                                  Person("assets/ocs/ishaan.png", "Ishan Wanchoo", 1/4, 30, width),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                              Text(
+                                "PHOTOGRAPHY",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 45,
+                                  fontFamily: titleFont
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(20),
+                                child:
+                                Person("assets/ocs/neve.png", "Neve Bangalore ", 1/4, 30, width),
+                              ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Column(
+                              children: [
+                                Text(
+                                  "FINANCE",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 45,
+                                    fontFamily: titleFont
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(20),
+                                  child:
+                                  Person("assets/ocs/allen.png", "Allen Goveas", 1/4, 30, width),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                              Text(
+                                "EVENTS",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 45,
+                                  fontFamily: titleFont
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(20),
+                                child:
+                                Person("assets/ocs/kriti.png", "Kriti farswal", 1/4, 30, width),
+                              ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20),
+                        child: Text(
+                          "REGISTRATIONS",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 45,
+                            fontFamily: titleFont
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(20),
@@ -344,14 +369,17 @@ class Secretariat extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Text(
-                        "COMMUNICATION",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 45,
-                          fontFamily: titleFont
+                      Padding(
+                        padding: const EdgeInsets.only(top:20),
+                        child: Text(
+                          "COMMUNICATION",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 45,
+                            fontFamily: titleFont
+                          ),
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
                       ),
                       Padding(
                         padding: const EdgeInsets.all(20),
@@ -364,13 +392,33 @@ class Secretariat extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Column(
-                            children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top:20.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Column(
+                              children: [
+                                Text(
+                                  "DELEGATE AFFAIRS",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 45,
+                                    fontFamily: titleFont
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(20),
+                                  child:
+                                  Person("assets/ocs/rishab.png", "Rishabh Kumar", 1/4, 30, width),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              children: [
                               Text(
-                                "DELEGATE AFFAIRS",
+                                "ACADEMICS",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 45,
@@ -381,31 +429,14 @@ class Secretariat extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(20),
                                 child:
-                                Person("assets/ocs/rishab.png", "Rishabh Kumar", 1/4, 30, width),
+                                Person("assets/ocs/ash.png", "Aashir Nair", 1/4, 30, width),
                               ),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                            Text(
-                              "ACADEMICS",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 45,
-                                fontFamily: titleFont
-                              ),
-                              textAlign: TextAlign.center,
+                              ],
                             ),
-                            Padding(
-                              padding: const EdgeInsets.all(20),
-                              child:
-                              Person("assets/ocs/ash.png", "Aashir Nair", 1/4, 30, width),
-                            ),
-                            ],
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                      
+                      footer(MediaQuery.of(context).orientation == Orientation.landscape)
                       ],
                   )
                 ),

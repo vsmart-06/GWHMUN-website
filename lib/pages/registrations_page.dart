@@ -18,6 +18,7 @@ class _RegistrationsState extends State<Registrations> {
   double? fontSize;
   late double cardWidth;
   late double cardHeight;
+  bool open = false;
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +31,42 @@ class _RegistrationsState extends State<Registrations> {
       fontSize = 30;
       cardWidth = MediaQuery.of(context).size.width/1.5;
       cardHeight = MediaQuery.of(context).size.height/4;
+    }
+    if (!open) {
+      return Scaffold(
+        appBar: getTopBar(context),
+        drawer: getDrawer(context),
+        backgroundColor: Colors.black,
+        body: Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text(
+                  "REGISTRATIONS",
+                  style: TextStyle(
+                      color: Colors.white, fontSize: 35, fontFamily: titleFont),
+                ),
+              ),
+              Text(
+                "Stay tuned! Registrations are opening soon!",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: titleFont,
+                  fontSize: 35,
+                ),
+                textAlign: TextAlign.center
+              ),
+              //Image(image: AssetImage("carousel/image_2.jpg")),
+              (MediaQuery.of(context).orientation == Orientation.landscape) ? Expanded(child: Column(mainAxisSize: MainAxisSize.max, mainAxisAlignment: MainAxisAlignment.end, children: [footer(MediaQuery.of(context).orientation==Orientation.landscape)])) : Container(),
+            ],
+          ),
+        ),
+      );
     }
     if (clickedLink == null) {
       return Scaffold(

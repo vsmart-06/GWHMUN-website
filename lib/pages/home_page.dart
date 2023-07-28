@@ -380,7 +380,7 @@ class _HomeState extends State<Home> {
                       Padding(
                         padding: EdgeInsets.all(20),
                         child: Text(
-                          "Pictures from past conferences",
+                          "Photo Gallery",
                           style: TextStyle(
                             color: Colors.white,
                             fontFamily: font,
@@ -710,7 +710,7 @@ class _HomeState extends State<Home> {
                       Padding(
                         padding: EdgeInsets.all(20),
                         child: Text(
-                          "Pictures from past conferences",
+                          "Photo Gallery",
                           style: TextStyle(
                             color: Colors.white,
                             fontFamily: font,
