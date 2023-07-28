@@ -339,7 +339,7 @@ class Secretariat extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(20),
                                 child:
-                                Person("assets/ocs/kriti.png", "Kriti farswal", 1/4, 30, width),
+                                Person("assets/ocs/kriti.png", "Kriti Farswal", 1/4, 30, width),
                               ),
                               ],
                             ),
@@ -429,7 +429,7 @@ class Secretariat extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(20),
                                 child:
-                                Person("assets/ocs/ash.png", "Aashir Nair", 1/4, 30, width),
+                                Person("assets/ocs/ash.png", "Ash Nair", 1/4, 30, width),
                               ),
                               ],
                             ),
@@ -626,7 +626,7 @@ class Secretariat extends StatelessWidget {
                                 textAlign: TextAlign.center,
                               ),
                       ),
-                      Person("assets/ocs/kriti.png", "Kriti farswal", size, fontsize, width),
+                      Person("assets/ocs/kriti.png", "Kriti Farswal", size, fontsize, width),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
@@ -668,6 +668,24 @@ class Secretariat extends StatelessWidget {
                         ),
                       ),
                       Person("assets/ocs/rishab.png", "Rishabh Kumar", size, fontsize, width),
+                      Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: 
+                        Text(
+                          "ACADEMICS",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 45,
+                            fontFamily: titleFont
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20),
+                        child:
+                        Person("assets/ocs/ash.png", "Ash Nair", 1/4, 30, width),
+                      ),
                       Padding(
                         padding: const EdgeInsets.all(10),
                         child: Text(
