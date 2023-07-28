@@ -18,6 +18,7 @@ void main() {
 
   runApp(
     MaterialApp(
+      title: "GWHMUN 2023",
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => Home(),
