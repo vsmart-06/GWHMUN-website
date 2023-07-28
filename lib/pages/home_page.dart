@@ -5,8 +5,6 @@ import "package:google_fonts/google_fonts.dart";
 import "package:website/widgets/header.dart";
 import "package:website/widgets/footer.dart";
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/services.dart' show rootBundle;
-import 'dart:convert';
 
 
 class Home extends StatefulWidget {
@@ -60,12 +58,6 @@ class _HomeState extends State<Home> {
     for (int i = 1; i <= 19; i++) {
       imageCarousel.add("image_$i.jpg");
     }
-    /* String manifestContent = await rootBundle.loadString('AssetManifest.json');
-    Map<String, dynamic> manifest = json.decode(manifestContent);
-    List<String> assetFiles = manifest.keys
-        .where((String key) => key.contains("assets/carousel"))
-        .toList();
-    imageCarousel = assetFiles; */
   }
 
   @override
