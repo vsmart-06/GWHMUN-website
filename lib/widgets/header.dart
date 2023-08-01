@@ -27,7 +27,7 @@ AppBar? getTopBar(BuildContext context) {
                       )
                     ),
                     child: Image(
-                      image: AssetImage("assets/gwhmun_logo.png"), 
+                      image: AssetImage("gwhmun_logo.png"), 
                       width: 55, 
                       height: 55
                     ), 
