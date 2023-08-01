@@ -20875,7 +20875,7 @@ try{s=A.an(a,p,t.w).w
 if(s.gcM(s)===B.W){s=t.h9
 s=A.o1(p,p,new A.bR(B.O,s),p,p,p,new A.bR(B.e,s),p,p,p,new A.bR(new A.Q(50,50),t.iL),p,p,p,p,new A.bR(new A.cl(A.AM(0),B.r),t.xx),p,p,p,p,p,p)
 r=t.D
-r=A.abi(A.a([A.lL(A.bz(A.a([A.fv(!1,A.ep(p,55,new A.d_("assets/gwhmun_logo.png",p,p),55),B.m,p,p,p,p,p,new A.a9Y(a),p,s),new A.k5("Home","/",p),new A.k5("Committees","/committees",p),new A.k5("Secretariat","/secretariat",p),new A.k5("Registrations","/registrations",p)],r),B.k,B.T,B.i))],r),!1,B.fn,p,p)
+r=A.abi(A.a([A.lL(A.bz(A.a([A.fv(!1,A.ep(p,55,new A.d_("gwhmun_logo.png",p,p),55),B.m,p,p,p,p,p,new A.a9Y(a),p,s),new A.k5("Home","/",p),new A.k5("Committees","/committees",p),new A.k5("Secretariat","/secretariat",p),new A.k5("Registrations","/registrations",p)],r),B.k,B.T,B.i))],r),!1,B.fn,p,p)
 return r}else{s=A.abi(p,!0,B.O,0,new A.ch(p,p,p,p,p,B.e,p,p))
 return s}}catch(q){s=A.abi(p,!0,B.O,0,new A.ch(p,p,p,p,p,B.e,p,p))
 return s}},
