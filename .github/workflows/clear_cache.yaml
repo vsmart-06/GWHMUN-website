@@ -16,8 +16,5 @@ jobs:
     - name: Clear Cache
       run: rm -rf _site
 
-    - name: Pull ghcr.io/actions/jekyll-build-pages:v1.0.8
-      uses: ghcr.io/actions/jekyll-build-pages:v1.0.8
-
-    - name: Build Website
-      run: actions/jekyll-build-pages@v1
+    - name: Run page build
+      uses: actions/pages-build-deployment
