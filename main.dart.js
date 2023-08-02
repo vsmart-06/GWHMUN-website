@@ -19403,26 +19403,6 @@ a6C:function a6C(a){this.a=a},
 a6B:function a6B(){},
 a6A:function a6A(a,b){this.a=a
 this.b=b},
-<<<<<<< Updated upstream
-a4b:function a4b(a){this.a=a},
-Oy:function Oy(){},
-A8(a){var s,r,q=null,p=A.afz().d
-try{if(a){s=t.D
-s=A.bD(q,A.bz(A.a([new A.P(B.yJ,A.ep(q,150,new A.d_("gwhmun_logo.png",q,q),150),q),A.aS(A.a([A.fv(!1,new A.P(new A.aC(0,20,0,0),A.a0("CONTACT US",A.a2(q,q,B.e,q,q,q,q,q,p,q,q,25,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q),q),B.m,q,q,q,q,q,q,q,q),A.bz(A.a([A.fv(!1,A.a0("SOCIALS",A.a2(q,q,B.e,q,q,q,q,q,p,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q),B.m,q,q,q,q,q,q,q,q),A.aid(A.ep(q,30,new A.kr(u.P),30),A.a0("INSTAGRAM",A.a2(q,q,B.e,q,q,q,q,q,p,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q),new A.a9F())],s),B.k,B.o,B.i),A.bz(A.a([A.fv(!1,A.a0("LOCATION",A.a2(q,q,B.e,q,q,q,q,q,p,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q),B.m,q,q,q,q,q,q,q,q),A.fv(!1,A.a0("Greenwood High School Sarjapur",A.a2(q,q,B.e,q,q,q,q,q,p,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q),B.m,q,q,q,q,q,new A.a9G(),q,q)],s),B.k,B.o,B.i),A.bz(A.a([A.fv(!1,A.a0("EMAILS",A.a2(q,q,B.e,q,q,q,q,q,p,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q),B.m,q,q,q,q,q,q,q,q),A.aS(A.a([A.fv(!1,A.a0("Secretary General- vansh052398@greenwoodhigh.edu.in",A.a2(q,q,B.e,q,q,q,q,q,p,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q),B.m,q,q,q,q,q,new A.a9H(),q,q),A.fv(!1,A.a0("Director General- rahul.p@greenwoodhigh.edu.in",A.a2(q,q,B.e,q,q,q,q,q,p,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q),B.m,q,q,q,q,q,new A.a9I(),q,q)],s),B.a2,B.o,B.i)],s),B.a2,B.o,B.i)],s),B.a2,B.o,B.i)],s),B.k,B.o,B.i),B.m,new A.H(4280097820),q,q,q,q,q,q,q,q,q)
-return new A.P(new A.aC(0,20,0,0),s,q)}else return new A.P(new A.aC(0,0,0,0),q,q)}catch(r){return new A.P(new A.aC(0,0,0,0),q,q)}},
-a9F:function a9F(){},
-a9G:function a9G(){},
-a9H:function a9H(){},
-a9I:function a9I(){},
-nD(a){var s,r,q,p=null
-try{s=A.an(a,p,t.w).w
-if(s.gcM(s)===B.W){s=t.h9
-s=A.o1(p,p,new A.bR(B.O,s),p,p,p,new A.bR(B.e,s),p,p,p,new A.bR(new A.Q(50,50),t.iL),p,p,p,p,new A.bR(new A.cl(A.AM(0),B.r),t.xx),p,p,p,p,p,p)
-r=t.D
-r=A.abi(A.a([A.lL(A.bz(A.a([A.fv(!1,A.ep(p,55,new A.d_("gwhmun_logo.png",p,p),55),B.m,p,p,p,p,p,new A.a9Y(a),p,s),new A.k5("Home","/",p),new A.k5("Committees","/committees",p),new A.k5("Secretariat","/secretariat",p),new A.k5("Registrations","/registrations",p)],r),B.k,B.T,B.i))],r),!1,B.fn,p,p)
-return r}else{s=A.abi(p,!0,B.O,0,new A.ch(p,p,p,p,p,B.e,p,p))
-return s}}catch(q){s=A.abi(p,!0,B.O,0,new A.ch(p,p,p,p,p,B.e,p,p))
-=======
 a6z:function a6z(a){this.a=a},
 Oo:function Oo(){},
 re(a){var s,r,q=null,p=A.ahO().d
@@ -19441,7 +19421,6 @@ r=t.p
 r=A.adJ(A.a([A.jV(A.bs(A.a([A.ev(!1,A.ej(p,55,new A.d1("gwhmun_logo.png",p,p),55),B.m,p,p,p,p,p,new A.aco(a),p,s),new A.iN("Home","/",p),new A.iN("Committees","/committees",p),new A.iN("Resources","/resources",p),new A.iN("Secretariat","/secretariat",p),new A.iN("Registrations","/registrations",p)],r),B.k,B.T,B.i))],r),!1,B.f7,p,p)
 return r}else{s=A.adJ(p,!0,B.N,0,new A.cd(p,p,p,p,p,B.e,p,p))
 return s}}catch(q){s=A.adJ(p,!0,B.N,0,new A.cd(p,p,p,p,p,B.e,p,p))
->>>>>>> Stashed changes
 return s}},
 lc(a){var s,r=4280097820,q=null,p=t.w,o=a.D(p).f
 p=a.D(p).f
