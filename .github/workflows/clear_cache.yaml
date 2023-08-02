@@ -15,6 +15,3 @@ jobs:
 
     - name: Clear Cache
       run: rm -rf _site
-
-    - name: Run page build
-      uses: actions/pages-build-deployment
