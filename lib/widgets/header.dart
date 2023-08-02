@@ -43,10 +43,10 @@ AppBar? getTopBar(BuildContext context) {
                     name: "Committees",
                     navPath: "/committees"
                   ),
-                  /* HeaderButton(
+                  HeaderButton(
                     name: "Resources",
                     navPath: "/resources"
-                  ), */
+                  ), 
                   HeaderButton(
                     name: "Secretariat",
                     navPath: "/secretariat"

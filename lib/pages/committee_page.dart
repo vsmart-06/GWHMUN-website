@@ -108,6 +108,16 @@ class _CommitteeState extends State<Committee> {
                               name: "SOCHUM"),
                           ],
                         ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            CommitteeButton(
+                            imagePath: 'committee_page/UNODC.png',
+                            websitePath: "/unodc",
+                            size: 0.35,
+                            name: "UNODC"),
+                          ],
+                        )
                       ],
                     ),
                   ),
@@ -162,11 +172,6 @@ class _CommitteeState extends State<Committee> {
                             size: 0.18,
                             name: "UNEP"),
                           CommitteeButton(
-                            imagePath: 'committee_page/DISEC.png',
-                            websitePath: "/disec",
-                            size: 0.18,
-                            name: "DISEC"),
-                          CommitteeButton(
                             imagePath: 'committee_page/UNSC.png',
                             websitePath: "/unsc",
                             size: 0.18,
@@ -192,11 +197,26 @@ class _CommitteeState extends State<Committee> {
                             websitePath: "/jcc",
                             size: 0.18,
                             name: "JCC"),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CommitteeButton(
+                            imagePath: 'committee_page/DISEC.png',
+                            websitePath: "/disec",
+                            size: 0.18,
+                            name: "DISEC"),
                           CommitteeButton(
                             imagePath: 'committee_page/SOCHUM.png',
                             websitePath: "/sochum",
                             size: 0.18,
                             name: "SOCHUM"),
+                          CommitteeButton(
+                            imagePath: 'committee_page/UNODC.png',
+                            websitePath: "/unodc",
+                            size: 0.18,
+                            name: "UNODC"),
                         ],
                       ),
                       Padding(padding: EdgeInsets.only(top: 20)),

@@ -54,8 +54,8 @@ class _ResourcesButtonState extends State<ResourcesButton> {
                 Image.asset(
                   widget.imagePath,
                   fit: BoxFit.cover,
-                  width: 2.4*MediaQuery.of(context).size.width*0.25,
-                  height: MediaQuery.of(context).size.width*0.25,
+                  width: 2.4*MediaQuery.of(context).size.width*0.2,
+                  height: MediaQuery.of(context).size.width*0.2,
                 ),
                 Text(
                   widget.name,
