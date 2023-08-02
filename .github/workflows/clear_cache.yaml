@@ -1,4 +1,4 @@
-name: Clear Cache and Build
+name: Clear Cache
 
 on:
   push:
@@ -17,4 +17,4 @@ jobs:
       run: rm -rf _site
 
     - name: Build Website
-      run: jekyll build
+      run: actions/jekyll-build-pages@v1
