@@ -1,0 +1,20 @@
+name: Clear Cache and Build
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Clear Cache
+      run: rm -rf _site
+
+    - name: Build Website
+      run: jekyll build
