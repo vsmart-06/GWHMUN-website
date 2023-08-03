@@ -135,7 +135,7 @@ Drawer getDrawer(BuildContext context){
               Navigator.popAndPushNamed(context, "/committees");
             },
           ),   
-          /* ListTile(
+          ListTile(
             title: Text(
               "Resources",
               style: TextStyle(
@@ -147,7 +147,7 @@ Drawer getDrawer(BuildContext context){
             onTap: () {
               Navigator.popAndPushNamed(context, "/resources");
             },
-          ), */
+          ), 
           ListTile(
             title: Text(
               "Secretariat",

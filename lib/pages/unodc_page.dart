@@ -13,7 +13,7 @@ class _UNODCState extends State<UNODC> {
   Widget build(BuildContext context) {
     return Committee(
       title: "United Nation Office on \nDrugs and Crime (UNODC)",
-      agenda: "Agenda: Combatting the illicit trafficking of narcotics and soaring crime rates.",
+      agenda: "Agenda: Combatting the illicit trafficking of narcotics\n and soaring crime rates in Latin America.",
       logoLink: "committee_page/UNODC.png",
       bgLink: "https://drive.google.com/file/d/1jG442BQskB8PictmgwO6T9pjIIkbo30F/view?usp=sharing",
       executiveBoard: [["Ishaan Ghosh","Head chair","EB/UNODC1.png","\"A sincere diplomat is like dry water or wooden iron\" -Joseph Stalin\n\nIshaan's exceptional crisis delegate skills are attributed to his quick thinking, sharp wit, and attention to detail. He has a knack for generating chaos in his committees, whether it be as a delegate or an Executive Board member, by donning a pair of sunglasses and employing a dramatic flair. Despite his occasionally serious demeanor during committee sessions, he maintains an amiable personality and shows off his impressive dance moves outside of committee. Ishaan's humble personality allows him to create an environment for delegates to develop their skills and bring new ideas to the table. He has received numerous accolades from reputable Model UN conferences across the country, demonstrating his expertise in Model UN conferences as well as speed skating and long-distance cycling. He is known to make an attempt at being humorous, although he may not always succeed, and has openly admitted to not having a talent for making jokes."],
