@@ -63897,7 +63897,7 @@ A.Mp.prototype={
 I(a){var s,r=null,q=A.ld(a),p=A.lc(a),o=A.X("RESOURCES",A.Y(r,r,B.e,r,r,r,r,r,this.f,r,r,35,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r),n=this.w,m=t.w,l=a.D(m).f
 m=a.D(m).f
 s=t.p
-return A.kx(q,B.l,A.iD(A.aL(A.a([new A.O(B.w,o,r),A.jV(A.kt(A.bx(r,A.mY(A.aL(A.a([new A.pp("assets/background_guides.jpg","https://drive.google.com/drive/folders/1RwZ3e7neBJbpix2aGPrwCbNfZbmhIeFA?usp=sharing","Country Matrix",r),new A.pp("rules_of_procedure.jpg","https://drive.google.com/file/d/1ZApGHbKFrlEBkLApeYcNoUlUdEM-6vmY/view?usp=drive_link","Rules Of Procedure",r),A.re(m.gcq(m)===B.Y)],s),B.k,B.a1,B.i),n),B.m,r,r,r,r,r,r,r,r,r,l.a.a),n,B.ad,r,r,A.f1(),B.r,r,r,10,new A.M(4281413939),!0,B.al,!0))],s),B.k,B.o,B.i),r,r),p,!1)}}
+return A.kx(q,B.l,A.iD(A.aL(A.a([new A.O(B.w,o,r),A.jV(A.kt(A.bx(r,A.mY(A.aL(A.a([new A.pp("background_guides.jpg","https://drive.google.com/drive/folders/1RwZ3e7neBJbpix2aGPrwCbNfZbmhIeFA?usp=sharing","Country Matrix",r),new A.pp("rules_of_procedure.jpg","https://drive.google.com/file/d/1ZApGHbKFrlEBkLApeYcNoUlUdEM-6vmY/view?usp=drive_link","Rules Of Procedure",r),A.re(m.gcq(m)===B.Y)],s),B.k,B.a1,B.i),n),B.m,r,r,r,r,r,r,r,r,r,l.a.a),n,B.ad,r,r,A.f1(),B.r,r,r,10,new A.M(4281413939),!0,B.al,!0))],s),B.k,B.o,B.i),r,r),p,!1)}}
 A.pA.prototype={
 aS(a,b,c,d,e){var s=null,r=e*c
 return A.bx(s,A.aL(A.a([new A.O(B.w,A.ej(s,s,new A.kk(a),r),s),A.X(b,A.Y(s,s,A.aF(255,103,200,171),s,s,s,s,s,this.d,s,s,d,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],t.p),B.k,B.o,B.i),B.m,s,s,s,s,s,s,s,s,s,r)},
