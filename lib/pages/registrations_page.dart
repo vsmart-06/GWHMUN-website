@@ -74,8 +74,12 @@ class _RegistrationsState extends State<Registrations> {
         appBar: getTopBar(context),
         drawer: getDrawer(context),
         backgroundColor: Colors.black,
-        body: Center(
+        body: Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
           child: Column(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.all(10.0),
@@ -97,6 +101,7 @@ class _RegistrationsState extends State<Registrations> {
                     child: SingleChildScrollView(
                       controller: scroll[0],
                       child: Column(
+                        mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Padding(
@@ -194,18 +199,19 @@ class _RegistrationsState extends State<Registrations> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(20.0),
                                     child: Text(
-                                      "Delegation",
+                                      "School Delegation",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontFamily: titleFont,
                                         fontSize: fontSize,
                                       ),
+                                      textAlign: TextAlign.center,
                                     ),
                                   ),
                                   onPressed: () {
                                     setState(
                                       () {
-                                        clickedLink = "Delegation";
+                                        clickedLink = "School Delegation";
                                       }
                                     );
                                   },
@@ -233,8 +239,12 @@ class _RegistrationsState extends State<Registrations> {
         appBar: getTopBar(context),
         drawer: getDrawer(context),
         backgroundColor: Colors.black,
-        body: Center(
+        body: Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
           child: Column(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.all(10.0),
@@ -270,7 +280,7 @@ class _RegistrationsState extends State<Registrations> {
                                     color: Colors.white
                                   )
                                 ),
-                                color: cardColors[0],
+                                color: linkColors[0],
                                 child: TextButton(
                                   child: Padding(
                                     padding: const EdgeInsets.all(20.0),
@@ -286,7 +296,7 @@ class _RegistrationsState extends State<Registrations> {
                                   onPressed: () {
                                     if (clickedLink == "Internals") {window.open("https://paytm.me/gw-fjKj", "Net Banking Internals");}
                                     else if (clickedLink == "Externals") {window.open("https://paytm.me/6s-r4ed", "Net Banking Externals");}
-                                    else if (clickedLink == "Delegation") {window.open("https://paytm.me/iH1-Vhw", "Net Banking Delegation");}
+                                    else if (clickedLink == "School Delegation") {window.open("https://paytm.me/iH1-Vhw", "Net Banking School Delegation");}
                                   },
                                   onHover: (value) {
                                     value ? setState(() {linkColors[0] = Color(0xFF313133);}) : setState(() {linkColors[0] = Colors.black;});
@@ -307,7 +317,7 @@ class _RegistrationsState extends State<Registrations> {
                                     color: Colors.white
                                   )
                                 ),
-                                color: cardColors[2],
+                                color: linkColors[1],
                                 child: TextButton(
                                   child: Padding(
                                     padding: const EdgeInsets.all(20.0),
@@ -323,7 +333,7 @@ class _RegistrationsState extends State<Registrations> {
                                   onPressed: () {
                                     if (clickedLink == "Internals") {window.open("https://paytm.me/I-f3wHu", "Wallet Internals");}
                                     else if (clickedLink == "Externals") {window.open("https://paytm.me/Fsj-GlT", "Wallet Externals");}
-                                    else if (clickedLink == "Delegation") {window.open("https://paytm.me/fX-192m", "Wallet Delegation");}
+                                    else if (clickedLink == "School Delegation") {window.open("https://paytm.me/fX-192m", "Wallet School Delegation");}
                                   },
                                   onHover: (value) {
                                     value ? setState(() {linkColors[1] = Color(0xFF313133);}) : setState(() {linkColors[1] = Colors.black;});
