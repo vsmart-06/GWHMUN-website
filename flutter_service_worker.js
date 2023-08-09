@@ -1,13 +1,13 @@
 'use strict';
 const MANIFEST = 'flutter-app-manifest';
-const TEMP = 'flutter-temp-cache-1.6';
-const CACHE_NAME = 'flutter-app-cache-1.6';
+const TEMP = 'flutter-temp-cache';
+const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "980547175e325fe622a3362b84d55b6a",
 "favicon.ico": "24567658131497a876098015b410d20c",
-"index.html": "f0bcaddf2a418eaa81139f7239e2ca65",
-"/": "f0bcaddf2a418eaa81139f7239e2ca65",
-"main.dart.js": "f62d1bc5cae8fcd8a465d6201c41bc0b",
+"index.html": "47fce51d70b3ef55856bb9d222cd5200",
+"/": "47fce51d70b3ef55856bb9d222cd5200",
+"main.dart.js": "d079f70f5ce5e539c53c4fd5a9f6bf74",
 "flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
