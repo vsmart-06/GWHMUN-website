@@ -63819,7 +63819,7 @@ A.M0.prototype={
 I(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=null,c="REGISTRATIONS",b=4281413939,a=t.w,a0=a1.D(a).f
 if(a0.gco(a0)===B.Z){e.x=50
 e.y=a1.D(a).f.a.a/4
-e.z=a1.D(a).f.a.b/4}else{e.x=30
+e.z=a1.D(a).f.a.b/2.5}else{e.x=30
 e.y=a1.D(a).f.a.a/1.5
 e.z=a1.D(a).f.a.b/4}a0=t.p
 s=e.d
@@ -63908,8 +63908,8 @@ $S:0}
 A.a9u.prototype={
 $0(){var s=this.a.w
 if(s==="Internals")B.aa.dC(window,"https://paytm.me/gw-fjKj","Net Banking Internals")
-else if(s==="Externals")B.aa.dC(window,"https://paytm.me/6s-r4ed","Net Banking Externals")
-else if(s==="School Delegation")B.aa.dC(window,"https://paytm.me/iH1-Vhw","Net Banking School Delegation")},
+else if(s==="Externals")B.aa.dC(window,"https://paytm.me/DA-X0g7","Net Banking Externals")
+else if(s==="School Delegation")B.aa.dC(window,"https://paytm.me/DtuZ-ZQ","Net Banking School Delegation")},
 $S:0}
 A.a9t.prototype={
 $1(a){var s=this.a
