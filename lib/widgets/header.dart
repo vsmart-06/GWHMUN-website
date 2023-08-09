@@ -27,7 +27,7 @@ AppBar? getTopBar(BuildContext context) {
                       )
                     ),
                     child: Image(
-                      image: AssetImage("assets/gwhmun_logo.png"), 
+                      image: AssetImage("gwhmun_logo.png"), 
                       width: 55, 
                       height: 55
                     ), 
@@ -43,10 +43,10 @@ AppBar? getTopBar(BuildContext context) {
                     name: "Committees",
                     navPath: "/committees"
                   ),
-                  /* HeaderButton(
+                  HeaderButton(
                     name: "Resources",
                     navPath: "/resources"
-                  ), */
+                  ), 
                   HeaderButton(
                     name: "Secretariat",
                     navPath: "/secretariat"
@@ -135,7 +135,7 @@ Drawer getDrawer(BuildContext context){
               Navigator.popAndPushNamed(context, "/committees");
             },
           ),   
-          /* ListTile(
+          ListTile(
             title: Text(
               "Resources",
               style: TextStyle(
@@ -147,7 +147,7 @@ Drawer getDrawer(BuildContext context){
             onTap: () {
               Navigator.popAndPushNamed(context, "/resources");
             },
-          ), */
+          ), 
           ListTile(
             title: Text(
               "Secretariat",

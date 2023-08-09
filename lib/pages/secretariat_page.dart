@@ -684,7 +684,7 @@ class Secretariat extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child:
-                        Person("assets/ocs/ash.png", "Ash Nair", 1/4, 30, width),
+                        Person("assets/ocs/ash.png", "Ash Nair", size, fontsize, width),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(10),

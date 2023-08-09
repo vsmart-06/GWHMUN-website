@@ -15,7 +15,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  Duration time = DateTime(2023, 8, 20, 8, 50).difference(DateTime.now());
+  Duration time = DateTime(2023, 8, 25, 8, 50).difference(DateTime.now());
   Timer? timer;
   int? days;
   int? hours;

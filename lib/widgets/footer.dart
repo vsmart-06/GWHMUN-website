@@ -16,7 +16,7 @@ Widget footer(bool landscape) {
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
-            child: Image(image: AssetImage("assets/gwhmun_logo.png"), width: 150, height: 150),
+            child: Image(image: AssetImage("gwhmun_logo.png"), width: 150, height: 150),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,

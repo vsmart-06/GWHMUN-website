@@ -47,22 +47,22 @@ class _ResourcesState extends State<Resources> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        ResourcesButton(
-                          imagePath: 'assets/code_of_conduct.jpg',
+                        /*ResourcesButton(
+                          imagePath: 'code_of_conduct.jpg',
                           websitePath:
                               "https://docs.google.com/document/d/1MSTvjv-TC2RxX49Iq090i7dr5wusqyjWmXL8sTFZis8/edit?usp=drivesdk",
                           name: "Code of Conduct",
-                        ),
+                        ),*/
                         ResourcesButton(
-                          imagePath: 'assets/background_guides.jpg',
+                          imagePath: 'background_guides.jpg',
                           websitePath:
-                              "https://drive.google.com/drive/folders/1PvWVxG5gLpb0p990iga8NNrM7OZJnFxJ?usp=sharing",
-                          name: "Background Guides",
+                              "https://drive.google.com/drive/folders/1RwZ3e7neBJbpix2aGPrwCbNfZbmhIeFA?usp=sharing",
+                          name: "Country Matrix",
                         ),
                         ResourcesButton(
                           imagePath: "rules_of_procedure.jpg",
                           websitePath:
-                              "https://drive.google.com/file/d/1xATgIXdRyIn1MgnJ4WkdKt1XRMP_l9Vi/view?usp=sharing",
+                              "https://drive.google.com/file/d/1ZApGHbKFrlEBkLApeYcNoUlUdEM-6vmY/view?usp=drive_link",
                           name: "Rules Of Procedure",
                         ),
                         footer(MediaQuery.of(context).orientation==Orientation.landscape),
