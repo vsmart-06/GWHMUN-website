@@ -13,12 +13,13 @@ class Registrations extends StatefulWidget {
 class _RegistrationsState extends State<Registrations> {
   String? titleFont = GoogleFonts.ebGaramond().fontFamily;
   List<Color> cardColors = [Colors.black, Colors.black, Colors.black];
-  ScrollController scroll = ScrollController();
+  List<Color> linkColors = [Colors.black, Colors.black];
+  List<ScrollController> scroll = [ScrollController(), ScrollController()];
   String? clickedLink;
   double? fontSize;
   late double cardWidth;
   late double cardHeight;
-  bool open = false;
+  bool open = true;
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +91,7 @@ class _RegistrationsState extends State<Registrations> {
                   thickness: 10,
                   thumbVisibility: true,
                   trackVisibility: true,
-                  controller: scroll,
+                  controller: scroll[0],
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     child: SingleChildScrollView(
@@ -124,12 +125,11 @@ class _RegistrationsState extends State<Registrations> {
                                     ),
                                   ),
                                   onPressed: () {
-                                    /* setState(
+                                    setState(
                                       () {
-                                        clickedLink = "https://forms.gle/NgbqfwUfYFatWRCfA";
+                                        clickedLink = "Internals";
                                       }
-                                    ); */
-                                    window.open("https://forms.gle/NgbqfwUfYFatWRCfA", "Internals");
+                                    );
                                   },
                                   onHover: (value) {
                                     value ? setState(() {cardColors[0] = Color(0xFF313133);}) : setState(() {cardColors[0] = Colors.black;});
@@ -138,7 +138,7 @@ class _RegistrationsState extends State<Registrations> {
                               ),
                             ),
                           ),
-                          Padding(
+                          /* Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
                               width: cardWidth,
@@ -164,12 +164,11 @@ class _RegistrationsState extends State<Registrations> {
                                     ),
                                   ),
                                   onPressed: () {
-                                    /* setState(
+                                    setState(
                                       () {
-                                        clickedLink = "https://forms.gle/9q4M4pGnKbTGWcbp6";
+                                        clickedLink = "Externals";
                                       }
-                                    ); */
-                                    window.open("https://forms.gle/9q4M4pGnKbTGWcbp6", "Externals");
+                                    );
                                   },
                                   onHover: (value) {
                                     value ? setState(() {cardColors[1] = Color(0xFF313133);}) : setState(() {cardColors[1] = Colors.black;});
@@ -177,7 +176,7 @@ class _RegistrationsState extends State<Registrations> {
                                 )
                               ),
                             ),
-                          ),
+                          ), */
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
@@ -204,12 +203,11 @@ class _RegistrationsState extends State<Registrations> {
                                     ),
                                   ),
                                   onPressed: () {
-                                    /* setState(
+                                    setState(
                                       () {
-                                        clickedLink = "https://forms.gle/kVFvQY3TycQzTE4e6";
+                                        clickedLink = "Delegation";
                                       }
-                                    ); */
-                                    window.open("https://forms.gle/kVFvQY3TycQzTE4e6", "Delegation");
+                                    );
                                   },
                                   onHover: (value) {
                                     value ? setState(() {cardColors[2] = Color(0xFF313133);}) : setState(() {cardColors[2] = Colors.black;});
@@ -231,7 +229,121 @@ class _RegistrationsState extends State<Registrations> {
       );
     }
     else {
-      return FormPage(link: clickedLink!);
+      return Scaffold(
+        appBar: getTopBar(context),
+        drawer: getDrawer(context),
+        backgroundColor: Colors.black,
+        body: Center(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text(
+                  "REGISTRATIONS",
+                  style: TextStyle(
+                      color: Colors.white, fontSize: 35, fontFamily: titleFont),
+                ),
+              ),
+              Expanded(
+                child: RawScrollbar(
+                  thumbColor: Color(0xFF313133),
+                  thickness: 10,
+                  thumbVisibility: true,
+                  trackVisibility: true,
+                  controller: scroll,
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    child: SingleChildScrollView(
+                      controller: scroll[1],
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Container(
+                              width: cardWidth,
+                              height: cardHeight,
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                  side: BorderSide(
+                                    color: Colors.white
+                                  )
+                                ),
+                                color: cardColors[0],
+                                child: TextButton(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(20.0),
+                                    child: Text(
+                                      "Net Banking",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: titleFont,
+                                        fontSize: fontSize,
+                                      ),
+                                    ),
+                                  ),
+                                  onPressed: () {
+                                    if (clickedLink == "Internals") {window.open("https://paytm.me/gw-fjKj", "Net Banking Internals");}
+                                    else if (clickedLink == "Externals") {window.open("https://paytm.me/6s-r4ed", "Net Banking Externals");}
+                                    else if (clickedLink == "Delegation") {window.open("https://paytm.me/iH1-Vhw", "Net Banking Delegation");}
+                                  },
+                                  onHover: (value) {
+                                    value ? setState(() {linkColors[0] = Color(0xFF313133);}) : setState(() {linkColors[0] = Colors.black;});
+                                  },
+                                )
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Container(
+                              width: cardWidth,
+                              height: cardHeight,
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                  side: BorderSide(
+                                    color: Colors.white
+                                  )
+                                ),
+                                color: cardColors[2],
+                                child: TextButton(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(20.0),
+                                    child: Text(
+                                      "CC/DC/UPI/Wallet",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: titleFont,
+                                        fontSize: fontSize,
+                                      ),
+                                    ),
+                                  ),
+                                  onPressed: () {
+                                    if (clickedLink == "Internals") {window.open("https://paytm.me/I-f3wHu", "Wallet Internals");}
+                                    else if (clickedLink == "Externals") {window.open("https://paytm.me/Fsj-GlT", "Wallet Externals");}
+                                    else if (clickedLink == "Delegation") {window.open("https://paytm.me/fX-192m", "Wallet Delegation");}
+                                  },
+                                  onHover: (value) {
+                                    value ? setState(() {linkColors[1] = Color(0xFF313133);}) : setState(() {linkColors[1] = Colors.black;});
+                                  },
+                                )
+                              ),
+                            ),
+                          ),
+                          footer(MediaQuery.of(context).orientation==Orientation.landscape),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+      //return FormPage(link: clickedLink!);
     }
   }
 }

@@ -13,7 +13,7 @@ class _UNSCState extends State<UNSC> {
   Widget build(BuildContext context) {
     return Committee(
       title: "United Nation Security Council (UNSC)",
-      agenda: "Agenda: The multitude of escalations in the hostile situation of Iraq \n[Freeze Date: February 27, 2006]",
+      agenda: "AAddressing the rapid escalation of tensions in Afghanistan\n[Freeze Date: October 6, 2001]",
       logoLink: "committee_page/UNSC.png",
       bgLink: "https://drive.google.com/file/d/1jG442BQskB8PictmgwO6T9pjIIkbo30F/view?usp=sharing",
       executiveBoard: [["Aarav Jhunjhunwala","Head chair","EB/UNSC1.png","Aarav Jhunjhunwala, the Chairperson of the UNSC, with extensive knowledge in History and Politics, has made his mark on the Bangalore circuit. Having placed at every conference he's attended, with notable names such as SMUN, TISBMUN, CLMUN, and CoMUN, as well as serving as an Assistant Director at HMUN India 2022. Aarav believes the MUN circuit is a massive part of him. He has been labeled as an AIPPM delegate and chair due to his passion for Indian Polity. As a proud member of the Old MUNks, Aarav is dominating, yet considerate, some even consider him to be one of the nicest and most lenient chairs in Bangalore, but that\’s only until you step into a committee with him."],
