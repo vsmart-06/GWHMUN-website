@@ -63925,8 +63925,8 @@ $S:0}
 A.a9w.prototype={
 $0(){var s=this.a.w
 if(s==="Internals")B.aa.dC(window,"https://paytm.me/I-f3wHu","Wallet Internals")
-else if(s==="Externals")B.aa.dC(window,"https://paytm.me/Fsj-GlT","Wallet Externals")
-else if(s==="School Delegation")B.aa.dC(window,"https://paytm.me/fX-192m","Wallet School Delegation")},
+else if(s==="Externals")B.aa.dC(window,"https://paytm.me/fX-192m","Wallet Externals")
+else if(s==="School Delegation")B.aa.dC(window,"https://paytm.me/Fsj-GlT","Wallet School Delegation")},
 $S:0}
 A.a9v.prototype={
 $1(a){var s=this.a
