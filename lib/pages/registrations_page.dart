@@ -95,7 +95,7 @@ class _RegistrationsState extends State<Registrations> {
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     child: SingleChildScrollView(
-                      controller: scroll,
+                      controller: scroll[0],
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -250,7 +250,7 @@ class _RegistrationsState extends State<Registrations> {
                   thickness: 10,
                   thumbVisibility: true,
                   trackVisibility: true,
-                  controller: scroll,
+                  controller: scroll[1],
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     child: SingleChildScrollView(
