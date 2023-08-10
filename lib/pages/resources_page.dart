@@ -56,7 +56,7 @@ class _ResourcesState extends State<Resources> {
                         ResourcesButton(
                           imagePath: 'background_guides.jpg',
                           websitePath:
-                              "https://drive.google.com/drive/folders/1RwZ3e7neBJbpix2aGPrwCbNfZbmhIeFA?usp=sharing",
+                              "https://docs.google.com/spreadsheets/d/1KP7v7Cq1djVBhAiXCL2chtdkW1-CCI44Iiwv2C54jSA/edit?usp=sharing",
                           name: "Country Matrix",
                         ),
                         ResourcesButton(
