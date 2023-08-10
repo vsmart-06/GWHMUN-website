@@ -107,7 +107,7 @@ class _RegistrationsState extends State<Registrations> {
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          /* Padding(
+                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Text(
                               "Please register early as the link will be closed as soon as required numbers are reached for each category",
@@ -118,7 +118,7 @@ class _RegistrationsState extends State<Registrations> {
                               ),
                               textAlign: TextAlign.center,
                             ),
-                          ), */
+                          ), 
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
@@ -148,7 +148,7 @@ class _RegistrationsState extends State<Registrations> {
                                           ),
                                           textAlign: TextAlign.center,
                                         ),
-                                        /* Text(
+                                         Text(
                                           "Registration dates: 10th to 16th August, 2023",
                                           style: TextStyle(
                                             color: Colors.white,
@@ -157,7 +157,7 @@ class _RegistrationsState extends State<Registrations> {
                                             fontStyle: FontStyle.italic
                                           ),
                                           textAlign: TextAlign.center,
-                                        ), */
+                                        ), 
                                       ],
                                     ),
                                   ),
@@ -204,7 +204,7 @@ class _RegistrationsState extends State<Registrations> {
                                           ),
                                           textAlign: TextAlign.center,
                                         ),
-                                        /* Text(
+                                        Text(
                                           "Registration dates: 10th to 16th August, 2023",
                                           style: TextStyle(
                                             color: Colors.white,
@@ -213,7 +213,7 @@ class _RegistrationsState extends State<Registrations> {
                                             fontStyle: FontStyle.italic
                                           ),
                                           textAlign: TextAlign.center,
-                                        ), */
+                                        ), 
                                       ],
                                     ),
                                   ),
