@@ -17,6 +17,7 @@ class _RegistrationsState extends State<Registrations> {
   List<ScrollController> scroll = [ScrollController(), ScrollController()];
   String? clickedLink;
   double? fontSize;
+  double? subFontSize;
   late double cardWidth;
   late double cardHeight;
   bool open = true;
@@ -25,13 +26,15 @@ class _RegistrationsState extends State<Registrations> {
   Widget build(BuildContext context) {
     if (MediaQuery.of(context).orientation == Orientation.landscape) {
       fontSize = 50;
-      cardWidth = MediaQuery.of(context).size.width/4;
-      cardHeight = MediaQuery.of(context).size.height/4;
+      subFontSize = 30;
+      cardWidth = MediaQuery.of(context).size.width/2;
+      cardHeight = MediaQuery.of(context).size.height/2;
     }
     else {
       fontSize = 30;
+      subFontSize = 15;
       cardWidth = MediaQuery.of(context).size.width/1.5;
-      cardHeight = MediaQuery.of(context).size.height/4;
+      cardHeight = MediaQuery.of(context).size.height/3;
     }
     if (!open) {
       return Scaffold(
@@ -104,6 +107,18 @@ class _RegistrationsState extends State<Registrations> {
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          /* Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              "Please register early as the link will be closed as soon as required numbers are reached for each category",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: titleFont,
+                                fontSize: 35,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ), */
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
@@ -120,13 +135,30 @@ class _RegistrationsState extends State<Registrations> {
                                 child: TextButton(
                                   child: Padding(
                                     padding: const EdgeInsets.all(20.0),
-                                    child: Text(
-                                      "Internals",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: titleFont,
-                                        fontSize: fontSize,
-                                      ),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "Greenwood High Delegates Only",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontFamily: titleFont,
+                                            fontSize: fontSize,
+                                          ),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                        /* Text(
+                                          "Registration dates: 10th to 16th August, 2023",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontFamily: titleFont,
+                                            fontSize: subFontSize,
+                                            fontStyle: FontStyle.italic
+                                          ),
+                                          textAlign: TextAlign.center,
+                                        ), */
+                                      ],
                                     ),
                                   ),
                                   onPressed: () {
@@ -143,7 +175,7 @@ class _RegistrationsState extends State<Registrations> {
                               ),
                             ),
                           ),
-                          /* Padding(
+                          Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
                               width: cardWidth,
@@ -159,19 +191,36 @@ class _RegistrationsState extends State<Registrations> {
                                 child: TextButton(
                                   child: Padding(
                                     padding: const EdgeInsets.all(20.0),
-                                    child: Text(
-                                      "Externals",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: titleFont,
-                                        fontSize: fontSize,
-                                      ),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "Official School Delegations",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontFamily: titleFont,
+                                            fontSize: fontSize,
+                                          ),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                        /* Text(
+                                          "Registration dates: 10th to 16th August, 2023",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontFamily: titleFont,
+                                            fontSize: subFontSize,
+                                            fontStyle: FontStyle.italic
+                                          ),
+                                          textAlign: TextAlign.center,
+                                        ), */
+                                      ],
                                     ),
                                   ),
                                   onPressed: () {
                                     setState(
                                       () {
-                                        clickedLink = "Externals";
+                                        clickedLink = "School Delegation";
                                       }
                                     );
                                   },
@@ -181,7 +230,7 @@ class _RegistrationsState extends State<Registrations> {
                                 )
                               ),
                             ),
-                          ), */
+                          ),
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
@@ -198,23 +247,39 @@ class _RegistrationsState extends State<Registrations> {
                                 child: TextButton(
                                   child: Padding(
                                     padding: const EdgeInsets.all(20.0),
-                                    child: Text(
-                                      "School Delegation",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: titleFont,
-                                        fontSize: fontSize,
-                                      ),
-                                      textAlign: TextAlign.center,
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "Non-School Affiliated Delegates",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontFamily: titleFont,
+                                            fontSize: fontSize,
+                                          ),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                        Text(
+                                          "Registration link will be provided on the 17th of August, 2023",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontFamily: titleFont,
+                                            fontSize: subFontSize,
+                                            fontStyle: FontStyle.italic
+                                          ),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      ],
                                     ),
                                   ),
-                                  onPressed: () {
+                                  onPressed: null /* () {
                                     setState(
                                       () {
-                                        clickedLink = "School Delegation";
+                                        clickedLink = "Externals";
                                       }
                                     );
-                                  },
+                                  } */,
                                   onHover: (value) {
                                     value ? setState(() {cardColors[2] = Color(0xFF313133);}) : setState(() {cardColors[2] = Colors.black;});
                                   },
