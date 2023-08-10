@@ -63819,7 +63819,7 @@ A.M0.prototype={
 I(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=null,c="REGISTRATIONS",b=4281413939,a=t.w,a0=a1.D(a).f
 if(a0.gco(a0)===B.Z){e.x=50
 e.y=a1.D(a).f.a.a/4
-e.z=a1.D(a).f.a.b/2.5}else{e.x=30
+e.z=a1.D(a).f.a.b/4}else{e.x=30
 e.y=a1.D(a).f.a.a/1.5
 e.z=a1.D(a).f.a.b/4}a0=t.p
 s=e.d
@@ -63908,8 +63908,8 @@ $S:0}
 A.a9u.prototype={
 $0(){var s=this.a.w
 if(s==="Internals")B.aa.dC(window,"https://paytm.me/gw-fjKj","Net Banking Internals")
-else if(s==="Externals")B.aa.dC(window,"https://paytm.me/DA-X0g7","Net Banking Externals")
-else if(s==="School Delegation")B.aa.dC(window,"https://paytm.me/DtuZ-ZQ","Net Banking School Delegation")},
+else if(s==="Externals")B.aa.dC(window,"https://paytm.me/6s-r4ed","Net Banking Externals")
+else if(s==="School Delegation")B.aa.dC(window,"https://paytm.me/iH1-Vhw","Net Banking School Delegation")},
 $S:0}
 A.a9t.prototype={
 $1(a){var s=this.a
@@ -63925,8 +63925,8 @@ $S:0}
 A.a9w.prototype={
 $0(){var s=this.a.w
 if(s==="Internals")B.aa.dC(window,"https://paytm.me/I-f3wHu","Wallet Internals")
-else if(s==="Externals")B.aa.dC(window,"https://paytm.me/fX-192m","Wallet Externals")
-else if(s==="School Delegation")B.aa.dC(window,"https://paytm.me/Fsj-GlT","Wallet School Delegation")},
+else if(s==="Externals")B.aa.dC(window,"https://paytm.me/Fsj-GlT","Wallet Externals")
+else if(s==="School Delegation")B.aa.dC(window,"https://paytm.me/fX-192m","Wallet School Delegation")},
 $S:0}
 A.a9v.prototype={
 $1(a){var s=this.a
@@ -63946,7 +63946,7 @@ A.Mo.prototype={
 I(a){var s,r=null,q=A.jH(a),p=A.jG(a),o=A.U("RESOURCES",A.Y(r,r,B.e,r,r,r,r,r,this.f,r,r,35,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r),n=this.w,m=t.w,l=a.D(m).f
 m=a.D(m).f
 s=t.p
-return A.j6(q,B.j,A.iF(A.aJ(A.a([new A.M(B.t,o,r),A.iM(A.i4(A.bl(r,A.jb(A.aJ(A.a([new A.pp("background_guides.jpg","https://drive.google.com/drive/folders/1RwZ3e7neBJbpix2aGPrwCbNfZbmhIeFA?usp=sharing","Country Matrix",r),new A.pp("rules_of_procedure.jpg","https://drive.google.com/file/d/1ZApGHbKFrlEBkLApeYcNoUlUdEM-6vmY/view?usp=drive_link","Rules Of Procedure",r),A.nL(m.gco(m)===B.Z)],s),B.m,B.T,B.i),n),B.k,r,r,r,r,r,r,r,r,r,l.a.a),n,B.a7,r,r,A.ec(),B.q,r,r,10,new A.L(4281413939),!0,B.ab,!0))],s),B.m,B.o,B.i),r,r),p,!1)}}
+return A.j6(q,B.j,A.iF(A.aJ(A.a([new A.M(B.t,o,r),A.iM(A.i4(A.bl(r,A.jb(A.aJ(A.a([new A.pp("background_guides.jpg","https://docs.google.com/spreadsheets/d/1KP7v7Cq1djVBhAiXCL2chtdkW1-CCI44Iiwv2C54jSA/edit?usp=sharing","Country Matrix",r),new A.pp("rules_of_procedure.jpg","https://drive.google.com/file/d/1ZApGHbKFrlEBkLApeYcNoUlUdEM-6vmY/view?usp=drive_link","Rules Of Procedure",r),A.nL(m.gco(m)===B.Z)],s),B.m,B.T,B.i),n),B.k,r,r,r,r,r,r,r,r,r,l.a.a),n,B.a7,r,r,A.ec(),B.q,r,r,10,new A.L(4281413939),!0,B.ab,!0))],s),B.m,B.o,B.i),r,r),p,!1)}}
 A.pz.prototype={
 aR(a,b,c,d,e){var s=null,r=e*c
 return A.bl(s,A.aJ(A.a([new A.M(B.t,A.el(s,s,new A.kr(a),r),s),A.U(b,A.Y(s,s,A.aF(255,103,200,171),s,s,s,s,s,this.d,s,s,d,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],t.p),B.m,B.o,B.i),B.k,s,s,s,s,s,s,s,s,s,r)},
@@ -63997,7 +63997,7 @@ A.nh.prototype={
 aa(){return new A.O7(B.n)}}
 A.O7.prototype={
 I(a){var s=t.s
-return A.jU("Addressing the rapid escalation of tensions in Afghanistan\n[Freeze Date: October 6, 2001]",u.t,A.a([A.a(["Eshwari Gundi","Vice chair","EB/UNSC2.png","Eshwari Gundi, the Vice Chair of UNSC, has been a passionate munner in the Bangalore circuit ever since her first MUN in the 7th grade sparked an insatiable thirst for global politics and diplomacy. You can often find her being the most dramatic in committee, although never lacking in strategy and research. Her love for negotiation and fiery debate is driven by her interest in current affairs, social justice, and literature. Crisis-driven committees like UNSC are where she feels most at home and will never decline an opportunity to prove another delegate wrong. Apart from MUN, she dabbles in photography and writing, directing most of her time to further pursue research about judicial prejudices to support her prospective career in law"],s),A.a(["Sunay Mittal","Moderator","EB/UNSC3.png","Sunay Mittal, the UNSC moderator is an overenthusiastic power delegate who loves to interact with people and get to know their perspectives, only to gaslight them into believing what he thinks should be done. From representing Syria in the Council of Women's Rights, China, and DPRK in the Security Council to the drug capital of Myanmar in UNODC, Sunay loves the opportunity to engage in controversy, while always keeping time to condemn Western propaganda. Recently winning his first Best Delegate at Iksha-Mun 2023, he has a near-perfect record of placing in 5 out of his 6 muns. Apart from straining his voice in committee, Sunay loves to over-dramatize any situation at hand while keeping himself busy with the sciences."],s)],t.rj),"committee_page/UNSC.png","United Nation Security Council (UNSC)")}}
+return A.jU("Addressing the rapid escalation of tensions in Afghanistan\n[Freeze Date: October 6, 2001]",u.t,A.a([A.a(["Rahul Prabhu","Head chair","EB/UNSC1.png","Rahul made his start in MUNS in the original running of the MSPMUN. 20 MUNs later, he has only failed to place in 3. He cannot wait to serve as a chair and this MUN's director- general watching delegates make their own mark (he's a bit more emotional than he admits). Often being the most outspoken (and irritating) delegate in the room, he loves lobbying and giving thunderous speeches - finding ways to make fun of half of the committee in the process. Frequently getting barred at a rate that rivals AIPPM delegates for making silly goofy jokes, he prefers committees like UNSC and DISEC where blackmail and ultimatums are considered acceptable forms of diplomacy. However, he never compromises on international law and regulations and scoffs at delegates who are all bark no bite. Outside of MUNs, he loves music, hockey and a plethora of other things (he swears he's interesting) and aspires to get into computers."],s),A.a(["Akshara Bhat","Co-chair","EB/UNSC2.png","With a seemingly inexhaustible tolerance for fruitless debates and a passion for politics, Akshara Bhat is always ready for a challenge. Apart from arguing way too much with anyone willing to partake, she spends her time reading books, writing film reviews, and trying to explore new corners of the city. Often known for being the most diplomatic and respectful delegate in committee, her tact has led her to win accolades at prestigious MUNs across India. Akshara is a firm believer in using MUN as a platform for change and invites the delegates for an enthralling and expeditious conference."],s),A.a(["Eshwari Gundi","Vice chair","EB/UNSC3.png","Eshwari Gundi, the Vice Chair of UNSC, has been a passionate munner in the Bangalore circuit ever since her first MUN in the 7th grade sparked an insatiable thirst for global politics and diplomacy. You can often find her being the most dramatic in committee, although never lacking in strategy and research. Her love for negotiation and fiery debate is driven by her interest in current affairs, social justice, and literature. Crisis-driven committees like UNSC are where she feels most at home and will never decline an opportunity to prove another delegate wrong. Apart from MUN, she dabbles in photography and writing, directing most of her time to further pursue research about judicial prejudices to support her prospective career in law"],s),A.a(["Sunay Mittal","Moderator","EB/UNSC4.png","Sunay Mittal, the UNSC moderator is an overenthusiastic power delegate who loves to interact with people and get to know their perspectives, only to gaslight them into believing what he thinks should be done. From representing Syria in the Council of Women's Rights, China, and DPRK in the Security Council to the drug capital of Myanmar in UNODC, Sunay loves the opportunity to engage in controversy, while always keeping time to condemn Western propaganda. Recently winning his first Best Delegate at Iksha-Mun 2023, he has a near-perfect record of placing in 5 out of his 6 muns. Apart from straining his voice in committee, Sunay loves to over-dramatize any situation at hand while keeping himself busy with the sciences."],s)],t.rj),"committee_page/UNSC.png","United Nation Security Council (UNSC)")}}
 A.cE.prototype={
 aa(){return new A.IE(A.hC().d,null,null,B.n)}}
 A.IE.prototype={
