@@ -15,7 +15,7 @@ class _RegistrationsState extends State<Registrations> {
   List<Color> cardColors = [Colors.black, Colors.black, Colors.black];
   List<Color> linkColors = [Colors.black, Colors.black];
   Color paymentColor = Colors.black;
-  List<ScrollController> scroll = [ScrollController(), ScrollController()];
+  ScrollController scroll = ScrollController();
   String? clickedLink;
   double? fontSize;
   double? subFontSize;
@@ -100,11 +100,11 @@ class _RegistrationsState extends State<Registrations> {
                   thickness: 10,
                   thumbVisibility: true,
                   trackVisibility: true,
-                  controller: scroll[0],
+                  controller: scroll,
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     child: SingleChildScrollView(
-                      controller: scroll[0],
+                      controller: scroll,
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -167,6 +167,7 @@ class _RegistrationsState extends State<Registrations> {
                                     setState(
                                       () {
                                         clickedLink = "Internals";
+                                        scroll.jumpTo(0);
                                       }
                                     );
                                   },
@@ -224,6 +225,7 @@ class _RegistrationsState extends State<Registrations> {
                                       () {
                                         betweenPage = true;
                                         clickedLink = "School Delegation";
+                                        scroll.jumpTo(0);
                                       }
                                     );
                                   },
@@ -280,6 +282,7 @@ class _RegistrationsState extends State<Registrations> {
                                     setState(
                                       () {
                                         clickedLink = "Externals";
+                                        scroll.jumpTo(0);
                                       }
                                     );
                                   } */,
@@ -328,11 +331,11 @@ class _RegistrationsState extends State<Registrations> {
                   thickness: 10,
                   thumbVisibility: true,
                   trackVisibility: true,
-                  controller: scroll[1],
+                  controller: scroll,
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     child: SingleChildScrollView(
-                      controller: scroll[1],
+                      controller: scroll,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -375,6 +378,7 @@ class _RegistrationsState extends State<Registrations> {
                                   onPressed: () {
                                     setState(() {
                                       betweenPage = false;
+                                      scroll.jumpTo(0);
                                     });
                                   },
                                   onHover: (value) {
@@ -422,11 +426,11 @@ class _RegistrationsState extends State<Registrations> {
                   thickness: 10,
                   thumbVisibility: true,
                   trackVisibility: true,
-                  controller: scroll[1],
+                  controller: scroll,
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     child: SingleChildScrollView(
-                      controller: scroll[1],
+                      controller: scroll,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
