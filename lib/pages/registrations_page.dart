@@ -333,6 +333,19 @@ class _RegistrationsState extends State<Registrations> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          (clickedLink == "School Delegation") ? Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              "Please note that the last date to register as a school delegation is the 16th August 2023. By this date a delegate information sheet, stating the delegates' names, committee and country preferences, and MUN experience along with a screenshot of all payments made should be emailed by the MUN Coordinator or Student Head to: gwhmun@greenwoodhigh.edu.in.\n\nFurthermore, the minimum number of delegates needed to form a school delegation is 5 and the delegation number cannot exceed 20.\n\nIf a student's name does not feature in the official delegate list sent by the School, such students cannot register as school or individual delegates. Despite that if they register, they will not be refunded. This is to encourage only school chosen delegation on various parameters.\n\nPlease note that due to overwhelming interest shown by different schools and individual registration enthusiasts from non participating schools, we will be closing the registrations before the deadline on a first come first serve basis to prevent overcrowding. Therefore, we request your delegates to register ASAP.\n\nIf the institution does not send an official delegation, only then the students of that particular institution will be allowed to register individually from 17th to 19th August on the website. This is to encourage students from Schools which may not have a delegation.",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: titleFont,
+                                fontSize: subFontSize,
+                                fontStyle: FontStyle.italic
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ) : Container(),
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
