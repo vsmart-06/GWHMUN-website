@@ -14,10 +14,12 @@ class _RegistrationsState extends State<Registrations> {
   String? titleFont = GoogleFonts.ebGaramond().fontFamily;
   List<Color> cardColors = [Colors.black, Colors.black, Colors.black];
   List<Color> linkColors = [Colors.black, Colors.black];
+  Color paymentColor = Colors.black;
   List<ScrollController> scroll = [ScrollController(), ScrollController()];
   String? clickedLink;
   double? fontSize;
   double? subFontSize;
+  bool betweenPage = false;
   late double cardWidth;
   late double cardHeight;
   bool open = true;
@@ -220,6 +222,7 @@ class _RegistrationsState extends State<Registrations> {
                                   onPressed: () {
                                     setState(
                                       () {
+                                        betweenPage = true;
                                         clickedLink = "School Delegation";
                                       }
                                     );
@@ -299,6 +302,100 @@ class _RegistrationsState extends State<Registrations> {
         ),
       );
     }
+    else if (betweenPage) {
+      return Scaffold(
+        appBar: getTopBar(context),
+        drawer: getDrawer(context),
+        backgroundColor: Colors.black,
+        body: Container(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text(
+                  "REGISTRATIONS",
+                  style: TextStyle(
+                      color: Colors.white, fontSize: 35, fontFamily: titleFont),
+                ),
+              ),
+              Expanded(
+                child: RawScrollbar(
+                  thumbColor: Color(0xFF313133),
+                  thickness: 10,
+                  thumbVisibility: true,
+                  trackVisibility: true,
+                  controller: scroll[1],
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    child: SingleChildScrollView(
+                      controller: scroll[1],
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              "Please note that the last date to register as a school delegation is the 16th August 2023. By this date a delegate information sheet, stating the delegates' names, committee and country preferences, and MUN experience along with a screenshot of all payments made should be emailed by the MUN Coordinator or Student Head to: gwhmun@greenwoodhigh.edu.in.\n\nFurthermore, the minimum number of delegates needed to form a school delegation is 5 and the delegation number cannot exceed 20.\n\nIf a student's name does not feature in the official delegate list sent by the School, such students cannot register as school or individual delegates. Despite that if they register, they will not be refunded. This is to encourage only school chosen delegation on various parameters.\n\nPlease note that due to overwhelming interest shown by different schools and individual registration enthusiasts from non participating schools, we will be closing the registrations before the deadline on a first come first serve basis to prevent overcrowding. Therefore, we request your delegates to register ASAP.\n\nIf the institution does not send an official delegation, only then the students of that particular institution will be allowed to register individually from 17th to 19th August on the website. This is to encourage students from Schools which may not have a delegation.",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: titleFont,
+                                fontSize: subFontSize,
+                                fontStyle: FontStyle.italic
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Container(
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                  side: BorderSide(
+                                    color: Colors.white
+                                  )
+                                ),
+                                color: paymentColor,
+                                child: TextButton(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(20.0),
+                                    child: Text(
+                                      "Proceed To Payment",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: titleFont,
+                                        fontSize: subFontSize,
+                                      ),
+                                    ),
+                                  ),
+                                  onPressed: () {
+                                    setState(() {
+                                      betweenPage = false;
+                                    });
+                                  },
+                                  onHover: (value) {
+                                    value ? setState(() {paymentColor = Color(0xFF313133);}) : setState(() {paymentColor = Colors.black;});
+                                  },
+                                )
+                              ),
+                            ),
+                          ),
+                          footer(MediaQuery.of(context).orientation==Orientation.landscape),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
     else {
       return Scaffold(
         appBar: getTopBar(context),
@@ -333,19 +430,6 @@ class _RegistrationsState extends State<Registrations> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          (clickedLink == "School Delegation") ? Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Text(
-                              "Please note that the last date to register as a school delegation is the 16th August 2023. By this date a delegate information sheet, stating the delegates' names, committee and country preferences, and MUN experience along with a screenshot of all payments made should be emailed by the MUN Coordinator or Student Head to: gwhmun@greenwoodhigh.edu.in.\n\nFurthermore, the minimum number of delegates needed to form a school delegation is 5 and the delegation number cannot exceed 20.\n\nIf a student's name does not feature in the official delegate list sent by the School, such students cannot register as school or individual delegates. Despite that if they register, they will not be refunded. This is to encourage only school chosen delegation on various parameters.\n\nPlease note that due to overwhelming interest shown by different schools and individual registration enthusiasts from non participating schools, we will be closing the registrations before the deadline on a first come first serve basis to prevent overcrowding. Therefore, we request your delegates to register ASAP.\n\nIf the institution does not send an official delegation, only then the students of that particular institution will be allowed to register individually from 17th to 19th August on the website. This is to encourage students from Schools which may not have a delegation.",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontFamily: titleFont,
-                                fontSize: subFontSize,
-                                fontStyle: FontStyle.italic
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ) : Container(),
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
