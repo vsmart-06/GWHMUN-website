@@ -151,7 +151,7 @@ class _RegistrationsState extends State<Registrations> {
                                           textAlign: TextAlign.center,
                                         ),
                                          Text(
-                                          "Registration dates: 10th to 16th August, 2023",
+                                          "Registrations closed!"//"Registration dates: 10th to 16th August, 2023",
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: titleFont,
@@ -163,14 +163,14 @@ class _RegistrationsState extends State<Registrations> {
                                       ],
                                     ),
                                   ),
-                                  onPressed: () {
+                                  onPressed: null /* () {
                                     setState(
                                       () {
                                         clickedLink = "Internals";
                                         scroll.jumpTo(0);
                                       }
                                     );
-                                  },
+                                  } */,
                                   onHover: (value) {
                                     value ? setState(() {cardColors[0] = Color(0xFF313133);}) : setState(() {cardColors[0] = Colors.black;});
                                   },
