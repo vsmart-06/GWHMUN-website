@@ -28,6 +28,7 @@ class Committee extends StatefulWidget {
 class _CommitteeState extends State<Committee> {
   String? fontMain = GoogleFonts.ebGaramond().fontFamily;
   Color buttonColor = Colors.white;
+  Color bgColor = Colors.black;
   ScrollController scroll = ScrollController();
 
   List<Row> generateBoard() {
@@ -251,10 +252,12 @@ class _CommitteeState extends State<Committee> {
                                   textAlign: TextAlign.center,
                                 ),
                               ),
-                              /*TextButton(
+                              widget.bgLink.isNotEmpty ? TextButton(
                                   style: ButtonStyle(
-                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
+                                      backgroundColor: MaterialStateProperty.all<Color>(bgColor),
                                       foregroundColor: MaterialStateProperty.all<Color>(buttonColor),
+                                      side: MaterialStateProperty.all<BorderSide>(BorderSide(color: Colors.white, width: 1)),
+                                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)))
                                   ),
                                   onPressed: () {
                                     window.open(
@@ -265,10 +268,12 @@ class _CommitteeState extends State<Committee> {
                                     if (value) {
                                       setState(() {
                                         buttonColor = Colors.green;
+                                        bgColor = Color(0xFF313133);
                                       });
                                     } else {
                                       setState(() {
                                         buttonColor = Colors.white;
+                                        bgColor = Colors.black;
                                       });
                                     }
                                   },
@@ -277,12 +282,7 @@ class _CommitteeState extends State<Committee> {
                                     child: Text("Background Guide",
                                         style: TextStyle(
                                             color: buttonColor, fontFamily: fontMain, fontSize: 30)),
-                                  )),
-                              */
-                              const Padding(
-                                padding: EdgeInsets.all(30.0),
-                                
-                              ),
+                                  )) : Container(),
                             ],
                           ),
                         ],

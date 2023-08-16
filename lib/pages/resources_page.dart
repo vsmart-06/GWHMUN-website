@@ -50,11 +50,17 @@ class _ResourcesState extends State<Resources> {
                         /*ResourcesButton(
                           imagePath: 'code_of_conduct.jpg',
                           websitePath:
-                              "https://docs.google.com/document/d/1MSTvjv-TC2RxX49Iq090i7dr5wusqyjWmXL8sTFZis8/edit?usp=drivesdk",
-                          name: "Code of Conduct",
+                              "https://drive.google.com/drive/folders/1-enswc3XmM-kWER12vZ3Qx211o_1yudE",
+                          name: "Background Guides",
                         ),*/
                         ResourcesButton(
                           imagePath: 'background_guides.jpg',
+                          websitePath:
+                              "https://drive.google.com/drive/folders/1-enswc3XmM-kWER12vZ3Qx211o_1yudE",
+                          name: "Background Guides",
+                        ),
+                        ResourcesButton(
+                          imagePath: 'country_matrix.jpeg',
                           websitePath:
                               "https://docs.google.com/spreadsheets/d/1KP7v7Cq1djVBhAiXCL2chtdkW1-CCI44Iiwv2C54jSA/edit?usp=sharing",
                           name: "Country Matrix",
