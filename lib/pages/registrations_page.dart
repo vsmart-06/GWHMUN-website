@@ -123,6 +123,18 @@ class _RegistrationsState extends State<Registrations> {
                           ),
                           Padding(
                             padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              "Non-School Affiliated Delegatesl fees is Rs.1900",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: titleFont,
+                                fontSize: subFontSize,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
                             child: Container(
                               width: cardWidth,
                               height: cardHeight,
@@ -151,7 +163,7 @@ class _RegistrationsState extends State<Registrations> {
                                           textAlign: TextAlign.center,
                                         ),
                                         Text(
-                                          "Registration link will be provided on the 19th of August, 2023",
+                                          "Registration link will be provided on the 19th of August, 2023 at 10 am",
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: titleFont,
