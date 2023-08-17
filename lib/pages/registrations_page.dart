@@ -33,7 +33,7 @@ class _RegistrationsState extends State<Registrations> {
       cardHeight = MediaQuery.of(context).size.height/2;
     }
     else {
-      fontSize = 30;
+      fontSize = 25;
       subFontSize = 15;
       cardWidth = MediaQuery.of(context).size.width/1.5;
       cardHeight = MediaQuery.of(context).size.height/3;
@@ -116,7 +116,7 @@ class _RegistrationsState extends State<Registrations> {
                               style: TextStyle(
                                 color: Colors.white,
                                 fontFamily: titleFont,
-                                fontSize: 35,
+                                fontSize: fontSize,
                               ),
                               textAlign: TextAlign.center,
                             ),
@@ -265,7 +265,7 @@ class _RegistrationsState extends State<Registrations> {
                                           textAlign: TextAlign.center,
                                         ),
                                         Text(
-                                          "Registrations closed due to overwhelming response!",
+                                          "Registrations are closed due to overwhelming response!",
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: titleFont,
