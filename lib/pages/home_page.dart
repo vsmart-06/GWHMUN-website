@@ -778,105 +778,51 @@ class _HomeState extends State<Home> {
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                              image: DecorationImage(image: AssetImage("gwhmun_logo.png"), opacity: 0.4)
+                              image: DecorationImage(image: AssetImage("gwhmun_logo.png"))
                             ),
-                            height: scheduleHeight,
+                            height: scheduleHeight!*1.5,
                             width: scheduleWidth,
                             child: 
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                            Stack(
                               children: [
-                                Text(
-                                  "Day 1: 25th August 2023",
-                                  style: TextStyle(
-                                    fontFamily: font,
-                                    color: Colors.white,
-                                    fontSize: 35,
-                                    fontWeight: FontWeight.bold
-                                  ),
-                                  ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(20, 0, 10, 0),
-                                  child: Text(
-                                    "\n\n8:30-9:45 - Registrations\n9:45-10:45 - Opening Ceremony\n10:45- 11:15 - Break\n11:15- 1:30- Committee Session 1\n1:30- 2:15- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC\n2:15- 3:00- Lunch Break for IPC, UNHRC, UNEP and UNDOC\n3:00- 4:30- Committee Session 2\nDispersal",
-                                    style: TextStyle(
-                                      fontFamily: font,
-                                      color: Colors.white,
-                                      fontSize: 30
-                                    ),
-                                  ),
+                                Container(
+                                  color: Color(0x99000000)
                                 ),
-                                IconButton(
-                                  iconSize: 50,
-                                  onPressed: () {
-                                setState(() {
-                                  rowController.animateTo(scheduleWidth!, duration: Duration(seconds: 1), curve: Curves.easeIn);             
-                                });
-                                  }, 
-                                  icon: Icon(Icons.arrow_forward, size: 50),
-                                  color: Colors.white,
-                                  hoverColor: Colors.green,
-                                ),
-                              ],
-                            )
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                              image: DecorationImage(image: AssetImage("gwhmun_logo.png"), opacity: 0.4)
-                            ),
-                            height: scheduleHeight,
-                            width: scheduleWidth,
-                            child: 
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "Day 2: 26th August 2023",
-                                  style: TextStyle(
-                                    fontFamily: font,
-                                    color: Colors.white,
-                                    fontSize: 35,
-                                    fontWeight: FontWeight.bold
-                                  ),
-                                  ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(20, 0, 10, 0),
-                                  child: Text(
-                                    "\n\n9:00- 10:30- Committee Session 3\n10:30-10:45- Break\n10:45- 1:00- Committee Session 4\n1:00-1:45- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC \n1:45- 2:30- Lunch Break for IPC, UNHRC, UNEP and UNDOC \n2:30- 4:00- Committee Session 5\n4:00- 5:00- Break/ Assemble for Socials\n5:00- 7:00- Socials\nDispersal",
-                                    style: TextStyle(
-                                      fontFamily: font,
-                                      color: Colors.white,
-                                      fontSize: 30
-                                    ),
-                                  ),
-                                ),
-                                Row(
+                                Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
+                                    Text(
+                                      "Day 1: 25th August 2023",
+                                      style: TextStyle(
+                                        fontFamily: font,
+                                        color: Colors.white,
+                                        fontSize: 35,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                      ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(20, 0, 10, 0),
+                                      child: Text(
+                                        "\n\n8:30-9:45 - Registrations\n9:45-10:45 - Opening Ceremony\n10:45- 11:15 - Break\n11:15- 1:30- Committee Session 1\n1:30- 2:15- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC\n2:15- 3:00- Lunch Break for IPC, UNHRC, UNEP and UNDOC\n3:00- 4:30- Committee Session 2\nDispersal",
+                                        style: TextStyle(
+                                          fontFamily: font,
+                                          color: Colors.white,
+                                          fontSize: 30
+                                        ),
+                                      ),
+                                    ),
                                     IconButton(
                                       iconSize: 50,
                                       onPressed: () {
-                                        setState(() {
-                                          rowController.animateTo(0, duration: Duration(seconds: 1), curve: Curves.easeOut);             
-                                        });
+                                    setState(() {
+                                      rowController.animateTo(scheduleWidth!, duration: Duration(seconds: 1), curve: Curves.easeIn);             
+                                    });
                                       }, 
-                                      icon: Icon(Icons.arrow_back, size: 50),
+                                      icon: Icon(Icons.arrow_forward, size: 50),
                                       color: Colors.white,
                                       hoverColor: Colors.green,
                                     ),
-                                    IconButton(
-                                  iconSize: 50,
-                                  onPressed: () {
-                                    setState(() {
-                                      rowController.animateTo(2*scheduleWidth!, duration: Duration(seconds: 1), curve: Curves.easeIn);             
-                                    });
-                                  }, 
-                                  icon: Icon(Icons.arrow_forward, size: 50),
-                                  color: Colors.white,
-                                  hoverColor: Colors.green,
-                                )
                                   ],
                                 ),
                               ],
@@ -884,45 +830,120 @@ class _HomeState extends State<Home> {
                           ),
                           Container(
                             decoration: BoxDecoration(
-                              image: DecorationImage(image: AssetImage("gwhmun_logo.png"), opacity: 0.4)
+                              image: DecorationImage(image: AssetImage("gwhmun_logo.png"))
                             ),
-                            height: scheduleHeight,
+                            height: scheduleHeight!*1.5,
                             width: scheduleWidth,
                             child: 
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                            Stack(
                               children: [
-                                Text(
-                                  "Day 3: 27th August 2023",
-                                  style: TextStyle(
-                                    fontFamily: font,
-                                    color: Colors.white,
-                                    fontSize: 35,
-                                    fontWeight: FontWeight.bold
-                                  ),
-                                  ),
-                                Padding(
-                                  padding: const EdgeInsets.fromLTRB(20, 0, 10, 0),
-                                  child: Text(
-                                    "\n\n8:30-11:00- Committee Session 6\n11:00- 11:15- Break\n11:15- 1:30- Committee Session 7\n1:30-2:45- Common Lunch\n2:45- 3:00- Assemble for Closing Ceremony\n3:00- 4:00- Closing Ceremony",
-                                    style: TextStyle(
-                                      fontFamily: font,
-                                      color: Colors.white,
-                                      fontSize: 30
-                                    ),
-                                  ),
+                                Container(
+                                  color: Color(0x99000000)
                                 ),
-                                IconButton(
-                                  iconSize: 50,
-                                  onPressed: () {
-                                    setState(() {
-                                      rowController.animateTo(scheduleWidth!, duration: Duration(seconds: 1), curve: Curves.easeOut);             
-                                    });
-                                  }, 
-                                  icon: Icon(Icons.arrow_back, size: 50),
-                                  color: Colors.white,
-                                  hoverColor: Colors.green,
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "Day 2: 26th August 2023",
+                                      style: TextStyle(
+                                        fontFamily: font,
+                                        color: Colors.white,
+                                        fontSize: 35,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                      ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(20, 0, 10, 0),
+                                      child: Text(
+                                        "\n\n9:00- 10:30- Committee Session 3\n10:30-10:45- Break\n10:45- 1:00- Committee Session 4\n1:00-1:45- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC \n1:45- 2:30- Lunch Break for IPC, UNHRC, UNEP and UNDOC \n2:30- 4:00- Committee Session 5\n4:00- 5:00- Break/ Assemble for Socials\n5:00- 7:00- Socials\nDispersal",
+                                        style: TextStyle(
+                                          fontFamily: font,
+                                          color: Colors.white,
+                                          fontSize: 30
+                                        ),
+                                      ),
+                                    ),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        IconButton(
+                                          iconSize: 50,
+                                          onPressed: () {
+                                            setState(() {
+                                              rowController.animateTo(0, duration: Duration(seconds: 1), curve: Curves.easeOut);             
+                                            });
+                                          }, 
+                                          icon: Icon(Icons.arrow_back, size: 50),
+                                          color: Colors.white,
+                                          hoverColor: Colors.green,
+                                        ),
+                                        IconButton(
+                                      iconSize: 50,
+                                      onPressed: () {
+                                        setState(() {
+                                          rowController.animateTo(2*scheduleWidth!, duration: Duration(seconds: 1), curve: Curves.easeIn);             
+                                        });
+                                      }, 
+                                      icon: Icon(Icons.arrow_forward, size: 50),
+                                      color: Colors.white,
+                                      hoverColor: Colors.green,
+                                    )
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            )
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              image: DecorationImage(image: AssetImage("gwhmun_logo.png"))
+                            ),
+                            height: scheduleHeight!*1.5,
+                            width: scheduleWidth,
+                            child: 
+                            Stack(
+                              children: [
+                                Container(
+                                  color: Color(0x99000000)
+                                ),
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "Day 3: 27th August 2023",
+                                      style: TextStyle(
+                                        fontFamily: font,
+                                        color: Colors.white,
+                                        fontSize: 35,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                      ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(20, 0, 10, 0),
+                                      child: Text(
+                                        "\n\n8:30-11:00- Committee Session 6\n11:00- 11:15- Break\n11:15- 1:30- Committee Session 7\n1:30-2:45- Common Lunch\n2:45- 3:00- Assemble for Closing Ceremony\n3:00- 4:00- Closing Ceremony",
+                                        style: TextStyle(
+                                          fontFamily: font,
+                                          color: Colors.white,
+                                          fontSize: 30
+                                        ),
+                                      ),
+                                    ),
+                                    IconButton(
+                                      iconSize: 50,
+                                      onPressed: () {
+                                        setState(() {
+                                          rowController.animateTo(scheduleWidth!, duration: Duration(seconds: 1), curve: Curves.easeOut);             
+                                        });
+                                      }, 
+                                      icon: Icon(Icons.arrow_back, size: 50),
+                                      color: Colors.white,
+                                      hoverColor: Colors.green,
+                                    ),
+                                  ],
                                 ),
                               ],
                             )
