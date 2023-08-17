@@ -120,7 +120,64 @@ class _RegistrationsState extends State<Registrations> {
                               ),
                               textAlign: TextAlign.center,
                             ),
-                          ), 
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Container(
+                              width: cardWidth,
+                              height: cardHeight,
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                  side: BorderSide(
+                                    color: Colors.white
+                                  )
+                                ),
+                                color: cardColors[2],
+                                child: TextButton(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(20.0),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "Non-School Affiliated Delegates",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontFamily: titleFont,
+                                            fontSize: fontSize,
+                                          ),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                        Text(
+                                          "Registration link will be provided on the 19th of August, 2023",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontFamily: titleFont,
+                                            fontSize: subFontSize,
+                                            fontStyle: FontStyle.italic
+                                          ),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  onPressed: null /* () {
+                                    setState(
+                                      () {
+                                        clickedLink = "Externals";
+                                        scroll.jumpTo(0);
+                                      }
+                                    );
+                                  } */,
+                                  onHover: (value) {
+                                    value ? setState(() {cardColors[2] = Color(0xFF313133);}) : setState(() {cardColors[2] = Colors.black;});
+                                  },
+                                )
+                              ),
+                            ),
+                          ),
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
@@ -151,7 +208,7 @@ class _RegistrationsState extends State<Registrations> {
                                           textAlign: TextAlign.center,
                                         ),
                                          Text(
-                                          "Registrations closed due to overwhelming response!", //"Registration dates: 10th to 16th August, 2023"
+                                          "Registrations are closed due to overwhelming response!", //"Registration dates: 10th to 16th August, 2023"
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: titleFont,
@@ -208,7 +265,7 @@ class _RegistrationsState extends State<Registrations> {
                                           textAlign: TextAlign.center,
                                         ),
                                         Text(
-                                          "Registration dates: 10th to 16th August, 2023",
+                                          "Registrations closed due to overwhelming response!",
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: titleFont,
@@ -220,7 +277,7 @@ class _RegistrationsState extends State<Registrations> {
                                       ],
                                     ),
                                   ),
-                                  onPressed: () {
+                                  onPressed: null/*() {
                                     setState(
                                       () {
                                         betweenPage = true;
@@ -231,64 +288,7 @@ class _RegistrationsState extends State<Registrations> {
                                   },
                                   onHover: (value) {
                                     value ? setState(() {cardColors[1] = Color(0xFF313133);}) : setState(() {cardColors[1] = Colors.black;});
-                                  },
-                                )
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Container(
-                              width: cardWidth,
-                              height: cardHeight,
-                              child: Card(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20),
-                                  side: BorderSide(
-                                    color: Colors.white
-                                  )
-                                ),
-                                color: cardColors[2],
-                                child: TextButton(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(20.0),
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          "Non-School Affiliated Delegates",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontFamily: titleFont,
-                                            fontSize: fontSize,
-                                          ),
-                                          textAlign: TextAlign.center,
-                                        ),
-                                        Text(
-                                          "Registration link will be provided on the 17th of August, 2023",
-                                          style: TextStyle(
-                                            color: Colors.white,
-                                            fontFamily: titleFont,
-                                            fontSize: subFontSize,
-                                            fontStyle: FontStyle.italic
-                                          ),
-                                          textAlign: TextAlign.center,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  onPressed: null /* () {
-                                    setState(
-                                      () {
-                                        clickedLink = "Externals";
-                                        scroll.jumpTo(0);
-                                      }
-                                    );
-                                  } */,
-                                  onHover: (value) {
-                                    value ? setState(() {cardColors[2] = Color(0xFF313133);}) : setState(() {cardColors[2] = Colors.black;});
-                                  },
+                                  },*/
                                 )
                               ),
                             ),
