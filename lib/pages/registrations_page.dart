@@ -151,7 +151,7 @@ class _RegistrationsState extends State<Registrations> {
                                           textAlign: TextAlign.center,
                                         ),
                                          Text(
-                                          "Registrations closed!", //"Registration dates: 10th to 16th August, 2023"
+                                          "Registrations closed due to overwhelming response!", //"Registration dates: 10th to 16th August, 2023"
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: titleFont,
