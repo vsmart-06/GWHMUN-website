@@ -116,6 +116,11 @@ class _CommitteeState extends State<Committee> {
                             websitePath: "/unodc",
                             size: 0.35,
                             name: "UNODC"),
+                            CommitteeButton(
+                            imagePath: 'committee_page/WHO.png',
+                            websitePath: "/who",
+                            size: 0.35,
+                            name: "WHO"),
                           ],
                         )
                       ],
@@ -171,11 +176,21 @@ class _CommitteeState extends State<Committee> {
                             websitePath: "/unep",
                             size: 0.18,
                             name: "UNEP"),
+                        //],
+                      //),
+                      //Row(
+                        //mainAxisAlignment: MainAxisAlignment.center,
+                        //children: [
                           CommitteeButton(
                             imagePath: 'committee_page/UNSC.png',
                             websitePath: "/unsc",
                             size: 0.18,
                             name: "UNSC"),
+                          CommitteeButton(
+                            imagePath: 'committee_page/JCC.png',
+                            websitePath: "/jcc",
+                            size: 0.18,
+                            name: "JCC"),
                         ],
                       ),
                       Row(
@@ -192,16 +207,11 @@ class _CommitteeState extends State<Committee> {
                             size: 0.18,
                             name: "IPC"
                             ),
-                          CommitteeButton(
-                            imagePath: 'committee_page/JCC.png',
-                            websitePath: "/jcc",
-                            size: 0.18,
-                            name: "JCC"),
-                        ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        //],
+                      //),
+                      //Row(
+                        //mainAxisAlignment: MainAxisAlignment.center,
+                        //children: [
                           CommitteeButton(
                             imagePath: 'committee_page/DISEC.png',
                             websitePath: "/disec",
@@ -212,6 +222,16 @@ class _CommitteeState extends State<Committee> {
                             websitePath: "/sochum",
                             size: 0.18,
                             name: "SOCHUM"),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CommitteeButton(
+                            imagePath: 'committee_page/WHO.png',
+                            websitePath: "/who",
+                            size: 0.18,
+                            name: "WHO"),
                           CommitteeButton(
                             imagePath: 'committee_page/UNODC.png',
                             websitePath: "/unodc",
