@@ -121,10 +121,10 @@ class _RegistrationsState extends State<Registrations> {
                               textAlign: TextAlign.center,
                             ),
                           ),
-                          Padding(
+                          /* Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Text(
-                              "Non-School Affiliated Delegatesl fees is Rs.1900",
+                              "Non-School Affiliated Delegates fees is Rs.1900",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontFamily: titleFont,
@@ -189,7 +189,7 @@ class _RegistrationsState extends State<Registrations> {
                                 )
                               ),
                             ),
-                          ),
+                          ), */
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: Container(
