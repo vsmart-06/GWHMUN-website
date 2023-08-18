@@ -13,6 +13,7 @@ import "package:website/pages/ipc_page.dart";
 import "package:website/pages/jcc_page.dart";
 import "package:website/pages/sochum_page.dart";
 import "package:website/pages/unodc_page.dart";
+import "package:website/pages/who_page.dart";
 void main() {
 
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,7 +36,8 @@ void main() {
         "/aippm": (context) => AIPPM(),
         "/jcc": (context) => JCC(),
         "/sochum": (context) => SOCHUM(),
-        "/unodc": (context) => UNODC()
+        "/unodc": (context) => UNODC(),
+        "/who": (context) => WHO()
       }
     )
   );

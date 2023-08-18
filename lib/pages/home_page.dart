@@ -319,7 +319,7 @@ class _HomeState extends State<Home> {
                                   ),
                                   ),
                                 Text(
-                                  "\n\n8:30-9:45 - Registrations\n9:45-10:45 - Opening Ceremony\n10:45- 11:15 - Break\n11:15- 1:30- Committee Session 1\n1:30- 2:15- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC\n2:15- 3:00- Lunch Break for IPC, UNHRC, UNEP and UNDOC\n3:00- 4:30- Committee Session 2\nDispersal",
+                                  "\n\n8:00-9:45 - Registrations\n9:45-10:45 - Opening Ceremony\n10:45- 11:15 - Break\n11:15- 1:30- Committee Session 1\n1:30- 2:15- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC\n2:15- 3:00- Lunch Break for IPC, UNHRC, UNEP and UNDOC\n3:00- 4:30- Committee Session 2\nDispersal",
                                   style: TextStyle(
                                     fontFamily: font,
                                     color: Colors.white,
