@@ -797,7 +797,7 @@ class _HomeState extends State<Home> {
                                       style: TextStyle(
                                         fontFamily: font,
                                         color: Colors.white,
-                                        fontSize: 35,
+                                        fontSize: 30,
                                         fontWeight: FontWeight.bold
                                       ),
                                       ),
@@ -808,7 +808,7 @@ class _HomeState extends State<Home> {
                                         style: TextStyle(
                                           fontFamily: font,
                                           color: Colors.white,
-                                          fontSize: 30
+                                          fontSize: 25
                                         ),
                                       ),
                                     ),
@@ -849,7 +849,7 @@ class _HomeState extends State<Home> {
                                       style: TextStyle(
                                         fontFamily: font,
                                         color: Colors.white,
-                                        fontSize: 35,
+                                        fontSize: 30,
                                         fontWeight: FontWeight.bold
                                       ),
                                       ),
@@ -860,7 +860,7 @@ class _HomeState extends State<Home> {
                                         style: TextStyle(
                                           fontFamily: font,
                                           color: Colors.white,
-                                          fontSize: 30
+                                          fontSize: 25
                                         ),
                                       ),
                                     ),
@@ -917,7 +917,7 @@ class _HomeState extends State<Home> {
                                       style: TextStyle(
                                         fontFamily: font,
                                         color: Colors.white,
-                                        fontSize: 35,
+                                        fontSize: 30,
                                         fontWeight: FontWeight.bold
                                       ),
                                       ),
@@ -928,7 +928,7 @@ class _HomeState extends State<Home> {
                                         style: TextStyle(
                                           fontFamily: font,
                                           color: Colors.white,
-                                          fontSize: 30
+                                          fontSize: 25
                                         ),
                                       ),
                                     ),
