@@ -47,12 +47,12 @@ class _ResourcesState extends State<Resources> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        /*ResourcesButton(
+                        ResourcesButton(
                           imagePath: 'code_of_conduct.jpg',
                           websitePath:
-                              "https://drive.google.com/drive/folders/1-enswc3XmM-kWER12vZ3Qx211o_1yudE",
-                          name: "Background Guides",
-                        ),*/
+                              "https://drive.google.com/file/d/1m2QE27O8QeSqBGRW--bLJSy6yrHrHbAq/view?usp=drive_link",
+                          name: "Code of Conduct",
+                        ),
                         ResourcesButton(
                           imagePath: 'background_guides.jpg',
                           websitePath:
