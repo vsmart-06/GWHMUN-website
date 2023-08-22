@@ -50,7 +50,7 @@ class _ResourcesState extends State<Resources> {
                         ResourcesButton(
                           imagePath: 'code_of_conduct.jpg',
                           websitePath:
-                              "https://drive.google.com/file/d/1m2QE27O8QeSqBGRW--bLJSy6yrHrHbAq/view?usp=drive_link",
+                              "https://drive.google.com/file/d/1dQ7KE9KfHQbC1ZyRnD-fGBsafMp84roZ/view?usp=drive_link",
                           name: "Code of Conduct",
                         ),
                         ResourcesButton(
