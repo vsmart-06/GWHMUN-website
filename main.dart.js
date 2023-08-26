@@ -63786,9 +63786,9 @@ p=1
 for(0;p<=19;++p)q.cy.push("image_"+p+".jpg")
 return A.a1(null,r)}})
 return A.a2($async$yu,r)},
-I(b8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=null,c=4281413939,b="carousel/image_18.jpg",a=1426063360,a0="gwhmun_logo.png",a1="Greenwood High Model United Nations 2023",a2="25-27 AUGUST 2023",a3="The conference starts in:",a4="Day 1: 25th August 2023",a5="Day 2: 26th August 2023",a6="\n\n9:00- 10:30- Committee Session 3\n10:30-10:45- Break\n10:45- 1:00- Committee Session 4\n1:00-1:45- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC \n1:45- 2:30- Lunch Break for IPC, UNHRC, UNEP and UNDOC \n2:30- 4:00- Committee Session 5\n4:00- 5:00- Break/ Assemble for Socials\n5:00- 7:00- Socials\nDispersal",a7="Day 3: 27th August 2023",a8="\n\n8:30-11:00- Committee Session 6\n11:00- 11:15- Break\n11:15- 1:30- Committee Session 7\n1:30-2:45- Common Lunch\n2:45- 3:00- Assemble for Closing Ceremony\n3:00- 4:00- Closing Ceremony",a9="Letter from the Secretary General",b0="ocs/vanshHome.png",b1='Dear Delegates,\n\nIt is with great pleasure and honor that I welcome you to the Greenwood High Model United Nations conference. As the Secretary-General, I am grateful for the opportunity to witness the passion and intellectual prowess of each one of you.\n\nAs someone who has been a part of the MUN circuit since 2018, I can truly say that, participating in a Model United Nations (MUN) conference offers a transformative journey of diplomacy and knowledge. MUN fosters empathetic collaboration to address global challenges, shaping future leaders with humility and strategic acumen. Throughout this conference, we look forward to have the unique chance to engage in thought-provoking debates, innovative problem-solving, and collaborative decision-making. It is our collective duty to forget our personal beliefs, opinions, and prejudices and collectively work towards finding sustainable and peaceful solutions for the challenges that lie ahead.\n\nAs we embark on this journey together, let us remember the words of Kofi Annan, "More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that, my friends, is why we have the United Nations."\n\nOnce again, welcome to the Model United Nations conference. I am excited to witness the incredible achievements we will attain throughout this enlightening journey.\n\nSincerely yours,\nVansh Abrol, Secretary General',b2="Letter from the Director General",b3="Dear Delegates,\n\nThe stage is set. The curtains are pulling aside to reveal the main act: GWHMUN '23. As the Director General of this diplomatic conference, I extend a welcome to each of you.\n\nThe world outside resounds with challenges that mirror the uncertainty of fate. The threat of climate change threatens to drown us in its waters, while the clash of conflict resonates, leaving scars on the skin of civilization. Yet, amid the hardships, we find hope. For it is in the artistry of your diplomacy, the expressiveness of your eloquence, and the dance of your intellect that the world shall witness change.\n\nDelegates, you are not mere spectators in this play. You are the protagonists, the heroes and the heroines (and in some cases villains) of this grand narrative. As the spotlight shines upon each of you, seize the moment to deliver wisdom, engage in diplomacy, and participate in acts of cooperation.\n\nThroughout the days that lie ahead, you shall navigate the corridors of diplomacy and forge alliances and friendships that last a life time. But remember, dear delegates, that every act matters, every word spoken holds weight, and every decision shapes the course of history.\n\nAnd so, let the Green Wood High MUN begin! Dazzle the world with your brilliance, and let the echoes of your achievements reverberate across time and space. Embrace the drama. Embrace the action. For it is in this crucible of passion and intellect that you shall script a tale of unity, compassion, and progress.\n\nSincerely,\nRahul, Director General",b4="ocs/rahulHome.png",b5="Photo Gallery",b6=2566914048,b7=t.w
-e.db=b8.D(b7).f.a.b
-e.dx=b8.D(b7).f.a.a
+I(b6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=null,c=4281413939,b="carousel/image_18.jpg",a=1426063360,a0="gwhmun_logo.png",a1="Greenwood High Model United Nations 2023",a2="25-27 AUGUST 2023",a3="The conference starts in:",a4="Day 1: 25th August 2023",a5="Day 2: 26th August 2023",a6="Day 3: 27th August 2023",a7="Letter from the Secretary General",a8="ocs/vanshHome.png",a9='Dear Delegates,\n\nIt is with great pleasure and honor that I welcome you to the Greenwood High Model United Nations conference. As the Secretary-General, I am grateful for the opportunity to witness the passion and intellectual prowess of each one of you.\n\nAs someone who has been a part of the MUN circuit since 2018, I can truly say that, participating in a Model United Nations (MUN) conference offers a transformative journey of diplomacy and knowledge. MUN fosters empathetic collaboration to address global challenges, shaping future leaders with humility and strategic acumen. Throughout this conference, we look forward to have the unique chance to engage in thought-provoking debates, innovative problem-solving, and collaborative decision-making. It is our collective duty to forget our personal beliefs, opinions, and prejudices and collectively work towards finding sustainable and peaceful solutions for the challenges that lie ahead.\n\nAs we embark on this journey together, let us remember the words of Kofi Annan, "More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that, my friends, is why we have the United Nations."\n\nOnce again, welcome to the Model United Nations conference. I am excited to witness the incredible achievements we will attain throughout this enlightening journey.\n\nSincerely yours,\nVansh Abrol, Secretary General',b0="Letter from the Director General",b1="Dear Delegates,\n\nThe stage is set. The curtains are pulling aside to reveal the main act: GWHMUN '23. As the Director General of this diplomatic conference, I extend a welcome to each of you.\n\nThe world outside resounds with challenges that mirror the uncertainty of fate. The threat of climate change threatens to drown us in its waters, while the clash of conflict resonates, leaving scars on the skin of civilization. Yet, amid the hardships, we find hope. For it is in the artistry of your diplomacy, the expressiveness of your eloquence, and the dance of your intellect that the world shall witness change.\n\nDelegates, you are not mere spectators in this play. You are the protagonists, the heroes and the heroines (and in some cases villains) of this grand narrative. As the spotlight shines upon each of you, seize the moment to deliver wisdom, engage in diplomacy, and participate in acts of cooperation.\n\nThroughout the days that lie ahead, you shall navigate the corridors of diplomacy and forge alliances and friendships that last a life time. But remember, dear delegates, that every act matters, every word spoken holds weight, and every decision shapes the course of history.\n\nAnd so, let the Green Wood High MUN begin! Dazzle the world with your brilliance, and let the echoes of your achievements reverberate across time and space. Embrace the drama. Embrace the action. For it is in this crucible of passion and intellect that you shall script a tale of unity, compassion, and progress.\n\nSincerely,\nRahul, Director General",b2="ocs/rahulHome.png",b3="Photo Gallery",b4=2566914048,b5=t.w
+e.db=b6.D(b5).f.a.b
+e.dx=b6.D(b5).f.a.a
 s=e.y=A.a(["","","",""],t.s)
 r=e.f=B.h.bE(e.d.a,864e8)
 if(r<10)s[0]="0"+B.h.j(r)
@@ -63806,17 +63806,17 @@ r=e.y
 if(s<10)r[3]="0"+B.h.j(s)
 else r[3]=B.h.j(s)
 e.yu()
-s=b8.D(b7).f
+s=b6.D(b5).f
 r=t.p
 q=e.ay
 p=e.at
 o=e.ax
 n=e.dy
-if(s.gcw(s)===B.a2){s=A.lj(b8)
-m=A.li(b8)
+if(s.gcw(s)===B.a2){s=A.lj(b6)
+m=A.li(b6)
 l=A.jW(B.wj,new A.c9(b,d,d),0.4)
-k=b8.D(b7).f
-l=A.b9(d,A.fo(B.b0,A.a([A.b9(d,d,B.k,new A.F(a),d,d,d,b8.D(b7).f.a.b,d,d,d,d,k.a.a),A.aC(A.a([A.DQ(a0,d,b8.D(b7).f.a.b*0.4,d),A.O(a1,A.S(d,d,B.e,d,d,d,d,d,p,d,d,60,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),B.t,d),new A.N(B.C,A.O(a2,A.S(d,d,B.e,d,d,d,d,d,p,d,d,28,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),B.t,d),d),new A.N(B.bv,A.O(a3,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.bk(A.a([new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[0],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Days",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[1],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Hours",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[2],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Minutes",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[3],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Seconds",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d)],r),B.j,B.M,B.i)],r),B.j,B.M,B.i)],r),B.aF),B.k,d,d,new A.cq(d,l,d,d,d,d,B.Y),d,d,d,d,d,d,d)
+k=b6.D(b5).f
+l=A.b9(d,A.fo(B.b0,A.a([A.b9(d,d,B.k,new A.F(a),d,d,d,b6.D(b5).f.a.b,d,d,d,d,k.a.a),A.aC(A.a([A.DQ(a0,d,b6.D(b5).f.a.b*0.4,d),A.O(a1,A.S(d,d,B.e,d,d,d,d,d,p,d,d,60,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),B.t,d),new A.N(B.C,A.O(a2,A.S(d,d,B.e,d,d,d,d,d,p,d,d,28,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),B.t,d),d),new A.N(B.bv,A.O(a3,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.bk(A.a([new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[0],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Days",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[1],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Hours",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[2],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Minutes",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[3],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Seconds",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d)],r),B.j,B.M,B.i)],r),B.j,B.M,B.i)],r),B.aF),B.k,d,d,new A.cq(d,l,d,d,d,d,B.Y),d,d,d,d,d,d,d)
 o=A.jW(d,new A.c9(a0,d,d),0.4)
 k=e.db
 j=e.dx
@@ -63824,63 +63824,63 @@ j=A.b9(d,A.aC(A.a([A.O(a4,A.S(d,d,B.e,d,d,d,d,d,p,d,d,35,d,d,B.a_,d,d,!0,d,d,d,d
 k=A.jW(d,new A.c9(a0,d,d),0.4)
 o=e.db
 i=e.dx
-i=A.b9(d,A.aC(A.a([A.O(a5,A.S(d,d,B.e,d,d,d,d,d,p,d,d,35,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),d,d),A.O(a6,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),A.bk(A.a([A.hE(B.e,B.b8,A.k7(B.ct,50),50,new A.a80(e),d),A.hE(B.e,B.b8,A.k7(B.dB,50),50,new A.a81(e),d)],r),B.j,B.M,B.i)],r),B.j,B.M,B.i),B.k,d,d,new A.cq(d,k,d,d,d,d,B.Y),d,o,d,d,d,d,i)
+i=A.b9(d,A.aC(A.a([A.O(a5,A.S(d,d,B.e,d,d,d,d,d,p,d,d,35,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),d,d),A.O("\n\n9:00- 10:30- Committee Session 3\n10:30-10:45- Break\n10:45- 1:00- Committee Session 4\n1:00-1:45- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC \n1:45- 2:30- Lunch Break for IPC, UNHRC, UNEP and UNDOC \n2:30- 4:00- Committee Session 5\n4:00- 5:00- Break/ Assemble for Socials\n5:00- 7:00- Socials\nDispersal",A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),A.bk(A.a([A.hE(B.e,B.b8,A.k7(B.ct,50),50,new A.a80(e),d),A.hE(B.e,B.b8,A.k7(B.dB,50),50,new A.a81(e),d)],r),B.j,B.M,B.i)],r),B.j,B.M,B.i),B.k,d,d,new A.cq(d,k,d,d,d,d,B.Y),d,o,d,d,d,d,i)
 o=A.jW(d,new A.c9(a0,d,d),0.4)
 k=e.db
 h=e.dx
-n=A.ib(A.bk(A.a([j,i,A.b9(d,A.aC(A.a([A.O(a7,A.S(d,d,B.e,d,d,d,d,d,p,d,d,35,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),d,d),A.O(a8,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),A.hE(B.e,B.b8,A.k7(B.ct,50),50,new A.a82(e),d)],r),B.j,B.M,B.i),B.k,d,d,new A.cq(d,o,d,d,d,d,B.Y),d,k,d,d,d,d,h)],r),B.j,B.o,B.i),n,B.aw)
+n=A.ib(A.bk(A.a([j,i,A.b9(d,A.aC(A.a([A.O(a6,A.S(d,d,B.e,d,d,d,d,d,p,d,d,35,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),d,d),A.O("\n\n8:30-11:00- Committee Session 6\n11:00- 11:15- Break\n11:15- 1:30- Committee Session 7\n1:30-2:45- Common Lunch\n2:45- 3:00- Assemble for Closing Ceremony\n3:00- 4:00- Closing Ceremony",A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),A.hE(B.e,B.b8,A.k7(B.ct,50),50,new A.a82(e),d)],r),B.j,B.M,B.i),B.k,d,d,new A.cq(d,o,d,d,d,d,B.Y),d,k,d,d,d,d,h)],r),B.j,B.o,B.i),n,B.aw)
 h=A.aG(255,40,39,39)
-k=A.O(a9,A.S(d,d,B.e,d,d,d,d,d,p,d,d,50,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)
-o=A.el(d,d,new A.c9(b0,d,d),b8.D(b7).f.a.a*0.4)
-i=b8.D(b7).f
-i=A.bk(A.a([o,new A.N(B.mb,A.b9(d,A.O(b1,A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),B.k,d,d,d,d,d,d,d,d,d,i.a.a*0.4),d)],r),B.a1,B.Q,B.i)
+k=A.O(a7,A.S(d,d,B.e,d,d,d,d,d,p,d,d,50,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)
+o=A.el(d,d,new A.c9(a8,d,d),b6.D(b5).f.a.a*0.4)
+i=b6.D(b5).f
+i=A.bk(A.a([o,new A.N(B.mb,A.b9(d,A.O(a9,A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),B.k,d,d,d,d,d,d,d,d,d,i.a.a*0.4),d)],r),B.a1,B.Q,B.i)
 o=A.ahR(B.e,1,1)
-j=A.O(b2,A.S(d,d,B.e,d,d,d,d,d,p,d,d,50,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)
-g=b8.D(b7).f
-h=A.b9(d,A.aC(A.a([k,new A.N(B.dt,i,d),new A.N(new A.az(100,20,100,20),o,d),j,new A.N(B.dt,A.bk(A.a([new A.N(B.m7,A.b9(d,A.O(b3,A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),B.k,d,d,d,d,d,d,d,d,d,g.a.a*0.4),d),A.el(d,d,new A.c9(b4,d,d),b8.D(b7).f.a.a*0.4)],r),B.a1,B.Q,B.i),d)],r),B.j,B.M,B.i),B.k,h,d,d,d,d,d,d,d,d,d)
-p=A.O(b5,A.S(d,d,B.e,d,d,d,d,d,p,d,d,50,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)
+j=A.O(b0,A.S(d,d,B.e,d,d,d,d,d,p,d,d,50,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)
+g=b6.D(b5).f
+h=A.b9(d,A.aC(A.a([k,new A.N(B.dt,i,d),new A.N(new A.az(100,20,100,20),o,d),j,new A.N(B.dt,A.bk(A.a([new A.N(B.m7,A.b9(d,A.O(b1,A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),B.k,d,d,d,d,d,d,d,d,d,g.a.a*0.4),d),A.el(d,d,new A.c9(b2,d,d),b6.D(b5).f.a.a*0.4)],r),B.a1,B.Q,B.i),d)],r),B.j,B.M,B.i),B.k,h,d,d,d,d,d,d,d,d,d)
+p=A.O(b3,A.S(d,d,B.e,d,d,d,d,d,p,d,d,50,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)
 g=A.ahz(!0,A.bn(0,0,2),!0,400,0.5)
 j=e.cy
 o=A.af(j).h("aA<1,dM>")
 g=A.aC(A.a([new A.N(new A.az(20,20,20,20),p,d),A.ahA(A.aq(new A.aA(j,new A.a83(),o),!0,o.h("bs.E")),g)],r),B.j,B.o,B.i)
-b7=b8.D(b7).f
-return A.kF(s,B.l,A.iH(A.j7(A.ib(A.aC(A.a([l,n,h,new A.N(B.ay,g,d),A.rg(b7.gcw(b7)===B.a2)],r),B.j,B.o,B.i),q,B.ag),q,B.ab,d,d,A.eD(),B.r,d,d,10,new A.F(c),!0,B.ah,!0),d,d),m,!1)}else{s=A.lj(b8)
-m=A.li(b8)
+b5=b6.D(b5).f
+return A.kF(s,B.l,A.iH(A.j7(A.ib(A.aC(A.a([l,n,h,new A.N(B.ay,g,d),A.rg(b5.gcw(b5)===B.a2)],r),B.j,B.o,B.i),q,B.ag),q,B.ab,d,d,A.eD(),B.r,d,d,10,new A.F(c),!0,B.ah,!0),d,d),m,!1)}else{s=A.lj(b6)
+m=A.li(b6)
 l=A.jW(B.wk,new A.c9(b,d,d),0.4)
-k=b8.D(b7).f
-l=A.b9(d,A.fo(B.b0,A.a([A.b9(d,d,B.k,new A.F(a),d,d,d,b8.D(b7).f.a.b,d,d,d,d,k.a.a),A.aC(A.a([new A.N(B.C,A.DQ(a0,d,b8.D(b7).f.a.b*0.3,d),d),A.O(a1,A.S(d,d,B.e,d,d,d,d,d,p,d,d,35,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),B.t,d),new A.N(B.C,A.O(a2,A.S(d,d,B.e,d,d,d,d,d,p,d,d,28,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),B.t,d),d),new A.N(B.bv,A.O(a3,A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.bk(A.a([new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[0],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Days",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[1],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Hours",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[2],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Minutes",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[3],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Seconds",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d)],r),B.j,B.M,B.i)],r),B.j,B.M,B.i)],r),B.aF),B.k,d,d,new A.cq(d,l,d,d,d,d,B.Y),d,d,d,d,d,d,d)
+k=b6.D(b5).f
+l=A.b9(d,A.fo(B.b0,A.a([A.b9(d,d,B.k,new A.F(a),d,d,d,b6.D(b5).f.a.b,d,d,d,d,k.a.a),A.aC(A.a([new A.N(B.C,A.DQ(a0,d,b6.D(b5).f.a.b*0.3,d),d),A.O(a1,A.S(d,d,B.e,d,d,d,d,d,p,d,d,35,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),B.t,d),new A.N(B.C,A.O(a2,A.S(d,d,B.e,d,d,d,d,d,p,d,d,28,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),B.t,d),d),new A.N(B.bv,A.O(a3,A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.bk(A.a([new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[0],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Days",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[1],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Hours",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[2],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Minutes",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d),new A.N(B.v,A.aC(A.a([new A.N(B.v,A.O(e.y[3],A.S(d,d,B.e,d,d,d,d,d,o,d,d,40,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.O("Seconds",A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d)],r),B.j,B.o,B.i),d)],r),B.j,B.M,B.i)],r),B.j,B.M,B.i)],r),B.aF),B.k,d,d,new A.cq(d,l,d,d,d,d,B.Y),d,d,d,d,d,d,d)
 o=A.jW(d,new A.c9(a0,d,d),1)
 k=e.db
 k.toString
 j=e.dx
-j=A.b9(d,A.fo(B.b0,A.a([A.b9(d,d,B.k,new A.F(b6),d,d,d,d,d,d,d,d,d),A.aC(A.a([A.O(a4,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),d,d),new A.N(B.fn,A.O("\n\n8:30-9:45 - Registrations\n9:45-10:45 - Opening Ceremony\n10:45- 11:15 - Break\n11:15- 1:30- Committee Session 1\n1:30- 2:15- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC\n2:15- 3:00- Lunch Break for IPC, UNHRC, UNEP and UNDOC\n3:00- 4:30- Committee Session 2\nDispersal",A.S(d,d,B.e,d,d,d,d,d,p,d,d,25,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.hE(B.e,B.b8,A.k7(B.dB,50),50,new A.a84(e),d)],r),B.j,B.M,B.i)],r),B.aF),B.k,d,d,new A.cq(d,o,d,d,d,d,B.Y),d,k*1.5,d,d,d,d,j)
+j=A.b9(d,A.fo(B.b0,A.a([A.b9(d,d,B.k,new A.F(b4),d,d,d,d,d,d,d,d,d),A.aC(A.a([A.O(a4,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),d,d),new A.N(B.fn,A.O("\n\n8:30-9:45 - Registrations\n9:45-10:45 - Opening Ceremony\n10:45- 11:15 - Break\n11:15- 1:30- Committee Session 1\n1:30- 2:15- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC\n2:15- 3:00- Lunch Break for IPC, UNHRC, UNEP and UNDOC\n3:00- 4:30- Committee Session 2\nDispersal",A.S(d,d,B.e,d,d,d,d,d,p,d,d,25,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.hE(B.e,B.b8,A.k7(B.dB,50),50,new A.a84(e),d)],r),B.j,B.M,B.i)],r),B.aF),B.k,d,d,new A.cq(d,o,d,d,d,d,B.Y),d,k*1.5,d,d,d,d,j)
 k=A.jW(d,new A.c9(a0,d,d),1)
 o=e.db
 o.toString
 i=e.dx
-i=A.b9(d,A.fo(B.b0,A.a([A.b9(d,d,B.k,new A.F(b6),d,d,d,d,d,d,d,d,d),A.aC(A.a([A.O(a5,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),d,d),new A.N(B.fn,A.O(a6,A.S(d,d,B.e,d,d,d,d,d,p,d,d,25,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.bk(A.a([A.hE(B.e,B.b8,A.k7(B.ct,50),50,new A.a85(e),d),A.hE(B.e,B.b8,A.k7(B.dB,50),50,new A.a86(e),d)],r),B.j,B.M,B.i)],r),B.j,B.M,B.i)],r),B.aF),B.k,d,d,new A.cq(d,k,d,d,d,d,B.Y),d,o*1.5,d,d,d,d,i)
+i=A.b9(d,A.fo(B.b0,A.a([A.b9(d,d,B.k,new A.F(b4),d,d,d,d,d,d,d,d,d),A.aC(A.a([A.O(a5,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),d,d),new A.N(B.fn,A.O("\n\n9:00- 10:30- Committee Session 3\n10:30-10:45- Break\n10:45- 1:00- Committee Session 4\n1:00-1:45- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC \n1:45- 2:30- Lunch Break for IPC, UNHRC, UNEP and UNDOC \n1:45- 4:00- Committee Session 5\n4:00- 4:45- Break/ Assemble for Socials\n5:00- 7:00- Socials\nDispersal",A.S(d,d,B.e,d,d,d,d,d,p,d,d,25,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.bk(A.a([A.hE(B.e,B.b8,A.k7(B.ct,50),50,new A.a85(e),d),A.hE(B.e,B.b8,A.k7(B.dB,50),50,new A.a86(e),d)],r),B.j,B.M,B.i)],r),B.j,B.M,B.i)],r),B.aF),B.k,d,d,new A.cq(d,k,d,d,d,d,B.Y),d,o*1.5,d,d,d,d,i)
 o=A.jW(d,new A.c9(a0,d,d),1)
 k=e.db
 k.toString
 h=e.dx
-n=A.ib(A.bk(A.a([j,i,A.b9(d,A.fo(B.b0,A.a([A.b9(d,d,B.k,new A.F(b6),d,d,d,d,d,d,d,d,d),A.aC(A.a([A.O(a7,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),d,d),new A.N(B.fn,A.O(a8,A.S(d,d,B.e,d,d,d,d,d,p,d,d,25,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.hE(B.e,B.b8,A.k7(B.ct,50),50,new A.a87(e),d)],r),B.j,B.M,B.i)],r),B.aF),B.k,d,d,new A.cq(d,o,d,d,d,d,B.Y),d,k*1.5,d,d,d,d,h)],r),B.j,B.o,B.i),n,B.aw)
+n=A.ib(A.bk(A.a([j,i,A.b9(d,A.fo(B.b0,A.a([A.b9(d,d,B.k,new A.F(b4),d,d,d,d,d,d,d,d,d),A.aC(A.a([A.O(a6,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,B.a_,d,d,!0,d,d,d,d,d,d,d,d),d,d),new A.N(B.fn,A.O("\n\n8:30-11:00- Committee Session 6\n11:00- 11:15- Break\n11:15- 1:30- Committee Session 7\n1:30-2:45- Common Lunch\n2:45- 3:00- Assemble for Closing Ceremony\n3:00- 4:00- Closing Ceremony\nDispersal",A.S(d,d,B.e,d,d,d,d,d,p,d,d,25,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),d),A.hE(B.e,B.b8,A.k7(B.ct,50),50,new A.a87(e),d)],r),B.j,B.M,B.i)],r),B.aF),B.k,d,d,new A.cq(d,o,d,d,d,d,B.Y),d,k*1.5,d,d,d,d,h)],r),B.j,B.o,B.i),n,B.aw)
 h=A.aG(255,40,39,39)
-k=A.O(a9,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),B.t,d)
-o=A.el(d,d,new A.c9(b0,d,d),b8.D(b7).f.a.a*0.7)
-i=b8.D(b7).f
-i=A.aC(A.a([o,new A.N(B.mb,A.b9(d,A.O(b1,A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),B.k,d,d,d,d,d,d,d,d,d,i.a.a*0.7),d)],r),B.a1,B.Q,B.i)
+k=A.O(a7,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),B.t,d)
+o=A.el(d,d,new A.c9(a8,d,d),b6.D(b5).f.a.a*0.7)
+i=b6.D(b5).f
+i=A.aC(A.a([o,new A.N(B.mb,A.b9(d,A.O(a9,A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),B.k,d,d,d,d,d,d,d,d,d,i.a.a*0.7),d)],r),B.a1,B.Q,B.i)
 o=A.ahR(B.e,1,1)
-j=A.O(b2,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),B.t,d)
-g=A.el(d,d,new A.c9(b4,d,d),b8.D(b7).f.a.a*0.7)
-f=b8.D(b7).f
-h=A.b9(d,A.aC(A.a([k,new A.N(B.dt,i,d),new A.N(new A.az(100,20,100,20),o,d),j,new A.N(B.dt,A.aC(A.a([g,new A.N(B.m7,A.b9(d,A.O(b3,A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),B.k,d,d,d,d,d,d,d,d,d,f.a.a*0.7),d)],r),B.a1,B.Q,B.i),d)],r),B.j,B.M,B.i),B.k,h,d,d,d,d,d,d,d,d,d)
-p=A.O(b5,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),B.t,d)
+j=A.O(b0,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),B.t,d)
+g=A.el(d,d,new A.c9(b2,d,d),b6.D(b5).f.a.a*0.7)
+f=b6.D(b5).f
+h=A.b9(d,A.aC(A.a([k,new A.N(B.dt,i,d),new A.N(new A.az(100,20,100,20),o,d),j,new A.N(B.dt,A.aC(A.a([g,new A.N(B.m7,A.b9(d,A.O(b1,A.S(d,d,B.e,d,d,d,d,d,p,d,d,20,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),d,d),B.k,d,d,d,d,d,d,d,d,d,f.a.a*0.7),d)],r),B.a1,B.Q,B.i),d)],r),B.j,B.M,B.i),B.k,h,d,d,d,d,d,d,d,d,d)
+p=A.O(b3,A.S(d,d,B.e,d,d,d,d,d,p,d,d,30,d,d,d,d,d,!0,d,d,d,d,d,d,d,d),B.t,d)
 f=A.ahz(!0,A.bn(0,0,2),!0,400,0.8)
 g=e.cy
 j=A.af(g).h("aA<1,dM>")
 f=A.aC(A.a([new A.N(new A.az(20,20,20,20),p,d),A.ahA(A.aq(new A.aA(g,new A.a88(),j),!0,j.h("bs.E")),f)],r),B.j,B.o,B.i)
-b7=b8.D(b7).f
-return A.kF(s,B.l,A.iH(A.j7(A.ib(A.aC(A.a([l,n,h,new A.N(B.ay,f,d),A.rg(b7.gcw(b7)===B.a2)],r),B.j,B.o,B.i),q,B.ag),q,B.ab,d,d,A.eD(),B.r,d,d,10,new A.F(c),!0,B.ah,!0),d,d),m,!0)}}}
+b5=b6.D(b5).f
+return A.kF(s,B.l,A.iH(A.j7(A.ib(A.aC(A.a([l,n,h,new A.N(B.ay,f,d),A.rg(b5.gcw(b5)===B.a2)],r),B.j,B.o,B.i),q,B.ag),q,B.ab,d,d,A.eD(),B.r,d,d,10,new A.F(c),!0,B.ah,!0),d,d),m,!0)}}}
 A.a89.prototype={
 $1(a){this.a.Lo()},
 $S:53}
