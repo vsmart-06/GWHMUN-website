@@ -856,7 +856,7 @@ class _HomeState extends State<Home> {
                                     Padding(
                                       padding: const EdgeInsets.fromLTRB(20, 0, 10, 0),
                                       child: Text(
-                                        "\n\n9:00- 10:30- Committee Session 3\n10:30-10:45- Break\n10:45- 1:00- Committee Session 4\n1:00-1:45- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC \n1:45- 2:30- Lunch Break for IPC, UNHRC, UNEP and UNDOC \n2:30- 4:00- Committee Session 5\n4:00- 5:00- Break/ Assemble for Socials\n5:00- 7:00- Socials\nDispersal",
+                                        "\n\n9:00- 10:30- Committee Session 3\n10:30-10:45- Break\n10:45- 1:00- Committee Session 4\n1:00-1:45- Lunch Break for UNSC, SOCHUM, JCC, AIPPM and DISEC \n1:45- 2:30- Lunch Break for IPC, UNHRC, UNEP and UNDOC \n1:45- 4:00- Committee Session 5\n4:00- 4:45- Break/ Assemble for Socials\n5:00- 7:00- Socials\nDispersal",
                                         style: TextStyle(
                                           fontFamily: font,
                                           color: Colors.white,
@@ -924,7 +924,7 @@ class _HomeState extends State<Home> {
                                     Padding(
                                       padding: const EdgeInsets.fromLTRB(20, 0, 10, 0),
                                       child: Text(
-                                        "\n\n8:30-11:00- Committee Session 6\n11:00- 11:15- Break\n11:15- 1:30- Committee Session 7\n1:30-2:45- Common Lunch\n2:45- 3:00- Assemble for Closing Ceremony\n3:00- 4:00- Closing Ceremony",
+                                        "\n\n8:30-11:00- Committee Session 6\n11:00- 11:15- Break\n11:15- 1:30- Committee Session 7\n1:30-2:45- Common Lunch\n2:45- 3:00- Assemble for Closing Ceremony\n3:00- 4:00- Closing Ceremony\nDispersal",
                                         style: TextStyle(
                                           fontFamily: font,
                                           color: Colors.white,
